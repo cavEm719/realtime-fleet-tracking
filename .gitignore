@@ -1,0 +1,65 @@
+**/target/
+.idea/
+.DS_Store
+data/
+.env
+*.log
+!bench/results/**/*.log
+__pycache__/
+
+# Verification keeps compact summaries and trace JSON, not raw process output.
+docs/verification/**/*.log
+docs/verification/**/*.out
+
+# Phase 6.1 keeps bulk benchmark output locally; commit compact provenance/results.
+bench/results/Phase61/**/*.log
+bench/results/Phase61/**/*.prom
+bench/results/Phase61/**/*.csv
+bench/results/Phase61/**/*.jsonl
+bench/results/Phase61/**/events.tsv
+!bench/results/Phase61/setup/container-jvm.log
+!bench/results/Phase61/S5-*/**/events.tsv
+
+# AWS operator state, secrets and local provisioning outputs
+infra/aws/.terraform/
+infra/aws/*.tfstate*
+infra/aws/*.tfvars
+infra/aws/inventory.json
+infra/aws/deployment.json
+infra/aws/cost-estimate.json
+infra/aws/plan*
+bench/results/AWS/**/*.log
+bench/results/AWS/**/*.prom
+bench/results/AWS/**/*.csv
+bench/results/AWS/**/*.jsonl
+bench/results/AWS/**/*-before.txt
+bench/results/AWS/**/*-after.txt
+
+# Private operator values and unsanitized evidence stay local.
+infra/aws/*.local.json
+scripts/.public-safety-local.json
+bench/results/AWS/private/
+bench/results/AWS/gate0/
+bench/results/AWS/bedrock-pilot-*/
+bench/results/AWS/bedrock-deepseek-*/
+bench/results/AWS/bedrock-claude-*/
+bench/results/private-originals/
+bench/results/**/*.jfr
+
+# Full AWS trials include private inventories; publish separate sanitized summaries.
+bench/results/AWS/gate*-private/
+bench/results/AWS/Gate1-*/
+bench/results/AWS/S*/trial-*/
+
+# Explicit sanitized per-scenario summaries; full raw CSV remains ignored.
+!bench/results/AWS/gate2-resources.csv
+!bench/results/AWS/gate2-consumer-lag.csv
+!bench/results/AWS/gate2-redis.csv
+
+# Private interview preparation; never publish.
+interview/
+bench/results/Phase9/**/*.log
+bench/results/Phase9/**/*.prom
+bench/results/Phase9/**/*.csv
+bench/results/Phase9/**/*.jsonl
+bench/results/Phase9/**/events.tsv
