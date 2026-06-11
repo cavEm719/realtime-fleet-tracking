@@ -1,0 +1,249 @@
+syntax = "proto3";
+package fleet.internal;
+option java_package = "dev.fleet.common.rpc";
+option java_multiple_files = true;
+
+// Copilot supplies tenant_id from server ToolContext, never from model arguments.
+// API validates ownership before reading; every list is capped at 50. AI reads are read-only.
+service FleetData {
+  rpc GetAssetStatus(AssetRequest) returns (AssetStatus);
+  rpc ListEvents(EventsRequest) returns (EventsResult);
+  rpc ListEventsSince(EventsSinceRequest) returns (EventsSinceResult);
+  rpc FindNearby(NearbyRequest) returns (NearbyResult);
+  rpc ListFences(FencesRequest) returns (FencesResult);
+  rpc FindAssets(AssetSearchRequest) returns (AssetSearchResult);
+  rpc AggregateEvents(EventsRequest) returns (EventSummary);
+  rpc GetFleetState(FencesRequest) returns (FleetStateSummary);
+  rpc QueryEvents(EventQueryRequest) returns (EventQueryResult);
+  rpc GetTenantPolicy(TenantRequest) returns (TenantPolicy);
+}
+message TenantRequest {
+  int64 tenant_id = 1;
+}
+message AssetRequest {
+  int64 tenant_id = 1;
+  int64 asset_id = 2; // Vessel MMSI; API checks its owner.
+  optional int32 state_limit = 3; // Default 50; positive values capped at 50.
+}
+message EventsRequest {
+  int64 tenant_id = 1;
+  optional int64 asset_id = 2;
+  optional int64 fence_id = 3;
+  optional int64 from_ts = 4; // Inclusive report time, UTC epoch milliseconds.
+  optional int64 to_ts = 5; // Inclusive report time; absent means no upper bound.
+  optional int32 limit = 6; // Default 50; positive values capped at 50.
+  optional string event_type = 7; // ENTER or EXIT; absent includes both.
+}
+message NearbyRequest {
+  int64 tenant_id = 1;
+  optional int64 fence_id = 2; // Use an owned fence's center OR explicit coordinates.
+  optional double lat = 3;
+  optional double lon = 4;
+  double radius_m = 5; // Positive meters, constrained by API radius configuration.
+  optional int32 limit = 6; // Default 50; positive values capped at 50.
+}
+message FencesRequest {
+  int64 tenant_id = 1;
+  optional int32 limit = 2; // Default 50; positive values capped at 50.
+}
+message AssetStatus {
+  Presentation presentation = 101; // Code-rendered output for the model and the user.
+  QueryReceipt receipt = 100; // Validated execution conditions; names come from tenant-scoped storage.
+  int64 asset_id = 1; // Requested, ownership-checked MMSI.
+  LatestPosition position = 2; // Absent when Redis has no latest position.
+  repeated ConfirmedFenceState confirmed_states = 3; // MySQL states for non-deleted fences.
+  int32 state_limit = 4; // Effective maximum returned state rows.
+}
+message LatestPosition {
+  int64 tenant_id = 1; // Owner from the canonical report.
+  int64 asset_id = 2; // Internal asset ID, currently the vessel MMSI.
+  int64 mmsi = 3; // AIS vessel identity.
+  int64 position_ts = 4; // Source report time, UTC epoch milliseconds.
+  double lat = 5; // Latitude in degrees from the report.
+  double lon = 6; // Longitude in degrees from the report.
+  optional double sog = 7; // Speed over ground; absent if not reported.
+  optional double cog = 8; // Course over ground; absent if not reported.
+  optional double heading = 9; // Heading; absent if not reported.
+  int64 emitted_at = 10; // Generator timestamp, UTC epoch milliseconds.
+  optional int64 ingested_at = 11; // API servlet receipt time; absent for legacy data.
+}
+message ConfirmedFenceState {
+  int64 fence_id = 1; // Owned port area identifier.
+  string name = 2; // Current fence display name from MySQL.
+  bool inside = 3; // Last transactionally confirmed state; false means OUTSIDE.
+  int64 last_transition_position_ts = 4; // Report time that last changed the state.
+  int64 fence_version = 5; // Fence version used by that confirmation.
+}
+message GeofenceEvent {
+  enum Type {
+    TYPE_UNSPECIFIED = 0;
+    ENTER = 1;
+    EXIT = 2;
+  }
+  string event_id = 1; // Deterministic SHA-256 event ID stored by the processor.
+  int64 asset_id = 2; // Vessel that crossed the fence.
+  int64 fence_id = 3; // Port area crossed by that vessel.
+  Type type = 4; // Confirmed ENTER or EXIT.
+  int64 position_ts = 5; // Confirming report time, UTC epoch milliseconds.
+  int64 fence_version = 6; // Fence version evaluated for that transition.
+  int64 created_at_micros = 7; // MySQL insert timestamp, UTC epoch microseconds; resume ordering.
+  int64 id = 8; // MySQL row ID, resume tie breaker (not event_id dedupe identity).
+}
+message EventsResult {
+  Presentation presentation = 101; // Code-rendered output for the model and the user.
+  QueryReceipt receipt = 100; // Validated execution conditions; names come from tenant-scoped storage.
+  repeated GeofenceEvent events = 1; // Newest first, at most limit rows.
+  int32 limit = 2; // Effective maximum after API clamping.
+}
+message Fence {
+  int64 id = 1; // Owned, non-deleted port area identifier.
+  string name = 2; // Human-readable port name from MySQL.
+  double center_lat = 3; // Circle center latitude in degrees.
+  double center_lon = 4; // Circle center longitude in degrees.
+  double enter_radius_m = 5; // Entry threshold in meters.
+  double exit_radius_m = 6; // Wider exit threshold in meters.
+  int64 version = 7; // Current stored version of the fence.
+}
+message FencesResult {
+  Presentation presentation = 101; // Code-rendered output for the model and the user.
+  QueryReceipt receipt = 100; // Validated execution conditions; names come from tenant-scoped storage.
+  repeated Fence fences = 1; // Owned, non-deleted fences ordered by ID.
+  int32 limit = 2; // Effective maximum after API clamping.
+}
+message NearbyVessel {
+  int64 asset_id = 1; // MMSI in this tenant's Redis geographic index.
+  double distance_m = 2; // Redis-computed distance from the requested center.
+}
+message NearbyResult {
+  Presentation presentation = 101; // Code-rendered output for the model and the user.
+  QueryReceipt receipt = 100; // Validated execution conditions; names come from tenant-scoped storage.
+  repeated NearbyVessel vessels = 1; // Closest first, at most limit rows.
+  int32 limit = 2; // Effective maximum after API clamping.
+}
+message TenantPolicy {
+  int32 llm_rate_per_min = 1; // API-owned quota used by copilot's Redis token bucket.
+}
+
+// Resume includes a look-back overlap; page cursors are exclusive. Tenant is server supplied.
+message EventCursor {
+  reserved 1, 2; // Former event-time cursor is intentionally incompatible.
+  int64 created_at_micros = 3; // MySQL insert timestamp, UTC epoch microseconds.
+  int64 id = 4; // MySQL row ID breaks equal timestamps; neither field guarantees commit order.
+}
+message EventsSinceRequest {
+  int64 tenant_id = 1;
+  repeated int64 asset_ids = 2; // At most 1000 owned assets; empty with all=true means tenant-wide.
+  bool all = 3;
+  EventCursor after = 4; // Supply this OR after_event_id.
+  string after_event_id = 5; // API resolves this only within the requested tenant.
+  int32 limit = 6; // Positive page size, capped at 50.
+  EventCursor page_after = 7; // Exclusive pagination cursor inside the overlap range.
+  optional int64 look_back_micros = 8; // Gateway-configured overlap; default 5s, capped at 60s.
+}
+message EventsSinceResult {
+  repeated GeofenceEvent events = 1; // Ascending created_at then id, including the overlap before the resume cursor.
+  EventCursor next = 2; // Last row, or resolved input cursor when empty.
+}
+
+// Name lookup reads only assets owned by the request tenant; exact display-name match.
+message AssetSearchRequest {
+  int64 tenant_id = 1;
+  string name = 2;
+}
+message NamedAsset {
+  int64 asset_id = 1;
+  string name = 2;
+}
+message AssetSearchResult {
+  Presentation presentation = 101; // Code-rendered output for the model and the user.
+  QueryReceipt receipt = 100; // Validated execution conditions; names come from tenant-scoped storage.
+  repeated NamedAsset assets = 1;
+  bool truncated = 2;
+}
+// Counts cover the full validated range, regardless of the bounded detail-list size.
+message PortEventCount {
+  int64 fence_id = 1;
+  string name = 2;
+  string type = 3;
+  int64 events = 4;
+  int64 distinct_assets = 5;
+}
+message EventSummary {
+  Presentation presentation = 101; // Code-rendered output for the model and the user.
+  QueryReceipt receipt = 100; // Validated execution conditions; names come from tenant-scoped storage.
+  int64 total_events = 1;
+  int64 distinct_assets = 2;
+  repeated PortEventCount ports = 3;
+  bool truncated = 4;
+}
+// Confirmed MySQL INSIDE state, not proximity. Full counts plus bounded asset details.
+message PortStateCount {
+  int64 fence_id = 1;
+  string name = 2;
+  int64 inside_assets = 3;
+}
+message InsideAsset {
+  int64 asset_id = 1;
+  int64 fence_id = 2;
+}
+message FleetStateSummary {
+  Presentation presentation = 101; // Code-rendered output for the model and the user.
+  QueryReceipt receipt = 100; // Validated execution conditions; names come from tenant-scoped storage.
+  int64 inside_assets = 1;
+  repeated PortStateCount ports = 2;
+  repeated InsideAsset assets = 3;
+  bool truncated = 4;
+}
+
+// Names are loaded by API code from validated identifiers, never accepted as query inputs.
+message QueryName {
+  int64 id = 1;
+  string name = 2;
+}
+message QueryReceipt {
+  string tool = 1;
+  map<string, string> arguments = 2; // Canonical values after validation/defaults/clamping; excludes tenant.
+  repeated QueryName ports = 3;
+  repeated QueryName vessels = 4;
+}
+message EventQueryRequest {
+  int64 tenant_id = 1; // Copilot supplies the authenticated request tenant.
+  string metric = 2; // event_count or distinct_vessels, never a SQL expression.
+  optional string event_type = 3; // ENTER or EXIT; absent includes both.
+  repeated int64 ports = 4; // At most 50 owned fence IDs; empty includes all owned ports.
+  repeated int64 vessels = 5; // At most 50 owned MMSIs; empty includes all owned vessels.
+  optional int64 from_ts = 6; // Required presence, inclusive UTC epoch milliseconds, resolved by copilot code.
+  optional int64 to_ts = 7; // Required presence, inclusive; validated range is at most 366 days.
+  string group_by = 8; // port, vessel, day (UTC), type or none.
+}
+message EventQueryRow {
+  optional int64 fence_id = 1;
+  optional int64 asset_id = 2;
+  string name = 3; // Tenant-scoped database name for a port/vessel group.
+  string day_utc = 4;
+  string event_type = 5;
+  int64 value = 6;
+}
+message EventQueryResult {
+  Presentation presentation = 101; // Code-rendered output for the model and the user.
+  QueryReceipt receipt = 1;
+  int64 total = 2; // Complete selected metric, not the sum of distinct counts across groups.
+  repeated EventQueryRow rows = 3; // Deterministically ordered, at most 50 groups.
+  bool truncated = 4; // More groups existed; total still covers the full range.
+}
+
+// Rendered by the API from the executed query and its rows, never by the model.
+message Presentation {
+  string result_json = 1; // Model-facing result; every timestamp also has an ISO-8601 UTC string.
+  string conditions = 2; // Query conditions shown to the user.
+  repeated Table tables = 3; // Result tables shown to the user.
+  string data_as_of_utc = 4; // Newest replicated heartbeat; port events and states are current to here.
+}
+message Table {
+  string title = 1;
+  repeated string columns = 2;
+  repeated TableRow rows = 3;
+}
+message TableRow {
+  repeated string cells = 1;
+}
