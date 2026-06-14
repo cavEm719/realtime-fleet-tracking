@@ -1,0 +1,82 @@
+x-service: &service
+  profiles: [multi]
+  restart: "no"
+  mem_limit: 768m
+  healthcheck:
+    test: ["CMD", "curl", "-fsS", "http://localhost:8080/actuator/health"]
+    interval: 5s
+    timeout: 3s
+    retries: 30
+    start_period: 20s
+
+x-data-environment: &data-environment
+  KAFKA_BOOTSTRAP_SERVERS: kafka:19092
+  REDIS_HOST: redis
+  MYSQL_URL: jdbc:mysql://mysql:3306/fleet
+  MYSQL_USER: fleet
+  MYSQL_PASSWORD: fleet
+
+services:
+  kafka:
+    image: apache/kafka:3.9.1
+    ports: ["9092:9092"]
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_LISTENERS: INTERNAL://:19092,EXTERNAL://:9092,CONTROLLER://:9093
+      KAFKA_ADVERTISED_LISTENERS: INTERNAL://kafka:19092,EXTERNAL://localhost:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT,CONTROLLER:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: INTERNAL
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:9093
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
+      KAFKA_LOG_DIRS: /var/lib/kafka/data
+    volumes: ["kafka-data:/var/lib/kafka/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --list >/dev/null 2>&1"]
+      interval: 10s
+      timeout: 10s
+      retries: 12
+  redis:
+    image: redis:7.4.9
+    command: ["redis-server", "--appendonly", "yes", "--appendfsync", "always", "--maxmemory-policy", "noeviction"]
+    ports: ["6379:6379"]
+    volumes: ["redis-data:/data"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+  mysql:
+    image: mysql:8.0.46
+    command: ["--server-id=1", "--gtid-mode=ON", "--enforce-gtid-consistency=ON"]
+    environment:
+      MYSQL_DATABASE: fleet
+      MYSQL_USER: fleet
+      MYSQL_PASSWORD: fleet
+      MYSQL_ROOT_PASSWORD: localroot
+    ports: ["3306:3306"]
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./docker/mysql/primary:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -u root -plocalroot --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+  # Asynchronous GTID replica; copilot reads run here with a SELECT-only account.
+  mysql-replica:
+    image: mysql:8.0.46
+    command: ["--server-id=2", "--gtid-mode=ON", "--enforce-gtid-consistency=ON"]
+    environment:
+      MYSQL_DATABASE: fleet
+      MYSQL_USER: fleet
+      MYSQL_PASSWORD: fleet
+      MYSQL_ROOT_PASSWORD: localroot
+    ports: ["3307:3306"]
+    volumes:
+      - mysql-replica-data:/var/lib/mysql
+      - ./docker/mysql/replica:/docker-entrypoint-initdb.d:ro
