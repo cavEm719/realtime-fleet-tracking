@@ -1,0 +1,52 @@
+server:
+  port: ${API_PORT:8080}
+spring:
+  jackson:
+    deserialization:
+      fail-on-null-for-primitives: true
+      accept-float-as-int: false
+  application:
+    name: fleet-api
+  datasource:
+    url: ${MYSQL_URL:jdbc:mysql://localhost:3306/fleet}
+    username: ${MYSQL_USER:fleet}
+    password: ${MYSQL_PASSWORD:fleet}
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      timeout: 5s
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    admin:
+      fail-fast: true
+    producer:
+      acks: all
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      properties:
+        linger.ms: 5
+        compression.type: lz4
+        max.block.ms: 1000
+        enable.idempotence: true
+        max.in.flight.requests.per.connection: 5
+        delivery.timeout.ms: 10000
+        request.timeout.ms: 5000
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus
+
+internal:
+  grpc-port: ${API_GRPC_PORT:9095}
+fleet:
+  # Empty values reuse the primary connection; compose points copilot reads at the replica.
+  ai-read:
+    url: ${AI_READ_URL:}
+    username: ${AI_READ_USER:}
+    password: ${AI_READ_PASSWORD:}
