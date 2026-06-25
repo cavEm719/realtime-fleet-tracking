@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dev.fleet.api.db.FenceCrudMapper">
+    <insert id="create" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO fence (tenant_id, name, center_lat, center_lon, enter_radius_m, exit_radius_m)
+        VALUES (#{tenantId}, #{request.name}, #{request.centerLat}, #{request.centerLon},
+            #{request.enterRadiusM}, #{request.exitRadiusM})
+    </insert>
+    <select id="find" resultType="dev.fleet.api.db.FenceRow">
+        SELECT id, tenant_id, name, center_lat, center_lon, enter_radius_m, exit_radius_m, version, deleted
+        FROM fence WHERE tenant_id = #{tenantId} AND id = #{id}
+    </select>
+    <update id="update">
+        UPDATE fence SET name = #{request.name}, center_lat = #{request.centerLat}, center_lon = #{request.centerLon},
+            enter_radius_m = #{request.enterRadiusM}, exit_radius_m = #{request.exitRadiusM},
+            version = version + 1, updated_at = CURRENT_TIMESTAMP(3)
+        WHERE tenant_id = #{tenantId} AND id = #{id} AND deleted = false
+    </update>
+    <update id="delete">
+        UPDATE fence SET deleted = true, version = version + 1, updated_at = CURRENT_TIMESTAMP(3)
+        WHERE tenant_id = #{tenantId} AND id = #{id} AND deleted = false
+    </update>
+    <insert id="changeOutbox">
+        INSERT INTO outbox (tenant_id, topic, msg_key, payload)
+        VALUES (#{tenantId}, 'fence-changes', #{id}, #{payload})
+    </insert>
+</mapper>
