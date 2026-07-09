@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dev.fleet.processor.geofence.StateMapper">
+    <select id="load" resultType="dev.fleet.processor.geofence.ConfirmedState">
+        SELECT tenant_id, asset_id, fence_id, inside, last_transition_position_ts, fence_version
+        FROM asset_fence_state
+        WHERE (tenant_id, asset_id) IN
+        <foreach collection="assets" item="asset" open="(" separator="," close=")">
+            (#{asset.tenantId}, #{asset.assetId})
+        </foreach>
+    </select>
+    <update id="updateState">
+        UPDATE asset_fence_state
+        SET inside = #{transition.inside}, last_transition_position_ts = #{transition.positionTs},
+            fence_version = #{transition.fenceVersion}
+        WHERE tenant_id = #{transition.tenantId} AND asset_id = #{transition.assetId}
+            AND fence_id = #{transition.fenceId}
+            AND last_transition_position_ts &lt; #{transition.positionTs}
+            AND inside != #{transition.inside}
+    </update>
+    <insert id="insertStateIfMissing">
+        INSERT IGNORE INTO asset_fence_state
+            (tenant_id, asset_id, fence_id, inside, last_transition_position_ts, fence_version)
+        VALUES (#{transition.tenantId}, #{transition.assetId}, #{transition.fenceId},
+            #{transition.inside}, #{transition.positionTs}, #{transition.fenceVersion})
+    </insert>
+    <insert id="insertEvent">
+        INSERT IGNORE INTO geofence_event
+            (event_id, tenant_id, asset_id, fence_id, type, position_ts, fence_version)
+        VALUES (#{transition.eventId}, #{transition.tenantId}, #{transition.assetId},
+            #{transition.fenceId}, #{transition.type}, #{transition.positionTs}, #{transition.fenceVersion})
+    </insert>
+    <select id="eventCommit" resultType="dev.fleet.processor.geofence.StateMapper$EventCommit">
+        SELECT CAST(UNIX_TIMESTAMP(created_at) * 1000000 AS SIGNED) AS created_at_micros, id
+        FROM geofence_event WHERE event_id = #{eventId}
+    </select>
+    <insert id="insertOutbox">
+        INSERT INTO outbox (tenant_id, topic, msg_key, payload)
+        VALUES (#{transition.tenantId}, 'fence-events', #{transition.assetId}, #{payload})
+    </insert>
+</mapper>
