@@ -1,0 +1,39 @@
+server:
+  port: ${GATEWAY_PORT:8082}
+spring:
+  application:
+    name: fleet-gateway
+  threads:
+    virtual:
+      enabled: true
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      timeout: 5s
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    admin:
+      fail-fast: true
+    consumer:
+      enable-auto-commit: false
+      auto-offset-reset: latest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    listener:
+      ack-mode: record
+gateway:
+  flush-interval-ms: ${GATEWAY_FLUSH_INTERVAL_MS:100}
+  send-time-limit-ms: ${GATEWAY_SEND_TIME_LIMIT_MS:10000}
+  buffer-size-bytes: ${GATEWAY_BUFFER_SIZE_BYTES:262144}
+  resume-look-back-ms: ${GATEWAY_RESUME_LOOK_BACK_MS:5000}
+  resume-max-events: ${GATEWAY_RESUME_MAX_EVENTS:1000}
+  resume-timeout: ${GATEWAY_RESUME_TIMEOUT:5s}
+  event-dedupe-size: ${GATEWAY_EVENT_DEDUPE_SIZE:1024}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus
+internal:
+  api-target: ${API_GRPC_TARGET:localhost:9095}
