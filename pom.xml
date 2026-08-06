@@ -19,6 +19,7 @@
         <module>api</module>
         <module>processor</module>
         <module>gateway</module>
+        <module>loadtest</module>
     </modules>
     <properties>
         <java.version>21</java.version>
