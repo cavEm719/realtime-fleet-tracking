@@ -1,0 +1,162 @@
+{
+  "totals": {
+    "tests": 96,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "suites": [
+    {
+      "module": "processor",
+      "suite": "dev.fleet.processor.ProcessorKafkaIT",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "processor",
+      "suite": "dev.fleet.processor.PoisonMessageIT",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "processor",
+      "suite": "dev.fleet.processor.ConsistencyIT",
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "processor",
+      "suite": "dev.fleet.processor.PositionStoreIT",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "processor",
+      "suite": "dev.fleet.processor.FenceCacheTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "processor",
+      "suite": "dev.fleet.processor.GeofenceEngineTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "processor",
+      "suite": "dev.fleet.processor.PositionListenerTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "processor",
+      "suite": "dev.fleet.processor.ConfirmedStateTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "processor",
+      "suite": "dev.fleet.processor.GridFenceIndexTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "loadtest",
+      "suite": "dev.fleet.loadtest.LatencyHistogramTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "replayer",
+      "suite": "dev.fleet.replayer.ReplayerTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "api",
+      "suite": "dev.fleet.api.IngestIT",
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "api",
+      "suite": "dev.fleet.api.IngestControllerTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "api",
+      "suite": "dev.fleet.api.copilot.CopilotTest",
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "api",
+      "suite": "dev.fleet.api.copilot.CopilotConfigurationTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "api",
+      "suite": "dev.fleet.api.TenantConfigCacheTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "api",
+      "suite": "dev.fleet.api.copilot.ConversationMemoryTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "gateway",
+      "suite": "dev.fleet.gateway.GatewayBroadcastIT",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "gateway",
+      "suite": "dev.fleet.gateway.GatewayHubTest",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ]
+}

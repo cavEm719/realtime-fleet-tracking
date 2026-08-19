@@ -1,0 +1,1 @@
+{"source": "data/AIS_2023_01_01.csv", "subset": "data/west-coast-4h.csv", "scanned": 8156509, "retained": 261255, "assets": 3249, "invalid": 0, "start": "2023-01-01T00:00:00", "end": "2023-01-01T04:00:00", "bbox": [-125, 32, -117, 49], "sha256": "434ab651deea8d11eff98cef45a0bc3c3bf7d91704b3906d269deaeeb30472d6"}

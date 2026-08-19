@@ -1,0 +1,1 @@
+{"source": "data/west-coast-4h.csv", "subset": "data/west-coast-10m.csv", "scanned": 261255, "retained": 11669, "assets": 3048, "invalid": 0, "start": "2023-01-01T00:00:00", "end": "2023-01-01T00:10:00", "bbox": [-125, 32, -117, 49], "sha256": "a8b50fee149c634e566b09bb096fba856b0f8986d0077c13f70ce31347537353"}

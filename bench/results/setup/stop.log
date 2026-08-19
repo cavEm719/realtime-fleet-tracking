@@ -1,0 +1,6 @@
+ Container fleetbench-mysql-1 Stopping 
+ Container fleetbench-redis-1 Stopping 
+ Container fleetbench-kafka-1 Stopping 
+ Container fleetbench-redis-1 Stopped 
+ Container fleetbench-kafka-1 Stopped 
+ Container fleetbench-mysql-1 Stopped 

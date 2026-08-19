@@ -1,0 +1,26 @@
+[
+  {
+    "name": "/fleetbench-kafka-1",
+    "image": "apache/kafka:3.9.1",
+    "memory": 1610612736,
+    "nanoCpus": 0,
+    "cpuQuota": 0,
+    "cpuPeriod": 0
+  },
+  {
+    "name": "/fleetbench-mysql-1",
+    "image": "mysql:8.0.46",
+    "memory": 1073741824,
+    "nanoCpus": 0,
+    "cpuQuota": 0,
+    "cpuPeriod": 0
+  },
+  {
+    "name": "/fleetbench-redis-1",
+    "image": "redis:7.4.9",
+    "memory": 536870912,
+    "nanoCpus": 0,
+    "cpuQuota": 0,
+    "cpuPeriod": 0
+  }
+]

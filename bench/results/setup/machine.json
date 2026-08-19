@@ -1,0 +1,10 @@
+{
+  "cpu": "Apple M5",
+  "physicalCores": "10",
+  "logicalCores": "10",
+  "ramBytes": "17179869184",
+  "os": "ProductName:\t\tmacOS\nProductVersion:\t\t26.4\nBuildVersion:\t\t25E246",
+  "docker": "10 8393289728",
+  "java": "Homebrew OpenJDK 21; exact stderr retained in java-version.txt",
+  "limits": "-t: cpu time (seconds)              unlimited\n-f: file size (blocks)              unlimited\n-d: data seg size (kbytes)          unlimited\n-s: stack size (kbytes)             8176\n-c: core file size (blocks)         0\n-v: address space (kbytes)          unlimited\n-l: locked-in-memory size (kbytes)  unlimited\n-u: processes                       2666\n-n: file descriptors                1048575"
+}
