@@ -1,0 +1,39 @@
+{
+  "scenario": "S1-ingest",
+  "dataset": "data/west-coast-4h.csv",
+  "clients": 0,
+  "all": 100,
+  "slow": 0,
+  "seconds": 20,
+  "concurrency": 200,
+  "mode": "max",
+  "speed": 100,
+  "switch_after": 0,
+  "rate": 10000,
+  "geofence": "hysteresis",
+  "jfr": false,
+  "startedEpochMs": 1791427339469,
+  "gitCommit": "c743f38cc817332fc179bf0460c084bade1a7199",
+  "jvmFlags": {
+    "api": [
+      "-Xms128m",
+      "-Xmx512m"
+    ],
+    "processor": [
+      "-Xms128m",
+      "-Xmx512m"
+    ],
+    "gateway": [
+      "-Xms128m",
+      "-Xmx1024m"
+    ],
+    "loadtest": [
+      "-Xms128m",
+      "-Xmx1024m"
+    ],
+    "replayer": [
+      "-Xms128m",
+      "-Xmx512m"
+    ]
+  }
+}

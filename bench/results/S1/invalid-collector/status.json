@@ -1,0 +1,5 @@
+{
+  "status": "failed",
+  "error": "Kafka lag did not drain in 90 seconds",
+  "finishedEpochMs": 1791427453849
+}

@@ -1,0 +1,1 @@
+INVALID LAG COLLECTOR: this trial queried fleet-processor, but @KafkaListener uses position-listener as its effective group ID. The constant lag shown here is not processor backlog. Keep this trial as evidence of the measurement failure; use S1/valid for the corrected scenario.
