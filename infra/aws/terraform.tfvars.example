@@ -1,0 +1,8 @@
+my_ip_cidr      = "203.0.113.10/32" # Replace with your real public IPv4.
+ssh_public_key  = "ssh-ed25519 REPLACE_WITH_PUBLIC_KEY"
+processors      = 4
+gateways       = 2
+load_generators = 2
+# Explicit model ARN(s), including regional model ARNs if using an inference profile.
+# No Bedrock permission is granted until this list is filled.
+bedrock_model_arns = []
