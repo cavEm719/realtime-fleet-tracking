@@ -1,0 +1,13 @@
+{
+  "activeInstances": [],
+  "vpcs": [],
+  "volumes": [],
+  "snapshots": [],
+  "repositories": [],
+  "roles": [],
+  "instanceProfiles": [],
+  "securityGroups": [],
+  "subnets": [],
+  "keyPairs": [],
+  "elasticIps": []
+}

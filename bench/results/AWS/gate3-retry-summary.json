@@ -1,0 +1,91 @@
+{
+  "outcome": "STOPPED_AFTER_ECR_ONLY_APPLY",
+  "localArmStartup": {
+    "mysql": {
+      "image": "mysql:8.0.46",
+      "architecture": "arm64",
+      "probe": "mysqld is alive"
+    },
+    "redis": {
+      "image": "redis:7.4.9",
+      "architecture": "arm64",
+      "probe": "PONG"
+    },
+    "kafka": {
+      "image": "apache/kafka:3.9.1",
+      "architecture": "arm64",
+      "probe": ""
+    },
+    "api": {
+      "image": "fleet-api:gate3-retry-1",
+      "architecture": "arm64",
+      "probe": "{\"status\":\"UP\"}"
+    },
+    "copilot": {
+      "image": "fleet-copilot:gate3-retry-1",
+      "architecture": "arm64",
+      "probe": "{\"status\":\"UP\"}"
+    }
+  },
+  "normalDockerConfigUnchanged": true,
+  "preflight": {
+    "authorizedIdentityMatches": true,
+    "pendingRunningInstances": 0,
+    "operatorIpUnchanged": true,
+    "bothModelsAvailable": true
+  },
+  "forcedStrictVerdict": {
+    "gpt": {
+      "inputTokens": 424,
+      "outputTokens": 135,
+      "estimatedUsd": 0.0001446
+    },
+    "deepseek": {
+      "inputTokens": 479,
+      "outputTokens": 77,
+      "estimatedUsd": 0.00040718
+    }
+  },
+  "plans": {
+    "ecrOnly": {
+      "add": 2,
+      "change": 0,
+      "destroy": 0
+    },
+    "fullBefore": {
+      "add": 18,
+      "change": 0,
+      "destroy": 0
+    }
+  },
+  "failure": "The full Terraform inventory output was unavailable after ECR-only targeted apply; execution stopped before image push.",
+  "localCorrection": "Repository-only inventory now reads the two ECR resources from local Terraform state; regression tested, no second cloud apply.",
+  "applyStartedAt": "2026-10-10T00:19:03.292031+00:00",
+  "destroyedAt": "2026-10-10T00:19:18.340144+00:00",
+  "hardDeadline": "2026-10-10T03:19:03.292031+00:00",
+  "calibration": "NOT_RUN",
+  "pilot": "NOT_RUN",
+  "full": "NOT_RUN",
+  "humanReview": "PENDING",
+  "estimatedNewVerificationUsd": 0.00055178,
+  "estimatedCumulativeIncludingPreviousAttemptUsd": 0.034385973,
+  "actualInvoiceUsd": null,
+  "cleanup": {
+    "resourcesDestroyed": 2,
+    "stateResources": 0,
+    "ec2Created": 0,
+    "auditExit": 0,
+    "directEC2": [],
+    "volumes": [],
+    "snapshots": [],
+    "taggingRecordKinds": {
+      "instance": 15
+    }
+  },
+  "tests": {
+    "maven": 139,
+    "evaluation": 48,
+    "bench": 25,
+    "publicSafety": "PASS"
+  }
+}

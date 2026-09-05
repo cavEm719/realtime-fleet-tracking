@@ -1,0 +1,115 @@
+{
+  "pollStartedAt": "2026-10-09T20:56:33.364173+00:00",
+  "stoppedAt": "2026-10-09T21:01:34.913357+00:00",
+  "pollIntervalMinutes": 5,
+  "plannedMaximumMinutes": 30,
+  "actualPolls": [
+    {
+      "at": "2026-10-09T20:56:33.364173+00:00",
+      "models": [
+        {
+          "model": "haiku",
+          "availability": {
+            "modelId": "anthropic.claude-haiku-4-5-20251001-v1",
+            "agreementAvailability": {
+              "status": "PENDING"
+            },
+            "authorizationStatus": "AUTHORIZED",
+            "entitlementAvailability": "AVAILABLE",
+            "regionAvailability": "AVAILABLE"
+          }
+        },
+        {
+          "model": "sonnet",
+          "availability": {
+            "modelId": "anthropic.claude-sonnet-4-6",
+            "agreementAvailability": {
+              "status": "PENDING"
+            },
+            "authorizationStatus": "AUTHORIZED",
+            "entitlementAvailability": "AVAILABLE",
+            "regionAvailability": "AVAILABLE"
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-10-09T21:01:34.913357+00:00",
+      "models": [
+        {
+          "model": "haiku",
+          "availability": {
+            "modelId": "anthropic.claude-haiku-4-5-20251001-v1",
+            "agreementAvailability": {
+              "status": "ERROR",
+              "errorMessage": "INVALID_PAYMENT_INSTRUMENT:A valid payment instrument must be provided."
+            },
+            "authorizationStatus": "AUTHORIZED",
+            "entitlementAvailability": "AVAILABLE",
+            "regionAvailability": "AVAILABLE"
+          }
+        },
+        {
+          "model": "sonnet",
+          "availability": {
+            "modelId": "anthropic.claude-sonnet-4-6",
+            "agreementAvailability": {
+              "status": "ERROR",
+              "errorMessage": "INVALID_PAYMENT_INSTRUMENT:A valid payment instrument must be provided."
+            },
+            "authorizationStatus": "AUTHORIZED",
+            "entitlementAvailability": "AVAILABLE",
+            "regionAvailability": "AVAILABLE"
+          }
+        }
+      ]
+    }
+  ],
+  "outcome": "STOPPED_BEFORE_APPLY",
+  "reason": "Both agreements changed to ERROR: INVALID_PAYMENT_INSTRUMENT:A valid payment instrument must be provided.",
+  "pendingFallbackUsed": false,
+  "resourcesCreated": 0,
+  "newConverseCalls": 0,
+  "incrementalTokenCostUsd": 0,
+  "sessionTokenCostUsdIncludingEarlierVerification": 0.000132,
+  "preparedTerraformPlan": {
+    "add": 18,
+    "change": 0,
+    "destroy": 0,
+    "hosts": [
+      "api",
+      "copilot",
+      "kafka",
+      "redis",
+      "mysql",
+      "loadgen-1"
+    ],
+    "estimatedHourlyUsd": 0.6257013698630137,
+    "applied": false
+  },
+  "localVerification": {
+    "terraformMockPlanTests": 2,
+    "benchmarkUnitTests": 23,
+    "evaluationUnitTests": 46,
+    "maven": {
+      "tests": 139,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "mavenResult": "BUILD SUCCESS",
+    "mavenUnitTests": {
+      "tests": 93,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "mavenIntegrationTests": {
+      "tests": 46,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "hardApplyClockStarted": false
+}

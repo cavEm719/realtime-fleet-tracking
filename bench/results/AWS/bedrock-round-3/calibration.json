@@ -1,0 +1,48 @@
+{
+  "openai.gpt-oss-120b-1:0": {
+    "plannedCases": 14,
+    "attemptedCases": 14,
+    "returnedVerdicts": 14,
+    "trusted": true,
+    "accuracy": 1.0,
+    "criticalMisses": [],
+    "status": "completed",
+    "errors": [],
+    "returnedUsage": {
+      "input": 16101,
+      "output": 4841
+    }
+  },
+  "mistral.mistral-large-2407-v1:0": {
+    "plannedCases": 14,
+    "attemptedCases": 1,
+    "returnedVerdicts": 0,
+    "trusted": false,
+    "accuracy": null,
+    "criticalMisses": null,
+    "status": "forced verdict request rejected before judgment",
+    "errors": [
+      "ValidationException"
+    ],
+    "returnedUsage": {
+      "input": 0,
+      "output": 0
+    }
+  },
+  "us.meta.llama4-maverick-17b-instruct-v1:0": {
+    "plannedCases": 14,
+    "attemptedCases": 1,
+    "returnedVerdicts": 0,
+    "trusted": false,
+    "accuracy": null,
+    "criticalMisses": null,
+    "status": "forced verdict request rejected before judgment",
+    "errors": [
+      "ValidationException"
+    ],
+    "returnedUsage": {
+      "input": 0,
+      "output": 0
+    }
+  }
+}

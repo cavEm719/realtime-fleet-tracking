@@ -1,0 +1,42 @@
+{
+  "gate": 1,
+  "outcome": "blocked; partial deployment destroyed",
+  "applyStartedAt": "2026-10-09T04:01:28.170108+00:00",
+  "cleanupVerifiedAt": "2026-10-09T04:04:18.228889+00:00",
+  "elapsedSeconds": 170.1,
+  "resourceRegion": "us-east-1",
+  "accountId": "<ACCOUNT_ID>",
+  "callerIdentityVerified": true,
+  "accountPlan": "FREE",
+  "accountPlanStatus": "ACTIVE",
+  "otherRunningOrPendingInstancesBeforeApply": 0,
+  "operatorIpUnchanged": true,
+  "plan": {
+    "add": 25,
+    "change": 0,
+    "destroy": 0
+  },
+  "supportingResourcesCreated": 16,
+  "instanceLaunchesRejected": 9,
+  "instanceLaunchesSuccessful": 0,
+  "error": "InvalidParameterCombination: The specified instance type is not eligible for Free Tier.",
+  "instanceLaunchTimestamps": [],
+  "imagesPushed": 0,
+  "serviceHealth": "NOT_RUN: no instances",
+  "S1": "NOT_RUN: no instances",
+  "S2_1000_clients": "NOT_RUN: no instances",
+  "estimatedPhaseSpendUsd": 0.0,
+  "costBasis": "No EC2 launch, EBS volume, public IPv4 allocation or Bedrock request; estimate is not an invoice. VPC/IAM/key pair/empty ECR supporting resources were destroyed.",
+  "budgetCreated": false,
+  "remainingResourcesAudit": {
+    "ResourceTagMappingList": [],
+    "instances": [],
+    "Volumes": [],
+    "Snapshots": [],
+    "candidateRoles": [],
+    "candidateInstanceProfiles": []
+  },
+  "tracingEnabled": false,
+  "codeFixes": [],
+  "nextGate": "Wait for user; chosen instance sizes require a Paid plan, account changes remain user-only."
+}

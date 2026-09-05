@@ -1,0 +1,2180 @@
+{
+  "scenarios": {
+    "S1-processors-1": {
+      "ingestPositionsPerSecond": {
+        "median": 40899.42410977685,
+        "min": 39849.90064473533,
+        "max": 41041.800991914046,
+        "trials": 3
+      },
+      "connected": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "failedClients": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "terminated": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "slowTerminatedObserved": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "normalTerminatedObserved": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineOverflow": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineNegative": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineMissing": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "messagesPerSecond": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "http429Retries": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "http503Retries": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "acknowledgedPositions": {
+        "median": 261255,
+        "min": 261255,
+        "max": 261255,
+        "trials": 3
+      },
+      "apiRateRejected": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "maxClockOffsetMs": {
+        "median": 0.004331,
+        "min": 0.0014860000000000001,
+        "max": 0.009425000000000001,
+        "trials": 3
+      },
+      "peakConsumerLag": {
+        "median": 18692,
+        "min": 10057,
+        "max": 41879,
+        "trials": 3
+      },
+      "gatewayOverflowTerminations": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "trials": 3
+      },
+      "gatewayFramesPerSecond": null,
+      "gatewayFramesTotalSnapshotDelta": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "trials": 3
+      },
+      "processorPositionsPerSecond": {
+        "median": 29689.744697626815,
+        "min": 25964.22419505769,
+        "max": 30337.419675902278,
+        "trials": 3
+      }
+    },
+    "S1-processors-2": {
+      "ingestPositionsPerSecond": {
+        "median": 40878.72760136586,
+        "min": 40225.29955399735,
+        "max": 41520.96146170079,
+        "trials": 3
+      },
+      "connected": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "failedClients": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "terminated": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "slowTerminatedObserved": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "normalTerminatedObserved": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineOverflow": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineNegative": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineMissing": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "messagesPerSecond": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "http429Retries": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "http503Retries": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "acknowledgedPositions": {
+        "median": 261255,
+        "min": 261255,
+        "max": 261255,
+        "trials": 3
+      },
+      "apiRateRejected": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "maxClockOffsetMs": {
+        "median": 0.003002,
+        "min": 0.0027530000000000002,
+        "max": 0.006051,
+        "trials": 3
+      },
+      "peakConsumerLag": {
+        "median": 19597,
+        "min": 14499,
+        "max": 21539,
+        "trials": 3
+      },
+      "gatewayOverflowTerminations": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "trials": 3
+      },
+      "gatewayFramesPerSecond": null,
+      "gatewayFramesTotalSnapshotDelta": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "trials": 3
+      },
+      "processorPositionsPerSecond": {
+        "median": 26034.37913165336,
+        "min": 25776.178331309282,
+        "max": 30927.710568261184,
+        "trials": 3
+      }
+    },
+    "S1-processors-4": {
+      "ingestPositionsPerSecond": {
+        "median": 41303.89134768756,
+        "min": 40880.32870754209,
+        "max": 41699.94542605535,
+        "trials": 3
+      },
+      "connected": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "failedClients": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "terminated": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "slowTerminatedObserved": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "normalTerminatedObserved": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineOverflow": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineNegative": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineMissing": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "messagesPerSecond": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "http429Retries": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "http503Retries": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "acknowledgedPositions": {
+        "median": 261255,
+        "min": 261255,
+        "max": 261255,
+        "trials": 3
+      },
+      "apiRateRejected": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "maxClockOffsetMs": {
+        "median": 0.003346,
+        "min": 0.0024549999999999997,
+        "max": 0.004631000000000001,
+        "trials": 3
+      },
+      "peakConsumerLag": {
+        "median": 11160,
+        "min": 3868,
+        "max": 17862,
+        "trials": 3
+      },
+      "gatewayOverflowTerminations": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "trials": 3
+      },
+      "gatewayFramesPerSecond": null,
+      "gatewayFramesTotalSnapshotDelta": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "trials": 3
+      },
+      "processorPositionsPerSecond": {
+        "median": 30425.340888627437,
+        "min": 26330.091172494376,
+        "max": 30720.597500419524,
+        "trials": 3
+      }
+    },
+    "S2-company-10000-gateways-2": {
+      "ingestPositionsPerSecond": {
+        "median": 998.6437202490208,
+        "min": 998.6246120015404,
+        "max": 999.6069186936734,
+        "trials": 3
+      },
+      "connected": {
+        "median": 10000,
+        "min": 10000,
+        "max": 10000,
+        "trials": 3
+      },
+      "failedClients": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "terminated": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "slowTerminatedObserved": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "normalTerminatedObserved": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineOverflow": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineNegative": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineMissing": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "messagesPerSecond": {
+        "median": 11329.582223640222,
+        "min": 11033.199137893862,
+        "max": 12144.966684254528,
+        "trials": 3
+      },
+      "samples": {
+        "median": 320831165,
+        "min": 319187384,
+        "max": 322946933,
+        "trials": 3
+      },
+      "p50Ms": {
+        "median": 1286,
+        "min": 1201,
+        "max": 1348,
+        "trials": 3
+      },
+      "p95Ms": {
+        "median": 2404,
+        "min": 2279,
+        "max": 2462,
+        "trials": 3
+      },
+      "p99Ms": {
+        "median": 2809,
+        "min": 2686,
+        "max": 2887,
+        "trials": 3
+      },
+      "endToEndSamples": {
+        "median": 320831165,
+        "min": 319187384,
+        "max": 322946933,
+        "trials": 3
+      },
+      "endToEndP50Ms": {
+        "median": 2825,
+        "min": 2701,
+        "max": 2856,
+        "trials": 3
+      },
+      "endToEndP95Ms": {
+        "median": 3949,
+        "min": 3890,
+        "max": 4079,
+        "trials": 3
+      },
+      "endToEndP99Ms": {
+        "median": 4635,
+        "min": 4489,
+        "max": 4793,
+        "trials": 3
+      },
+      "http429Retries": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "http503Retries": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "acknowledgedPositions": {
+        "median": 125000,
+        "min": 125000,
+        "max": 125000,
+        "trials": 3
+      },
+      "apiRateRejected": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "maxClockOffsetMs": {
+        "median": 0.003644,
+        "min": 0.003261,
+        "max": 0.0050409999999999995,
+        "trials": 3
+      },
+      "peakConsumerLag": {
+        "median": 800,
+        "min": 599,
+        "max": 945,
+        "trials": 3
+      },
+      "gatewayOverflowTerminations": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "trials": 3
+      },
+      "gatewayFramesPerSecond": {
+        "median": 11341.331184219707,
+        "min": 11109.071923508604,
+        "max": 12236.733260326291,
+        "trials": 3
+      },
+      "gatewayFramesTotalSnapshotDelta": {
+        "median": 1360438.0,
+        "min": 1326546.0,
+        "max": 1459842.0,
+        "trials": 3
+      },
+      "processorPositionsPerSecond": {
+        "median": 964.2761772868953,
+        "min": 962.3509074746985,
+        "max": 964.3105641904904,
+        "trials": 3
+      }
+    },
+    "S2-company-5000-gateways-1": {
+      "ingestPositionsPerSecond": {
+        "median": 998.6591621878949,
+        "min": 998.6450973159357,
+        "max": 998.6600868880114,
+        "trials": 3
+      },
+      "connected": {
+        "median": 5000,
+        "min": 5000,
+        "max": 5000,
+        "trials": 3
+      },
+      "failedClients": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "terminated": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "slowTerminatedObserved": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "normalTerminatedObserved": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineOverflow": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineNegative": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineMissing": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "messagesPerSecond": {
+        "median": 5992.570027683254,
+        "min": 5470.795505957654,
+        "max": 6037.618666296338,
+        "trials": 3
+      },
+      "samples": {
+        "median": 161135802,
+        "min": 159997746,
+        "max": 161257014,
+        "trials": 3
+      },
+      "p50Ms": {
+        "median": 1284,
+        "min": 1244,
+        "max": 1292,
+        "trials": 3
+      },
+      "p95Ms": {
+        "median": 2397,
+        "min": 2286,
+        "max": 2633,
+        "trials": 3
+      },
+      "p99Ms": {
+        "median": 2845,
+        "min": 2708,
+        "max": 3315,
+        "trials": 3
+      },
+      "endToEndSamples": {
+        "median": 161135802,
+        "min": 159997746,
+        "max": 161257014,
+        "trials": 3
+      },
+      "endToEndP50Ms": {
+        "median": 2736,
+        "min": 2693,
+        "max": 2897,
+        "trials": 3
+      },
+      "endToEndP95Ms": {
+        "median": 3927,
+        "min": 3889,
+        "max": 4266,
+        "trials": 3
+      },
+      "endToEndP99Ms": {
+        "median": 4531,
+        "min": 4521,
+        "max": 5033,
+        "trials": 3
+      },
+      "http429Retries": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "http503Retries": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "acknowledgedPositions": {
+        "median": 125000,
+        "min": 125000,
+        "max": 125000,
+        "trials": 3
+      },
+      "apiRateRejected": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "maxClockOffsetMs": {
+        "median": 0.005031,
+        "min": 0.0042309999999999995,
+        "max": 0.009085000000000001,
+        "trials": 3
+      },
+      "peakConsumerLag": {
+        "median": 408,
+        "min": 259,
+        "max": 800,
+        "trials": 3
+      },
+      "gatewayOverflowTerminations": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "trials": 3
+      },
+      "gatewayFramesPerSecond": {
+        "median": 6018.710110849849,
+        "min": 5518.838125079392,
+        "max": 6051.2340339768725,
+        "trials": 3
+      },
+      "gatewayFramesTotalSnapshotDelta": {
+        "median": 719295.0,
+        "min": 656584.0,
+        "max": 724722.0,
+        "trials": 3
+      },
+      "processorPositionsPerSecond": {
+        "median": 964.1600197446976,
+        "min": 963.942489930478,
+        "max": 964.4933690568441,
+        "trials": 3
+      }
+    },
+    "S2-company-5000-gateways-2": {
+      "ingestPositionsPerSecond": {
+        "median": 998.6167719779842,
+        "min": 998.6128885428128,
+        "max": 998.6366601131405,
+        "trials": 3
+      },
+      "connected": {
+        "median": 5000,
+        "min": 5000,
+        "max": 5000,
+        "trials": 3
+      },
+      "failedClients": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "terminated": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "slowTerminatedObserved": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "normalTerminatedObserved": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineOverflow": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineNegative": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineMissing": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "messagesPerSecond": {
+        "median": 9203.371040078582,
+        "min": 9139.717687999535,
+        "max": 9325.599618097633,
+        "trials": 3
+      },
+      "samples": {
+        "median": 169259672,
+        "min": 169203671,
+        "max": 169434827,
+        "trials": 3
+      },
+      "p50Ms": {
+        "median": 128,
+        "min": 123,
+        "max": 129,
+        "trials": 3
+      },
+      "p95Ms": {
+        "median": 224,
+        "min": 212,
+        "max": 228,
+        "trials": 3
+      },
+      "p99Ms": {
+        "median": 986,
+        "min": 944,
+        "max": 1010,
+        "trials": 3
+      },
+      "endToEndSamples": {
+        "median": 169259672,
+        "min": 169203671,
+        "max": 169434827,
+        "trials": 3
+      },
+      "endToEndP50Ms": {
+        "median": 1349,
+        "min": 1344,
+        "max": 1354,
+        "trials": 3
+      },
+      "endToEndP95Ms": {
+        "median": 2557,
+        "min": 2547,
+        "max": 2557,
+        "trials": 3
+      },
+      "endToEndP99Ms": {
+        "median": 2652,
+        "min": 2636,
+        "max": 2672,
+        "trials": 3
+      },
+      "http429Retries": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "http503Retries": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "acknowledgedPositions": {
+        "median": 125000,
+        "min": 125000,
+        "max": 125000,
+        "trials": 3
+      },
+      "apiRateRejected": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "maxClockOffsetMs": {
+        "median": 0.00592,
+        "min": 0.003042,
+        "max": 0.009832,
+        "trials": 3
+      },
+      "peakConsumerLag": {
+        "median": 657,
+        "min": 200,
+        "max": 1000,
+        "trials": 3
+      },
+      "gatewayOverflowTerminations": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "trials": 3
+      },
+      "gatewayFramesPerSecond": {
+        "median": 9190.146310967448,
+        "min": 9107.786164055811,
+        "max": 9303.963238440952,
+        "trials": 3
+      },
+      "gatewayFramesTotalSnapshotDelta": {
+        "median": 1105200.0,
+        "min": 1097048.0,
+        "max": 1120553.0,
+        "trials": 3
+      },
+      "processorPositionsPerSecond": {
+        "median": 965.0426501762369,
+        "min": 964.0173824941176,
+        "max": 965.2895116089406,
+        "trials": 3
+      }
+    },
+    "S3-slow-0": {
+      "ingestPositionsPerSecond": {
+        "median": 998.5693339857345,
+        "min": 998.562325691236,
+        "max": 998.5956820183565,
+        "trials": 3
+      },
+      "connected": {
+        "median": 5000,
+        "min": 5000,
+        "max": 5000,
+        "trials": 3
+      },
+      "failedClients": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "terminated": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "slowTerminatedObserved": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "normalTerminatedObserved": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineOverflow": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineNegative": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineMissing": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "messagesPerSecond": {
+        "median": 9267.598049608927,
+        "min": 9256.650903858601,
+        "max": 9314.92446337469,
+        "trials": 3
+      },
+      "samples": {
+        "median": 169365346,
+        "min": 168860811,
+        "max": 169603965,
+        "trials": 3
+      },
+      "p50Ms": {
+        "median": 126,
+        "min": 124,
+        "max": 126,
+        "trials": 3
+      },
+      "p95Ms": {
+        "median": 220,
+        "min": 220,
+        "max": 222,
+        "trials": 3
+      },
+      "p99Ms": {
+        "median": 974,
+        "min": 875,
+        "max": 1016,
+        "trials": 3
+      },
+      "endToEndSamples": {
+        "median": 169365346,
+        "min": 168860811,
+        "max": 169603965,
+        "trials": 3
+      },
+      "endToEndP50Ms": {
+        "median": 1346,
+        "min": 1345,
+        "max": 1348,
+        "trials": 3
+      },
+      "endToEndP95Ms": {
+        "median": 2553,
+        "min": 2553,
+        "max": 2559,
+        "trials": 3
+      },
+      "endToEndP99Ms": {
+        "median": 2668,
+        "min": 2658,
+        "max": 2779,
+        "trials": 3
+      },
+      "http429Retries": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "http503Retries": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "acknowledgedPositions": {
+        "median": 125000,
+        "min": 125000,
+        "max": 125000,
+        "trials": 3
+      },
+      "apiRateRejected": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "maxClockOffsetMs": {
+        "median": 0.005121,
+        "min": 0.004332,
+        "max": 0.005752,
+        "trials": 3
+      },
+      "peakConsumerLag": {
+        "median": 1000,
+        "min": 669,
+        "max": 1006,
+        "trials": 3
+      },
+      "gatewayOverflowTerminations": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "trials": 3
+      },
+      "gatewayFramesPerSecond": {
+        "median": 9281.897736776322,
+        "min": 9220.704015172945,
+        "max": 9286.398537234698,
+        "trials": 3
+      },
+      "gatewayFramesTotalSnapshotDelta": {
+        "median": 1113577.0,
+        "min": 1111450.0,
+        "max": 1119033.0,
+        "trials": 3
+      },
+      "processorPositionsPerSecond": {
+        "median": 964.8484505265885,
+        "min": 961.1586886424495,
+        "max": 965.5958513637034,
+        "trials": 3
+      }
+    },
+    "S3-slow-5": {
+      "ingestPositionsPerSecond": {
+        "median": 998.6384544856704,
+        "min": 998.6127103023541,
+        "max": 998.6493096479114,
+        "trials": 3
+      },
+      "connected": {
+        "median": 5000,
+        "min": 5000,
+        "max": 5000,
+        "trials": 3
+      },
+      "failedClients": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "terminated": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "slowTerminatedObserved": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "normalTerminatedObserved": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineOverflow": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineNegative": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "pipelineMissing": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "messagesPerSecond": {
+        "median": 8764.859191311483,
+        "min": 8762.324700799469,
+        "max": 8797.60990329332,
+        "trials": 3
+      },
+      "samples": {
+        "median": 160870927,
+        "min": 160723026,
+        "max": 160942734,
+        "trials": 3
+      },
+      "p50Ms": {
+        "median": 125,
+        "min": 125,
+        "max": 127,
+        "trials": 3
+      },
+      "p95Ms": {
+        "median": 245,
+        "min": 230,
+        "max": 245,
+        "trials": 3
+      },
+      "p99Ms": {
+        "median": 904,
+        "min": 892,
+        "max": 977,
+        "trials": 3
+      },
+      "endToEndSamples": {
+        "median": 160870927,
+        "min": 160723026,
+        "max": 160942734,
+        "trials": 3
+      },
+      "endToEndP50Ms": {
+        "median": 1342,
+        "min": 1341,
+        "max": 1345,
+        "trials": 3
+      },
+      "endToEndP95Ms": {
+        "median": 2587,
+        "min": 2576,
+        "max": 2588,
+        "trials": 3
+      },
+      "endToEndP99Ms": {
+        "median": 2731,
+        "min": 2700,
+        "max": 2812,
+        "trials": 3
+      },
+      "http429Retries": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "http503Retries": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "acknowledgedPositions": {
+        "median": 125000,
+        "min": 125000,
+        "max": 125000,
+        "trials": 3
+      },
+      "apiRateRejected": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "trials": 3
+      },
+      "maxClockOffsetMs": {
+        "median": 0.005276,
+        "min": 0.003112,
+        "max": 0.008592,
+        "trials": 3
+      },
+      "peakConsumerLag": {
+        "median": 650,
+        "min": 343,
+        "max": 674,
+        "trials": 3
+      },
+      "gatewayOverflowTerminations": {
+        "median": 250.0,
+        "min": 250.0,
+        "max": 250.0,
+        "trials": 3
+      },
+      "gatewayFramesPerSecond": {
+        "median": 8851.441033868785,
+        "min": 8845.971228280767,
+        "max": 8922.503973167113,
+        "trials": 3
+      },
+      "gatewayFramesTotalSnapshotDelta": {
+        "median": 1065540.0,
+        "min": 1065157.0,
+        "max": 1069182.0,
+        "trials": 3
+      },
+      "processorPositionsPerSecond": {
+        "median": 962.7605592434383,
+        "min": 962.3724436301935,
+        "max": 963.4931037038176,
+        "trials": 3
+      }
+    }
+  },
+  "failedTrials": [
+    {
+      "path": "S2-company-10000-gateways-1/trial-1",
+      "outcome": "incomplete",
+      "collection_errors": [
+        "Missing generator histogram(s)"
+      ]
+    },
+    {
+      "path": "S2-company-10000-gateways-1/trial-2",
+      "outcome": "incomplete",
+      "collection_errors": [
+        "Missing generator histogram(s)"
+      ],
+      "separatelyCapturedPrimaryError": "loadgen-1 had failed connections",
+      "failureStage": "connection readiness"
+    }
+  ],
+  "status": "measured",
+  "caveat": "Pipeline histograms are merged by counts across generators; never average percentiles. Inspect per-trial resource and chrony evidence before attributing scale-out.",
+  "gate": "Gate 2",
+  "matrixCompletedAt": "2026-10-09T19:08:16.486901+00:00",
+  "validTrials": 24,
+  "failedPreparationAttempts": 2,
+  "skippedTrials": 1,
+  "tracingEnabled": false,
+  "bedrockInvocations": 0,
+  "region": "us-east-1",
+  "project": "fleet-bench",
+  "setup": {
+    "verifiedScalePlan": {
+      "add": 5,
+      "change": 0,
+      "destroy": 0,
+      "additionalHosts": [
+        "processor-2",
+        "processor-3",
+        "processor-4",
+        "gateway-2",
+        "loadgen-2"
+      ]
+    },
+    "totalVcpus": 32,
+    "excludedExistingUserDataUpdates": 9,
+    "machines": [
+      {
+        "host": "api",
+        "role": "api",
+        "instanceType": "c7g.large",
+        "architecture": "aarch64",
+        "vcpus": 2,
+        "reportedRamBytes": 3990900736,
+        "os": "Amazon Linux 2023",
+        "kernel": "6.18.51-120.163.amzn2023.aarch64"
+      },
+      {
+        "host": "copilot",
+        "role": "copilot",
+        "instanceType": "m7g.large",
+        "architecture": "aarch64",
+        "vcpus": 2,
+        "reportedRamBytes": 8139177984,
+        "os": "Amazon Linux 2023",
+        "kernel": "6.18.51-120.163.amzn2023.aarch64"
+      },
+      {
+        "host": "gateway-1",
+        "role": "gateway",
+        "instanceType": "c7g.large",
+        "architecture": "aarch64",
+        "vcpus": 2,
+        "reportedRamBytes": 3990900736,
+        "os": "Amazon Linux 2023",
+        "kernel": "6.18.51-120.163.amzn2023.aarch64"
+      },
+      {
+        "host": "gateway-2",
+        "role": "gateway",
+        "instanceType": "c7g.large",
+        "architecture": "aarch64",
+        "vcpus": 2,
+        "reportedRamBytes": 3990900736,
+        "os": "Amazon Linux 2023",
+        "kernel": "6.18.51-120.163.amzn2023.aarch64"
+      },
+      {
+        "host": "kafka",
+        "role": "kafka",
+        "instanceType": "m7g.large",
+        "architecture": "aarch64",
+        "vcpus": 2,
+        "reportedRamBytes": 8139177984,
+        "os": "Amazon Linux 2023",
+        "kernel": "6.18.51-120.163.amzn2023.aarch64"
+      },
+      {
+        "host": "loadgen-1",
+        "role": "loadgen",
+        "instanceType": "c7g.xlarge",
+        "architecture": "aarch64",
+        "vcpus": 4,
+        "reportedRamBytes": 8138899456,
+        "os": "Amazon Linux 2023",
+        "kernel": "6.18.51-120.163.amzn2023.aarch64"
+      },
+      {
+        "host": "loadgen-2",
+        "role": "loadgen",
+        "instanceType": "c7g.xlarge",
+        "architecture": "aarch64",
+        "vcpus": 4,
+        "reportedRamBytes": 8138899456,
+        "os": "Amazon Linux 2023",
+        "kernel": "6.18.51-120.163.amzn2023.aarch64"
+      },
+      {
+        "host": "mysql",
+        "role": "mysql",
+        "instanceType": "r7g.large",
+        "architecture": "aarch64",
+        "vcpus": 2,
+        "reportedRamBytes": 16433635328,
+        "os": "Amazon Linux 2023",
+        "kernel": "6.18.51-120.163.amzn2023.aarch64"
+      },
+      {
+        "host": "nginx",
+        "role": "nginx",
+        "instanceType": "c7g.large",
+        "architecture": "aarch64",
+        "vcpus": 2,
+        "reportedRamBytes": 3990900736,
+        "os": "Amazon Linux 2023",
+        "kernel": "6.18.51-120.163.amzn2023.aarch64"
+      },
+      {
+        "host": "processor-1",
+        "role": "processor",
+        "instanceType": "c7g.large",
+        "architecture": "aarch64",
+        "vcpus": 2,
+        "reportedRamBytes": 3990900736,
+        "os": "Amazon Linux 2023",
+        "kernel": "6.18.51-120.163.amzn2023.aarch64"
+      },
+      {
+        "host": "processor-2",
+        "role": "processor",
+        "instanceType": "c7g.large",
+        "architecture": "aarch64",
+        "vcpus": 2,
+        "reportedRamBytes": 3990900736,
+        "os": "Amazon Linux 2023",
+        "kernel": "6.18.51-120.163.amzn2023.aarch64"
+      },
+      {
+        "host": "processor-3",
+        "role": "processor",
+        "instanceType": "c7g.large",
+        "architecture": "aarch64",
+        "vcpus": 2,
+        "reportedRamBytes": 3990900736,
+        "os": "Amazon Linux 2023",
+        "kernel": "6.18.51-120.163.amzn2023.aarch64"
+      },
+      {
+        "host": "processor-4",
+        "role": "processor",
+        "instanceType": "c7g.large",
+        "architecture": "aarch64",
+        "vcpus": 2,
+        "reportedRamBytes": 3990900736,
+        "os": "Amazon Linux 2023",
+        "kernel": "6.18.51-120.163.amzn2023.aarch64"
+      },
+      {
+        "host": "redis",
+        "role": "redis",
+        "instanceType": "m7g.large",
+        "architecture": "aarch64",
+        "vcpus": 2,
+        "reportedRamBytes": 8139177984,
+        "os": "Amazon Linux 2023",
+        "kernel": "6.18.51-120.163.amzn2023.aarch64"
+      }
+    ],
+    "dataset": {
+      "sourceDataset": "data/west-coast-4h.csv",
+      "sourceSha256": "434ab651deea8d11eff98cef45a0bc3c3bf7d91704b3906d269deaeeb30472d6",
+      "sourceRows": 261255,
+      "sourceAssets": 3249,
+      "latencyReplayRows": 125000,
+      "latencyReplaySha256": "68773f9dd92dafbc260c1321e330a1651c6d879aebef4dc5c3f477110816147e",
+      "date": "2023-01-01",
+      "sourceTimeRangeUtc": "00:00-04:00",
+      "verification": "Byte hash matches actual replay.csv on the first AWS generator"
+    },
+    "imageDigests": {
+      "api": "sha256:fee785d57ae590acb174404eead00c9085beffa95d4a9a5cfabba39b6138b120",
+      "copilot": "sha256:d24ad4376471f0cf1ba8096df94d7fc8dc4095a1a90c038558ad99e8c85ad168",
+      "processor": "sha256:810ca865e02579e56979613331156d73bcebac517a244cd34b8566bb320045f1",
+      "gateway": "sha256:d94397b869488489b1c4de971d3d1fe0860b4cfe61a245dd433af848b07a7228",
+      "loadtest": "sha256:9da89ae8c80d1aaba36f533e25cd7813fc85e82de619d6af479dcf7f6f7861e2",
+      "replayer": "sha256:f9e74f2b1335a085683bdfdd0e493f8c24b358d88b55bd3f07b38f995132828b"
+    },
+    "serviceJvm": "-Xms256m -Xmx1g",
+    "serviceMemoryGiB": 2,
+    "generatorJvm": "-Xms512m -Xmx3g",
+    "generatorMemoryGiB": 4,
+    "generatorProcesses": 2,
+    "companyWidePercent": 100,
+    "tenantCount": 3,
+    "sourceLanes": 12,
+    "latencyOfferedRateTotal": 1000,
+    "tenantQuotaEach": 250000,
+    "clientWindowSeconds": 120
+  },
+  "verification": {
+    "mavenCommand": "mvn -B -ntp verify",
+    "mavenTests": 139,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "mavenDuration": "01:10",
+    "mavenFinishedAt": "2026-10-09T15:09:18-04:00",
+    "offlineBenchTests": 23,
+    "publicSafety": "checked before each commit"
+  },
+  "archives": {
+    "copiedAt": "2026-10-09T19:09:21.335298+00:00",
+    "hosts": [
+      {
+        "host": "api",
+        "bytes": 18048741,
+        "sha256": "9864f6c1e8500b967b0f387afb051742adae3d055e32ef1e512b274b1493f451"
+      },
+      {
+        "host": "copilot",
+        "bytes": 288308,
+        "sha256": "287b053190bb678d88bc89e4330414ef3c5df4fedcf35cadc786d7e7f02debf9"
+      },
+      {
+        "host": "gateway-1",
+        "bytes": 24465890,
+        "sha256": "b04aebc4f92e27492e365014a2b1266fb2e3d2ec5a6e951ae37a42f0c62c05a0"
+      },
+      {
+        "host": "gateway-2",
+        "bytes": 16398769,
+        "sha256": "077b9f38e89a99b8017d9c1631fe6ad09011684310ca703967355a2a936aef0c"
+      },
+      {
+        "host": "kafka",
+        "bytes": 443396,
+        "sha256": "d8b27c0434182f6d742b6a2e681c77e095701812a1d7b427df0758c3de2517db"
+      },
+      {
+        "host": "loadgen-1",
+        "bytes": 1119610,
+        "sha256": "90e271de73a72003b6a14f67a9b92259a72fe79ce3a11973293c9347b3e12e03"
+      },
+      {
+        "host": "loadgen-2",
+        "bytes": 880353,
+        "sha256": "b3c83d259e6b870b21096c4e96eda87f44046caef83b75f752bb815455611fc5"
+      },
+      {
+        "host": "mysql",
+        "bytes": 1708699,
+        "sha256": "b30c3112ecd2c048cc4222e839d6ad9c6073414216188b6944c578325343897f"
+      },
+      {
+        "host": "nginx",
+        "bytes": 417979,
+        "sha256": "dd9d2dab6e450292c1214ae11ee9a41ea34b2f276af055fdafef858d45156951"
+      },
+      {
+        "host": "processor-1",
+        "bytes": 46650018,
+        "sha256": "c9eb526f6aaa1c995c2d40f5989f1bf67a924842ae67f7eadfa89c4db0690c16"
+      },
+      {
+        "host": "processor-2",
+        "bytes": 3779228,
+        "sha256": "328f5b857fe6180b56f821437ebc2d9567569fb7d3032de6c7aa6f83d468a9bd"
+      },
+      {
+        "host": "processor-3",
+        "bytes": 2034513,
+        "sha256": "890988d4250a6d0d6ffd65c5ab3adf8a5cc845d62d4af04057550a3600c46ba0"
+      },
+      {
+        "host": "processor-4",
+        "bytes": 2046309,
+        "sha256": "bb8248a4dccafb5c817fdd5ea867839faa2698c45fd92ce239f5e1438d0c0476"
+      },
+      {
+        "host": "redis",
+        "bytes": 1544923,
+        "sha256": "99ad23a68c764c32e4656142887d6bf47caf7587c97b223606a5ae1f8a0bf66b"
+      }
+    ]
+  },
+  "connectionPreparationEvidence": {
+    "configuration": "10000 clients, one gateway",
+    "tomcatMaxConnectionsDefault": 8192,
+    "overridePresent": false,
+    "secondAttemptPrimaryError": "loadgen-1 had failed connections",
+    "secondAttemptReady": [
+      {
+        "generator": "loadgen-1",
+        "requested": 5000,
+        "connected": 4137,
+        "failed": 863,
+        "connectSeconds": 57.394714855
+      },
+      {
+        "generator": "loadgen-2",
+        "requested": 5000,
+        "connected": 4055,
+        "failed": 945,
+        "connectSeconds": 57.638395009
+      }
+    ],
+    "firstAttemptPrimaryErrorRetained": false,
+    "thirdTrial": "skipped after two setup failures",
+    "resourceCollections": [
+      {
+        "trial": 1,
+        "scope": "Entire retained connection preparation only; no replay or latency measurement",
+        "beforeClockHosts": 14,
+        "afterClockHosts": 0,
+        "hosts": {
+          "gateway-1": {
+            "cpuMeanPercent": 12.825574238410544,
+            "cpuPeakPercent": 100.0,
+            "containerCpu": {
+              "fleet": {
+                "samples": 157,
+                "mean": 22.39471337579618,
+                "p95": 193.08,
+                "max": 194.36
+              }
+            },
+            "rxPeakMiBPerSecond": 0.7094144821166992,
+            "txPeakMiBPerSecond": 0.5565662384033203,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 57
+          },
+          "processor-1": {
+            "cpuMeanPercent": 4.060709356903235,
+            "cpuPeakPercent": 11.442786069651746,
+            "containerCpu": {
+              "fleet": {
+                "samples": 172,
+                "mean": 4.197325581395349,
+                "p95": 9.03,
+                "max": 18.93
+              }
+            },
+            "rxPeakMiBPerSecond": 0.004439682631821304,
+            "txPeakMiBPerSecond": 0.004417770035140641,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "copilot": {
+            "cpuMeanPercent": 1.646869240658041,
+            "cpuPeakPercent": 5.527638190954775,
+            "containerCpu": {
+              "fleet": {
+                "samples": 156,
+                "mean": 0.09730769230769232,
+                "p95": 0.2,
+                "max": 0.23
+              }
+            },
+            "rxPeakMiBPerSecond": 0.0024599271578031345,
+            "txPeakMiBPerSecond": 0.002479934311294175,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "redis": {
+            "cpuMeanPercent": 4.765545328223704,
+            "cpuPeakPercent": 8.585858585858585,
+            "containerCpu": {
+              "fleet": {
+                "samples": 178,
+                "mean": 1.3507865168539326,
+                "p95": 2.28,
+                "max": 2.47
+              }
+            },
+            "rxPeakMiBPerSecond": 0.0024599271578031345,
+            "txPeakMiBPerSecond": 0.002479934311294175,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "loadgen-1": {
+            "cpuMeanPercent": 5.51864576629237,
+            "cpuPeakPercent": 76.57430730478589,
+            "containerCpu": {
+              "fleet-lag": {
+                "samples": 147,
+                "mean": 3.7997278911564627,
+                "p95": 1.96,
+                "max": 186.4
+              },
+              "--": {
+                "samples": 1,
+                "mean": 0.0,
+                "p95": 0.0,
+                "max": 0.0
+              },
+              "fleet-load": {
+                "samples": 145,
+                "mean": 11.683862068965517,
+                "p95": 91.13,
+                "max": 195.63
+              }
+            },
+            "rxPeakMiBPerSecond": 0.3439477392724463,
+            "txPeakMiBPerSecond": 0.408405071491009,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "nginx": {
+            "cpuMeanPercent": 2.242840620050287,
+            "cpuPeakPercent": 9.405940594059404,
+            "containerCpu": {
+              "fleet": {
+                "samples": 170,
+                "mean": 0.922,
+                "p95": 7.43,
+                "max": 9.62
+              }
+            },
+            "rxPeakMiBPerSecond": 1.3575692038674219,
+            "txPeakMiBPerSecond": 1.354171798660324,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "kafka": {
+            "cpuMeanPercent": 1.962007801380677,
+            "cpuPeakPercent": 5.555555555555558,
+            "containerCpu": {
+              "fleet": {
+                "samples": 161,
+                "mean": 0.8611180124223602,
+                "p95": 1.09,
+                "max": 5.06
+              }
+            },
+            "rxPeakMiBPerSecond": 0.005131721496582031,
+            "txPeakMiBPerSecond": 0.005869865417480469,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "processor-2": {
+            "cpuMeanPercent": 1.3194505613936434,
+            "cpuPeakPercent": 5.05050505050505,
+            "containerCpu": {},
+            "rxPeakMiBPerSecond": 0.016729791204888864,
+            "txPeakMiBPerSecond": 0.010765754021369258,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "mysql": {
+            "cpuMeanPercent": 5.5590843140673565,
+            "cpuPeakPercent": 11.21951219512195,
+            "containerCpu": {
+              "fleet": {
+                "samples": 168,
+                "mean": 1.930952380952381,
+                "p95": 2.69,
+                "max": 3.58
+              }
+            },
+            "rxPeakMiBPerSecond": 0.004355843131477898,
+            "txPeakMiBPerSecond": 0.00401286335734578,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "gateway-2": {
+            "cpuMeanPercent": 1.4982338015913428,
+            "cpuPeakPercent": 6.999999999999995,
+            "containerCpu": {},
+            "rxPeakMiBPerSecond": 0.0024599271578031345,
+            "txPeakMiBPerSecond": 0.002479934311294175,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "processor-3": {
+            "cpuMeanPercent": 1.3828348140503537,
+            "cpuPeakPercent": 5.025125628140703,
+            "containerCpu": {},
+            "rxPeakMiBPerSecond": 0.016851739569024728,
+            "txPeakMiBPerSecond": 0.010824822760247566,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "processor-4": {
+            "cpuMeanPercent": 1.39040703956673,
+            "cpuPeakPercent": 5.527638190954775,
+            "containerCpu": {},
+            "rxPeakMiBPerSecond": 0.002458974436208323,
+            "txPeakMiBPerSecond": 0.002479934311294175,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "api": {
+            "cpuMeanPercent": 2.8338587402082314,
+            "cpuPeakPercent": 6.999999999999995,
+            "containerCpu": {
+              "fleet": {
+                "samples": 154,
+                "mean": 2.6001298701298703,
+                "p95": 5.17,
+                "max": 7.49
+              }
+            },
+            "rxPeakMiBPerSecond": 0.004259618250401942,
+            "txPeakMiBPerSecond": 0.003678458077566965,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "loadgen-2": {
+            "cpuMeanPercent": 3.700629205737815,
+            "cpuPeakPercent": 64.8989898989899,
+            "containerCpu": {
+              "fleet-load": {
+                "samples": 149,
+                "mean": 12.968255033557046,
+                "p95": 111.32,
+                "max": 248.59
+              }
+            },
+            "rxPeakMiBPerSecond": 0.34562167111453,
+            "txPeakMiBPerSecond": 0.4098665464174498,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          }
+        },
+        "redis": {
+          "durationSeconds": 89.076,
+          "processCoreCpuPercent": 0.2670113161794485,
+          "mainThreadCoreCpuPercent": 0.26692824105258145,
+          "luaCalls": 0.0,
+          "luaTotalUsec": 0.0,
+          "luaUsecPerCall": null,
+          "luaMsPerSecond": 0.0,
+          "luaScope": "Aggregate EVAL/EVALSHA, including ingest token buckets and position batches; not isolated script profiling"
+        },
+        "lag": {
+          "samples": 67,
+          "mean": 0,
+          "p95": 0,
+          "max": 0
+        }
+      },
+      {
+        "trial": 2,
+        "scope": "Entire retained connection preparation only; no replay or latency measurement",
+        "beforeClockHosts": 14,
+        "afterClockHosts": 0,
+        "hosts": {
+          "gateway-1": {
+            "cpuMeanPercent": 12.467133397949647,
+            "cpuPeakPercent": 99.50248756218906,
+            "containerCpu": {
+              "fleet": {
+                "samples": 153,
+                "mean": 21.722549019607843,
+                "p95": 193.39,
+                "max": 195.53
+              }
+            },
+            "rxPeakMiBPerSecond": 0.84517149630183,
+            "txPeakMiBPerSecond": 0.6786753793438514,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 54
+          },
+          "processor-1": {
+            "cpuMeanPercent": 3.717050252405366,
+            "cpuPeakPercent": 9.547738693467334,
+            "containerCpu": {
+              "fleet": {
+                "samples": 168,
+                "mean": 4.392380952380952,
+                "p95": 10.42,
+                "max": 16.47
+              }
+            },
+            "rxPeakMiBPerSecond": 0.005075147935560534,
+            "txPeakMiBPerSecond": 0.005530548857880402,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "copilot": {
+            "cpuMeanPercent": 1.4932667326584184,
+            "cpuPeakPercent": 6.030150753768848,
+            "containerCpu": {
+              "fleet": {
+                "samples": 152,
+                "mean": 0.09328947368421053,
+                "p95": 0.16,
+                "max": 0.23
+              }
+            },
+            "rxPeakMiBPerSecond": 0.0025482177734375,
+            "txPeakMiBPerSecond": 0.0025682449340820312,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "redis": {
+            "cpuMeanPercent": 4.7059464927284225,
+            "cpuPeakPercent": 9.950248756218905,
+            "containerCpu": {
+              "fleet": {
+                "samples": 174,
+                "mean": 1.3462068965517242,
+                "p95": 2.24,
+                "max": 2.43
+              }
+            },
+            "rxPeakMiBPerSecond": 0.016815536148421892,
+            "txPeakMiBPerSecond": 0.010788619339644732,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "loadgen-1": {
+            "cpuMeanPercent": 5.7909182170254025,
+            "cpuPeakPercent": 64.75195822454309,
+            "containerCpu": {
+              "fleet-lag": {
+                "samples": 142,
+                "mean": 3.498521126760563,
+                "p95": 1.73,
+                "max": 192.45
+              },
+              "fleet-load": {
+                "samples": 140,
+                "mean": 11.810285714285714,
+                "p95": 103.9,
+                "max": 193.18
+              }
+            },
+            "rxPeakMiBPerSecond": 0.37047722480156564,
+            "txPeakMiBPerSecond": 0.4519044340669097,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "nginx": {
+            "cpuMeanPercent": 2.129400311250994,
+            "cpuPeakPercent": 8.080808080808078,
+            "containerCpu": {
+              "fleet": {
+                "samples": 166,
+                "mean": 0.9395180722891566,
+                "p95": 7.74,
+                "max": 10.81
+              }
+            },
+            "rxPeakMiBPerSecond": 1.4316061517218135,
+            "txPeakMiBPerSecond": 1.4287908594091456,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "kafka": {
+            "cpuMeanPercent": 1.9407273974819899,
+            "cpuPeakPercent": 6.499999999999995,
+            "containerCpu": {
+              "fleet": {
+                "samples": 158,
+                "mean": 0.8849367088607595,
+                "p95": 1.07,
+                "max": 8.37
+              }
+            },
+            "rxPeakMiBPerSecond": 0.006950104034149445,
+            "txPeakMiBPerSecond": 0.005791664123535156,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "processor-2": {
+            "cpuMeanPercent": 1.30251913030284,
+            "cpuPeakPercent": 4.060913705583758,
+            "containerCpu": {},
+            "rxPeakMiBPerSecond": 0.0024599271578031345,
+            "txPeakMiBPerSecond": 0.002479934311294175,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "mysql": {
+            "cpuMeanPercent": 5.526686801226108,
+            "cpuPeakPercent": 9.137055837563457,
+            "containerCpu": {
+              "fleet": {
+                "samples": 164,
+                "mean": 1.903170731707317,
+                "p95": 2.69,
+                "max": 3.46
+              }
+            },
+            "rxPeakMiBPerSecond": 0.004355843131477898,
+            "txPeakMiBPerSecond": 0.00401286335734578,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "gateway-2": {
+            "cpuMeanPercent": 1.5244442568635959,
+            "cpuPeakPercent": 5.076142131979699,
+            "containerCpu": {},
+            "rxPeakMiBPerSecond": 0.0024599271578031345,
+            "txPeakMiBPerSecond": 0.002479934311294175,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "processor-3": {
+            "cpuMeanPercent": 1.477999962608666,
+            "cpuPeakPercent": 5.500000000000005,
+            "containerCpu": {},
+            "rxPeakMiBPerSecond": 0.002458974436208323,
+            "txPeakMiBPerSecond": 0.002479934311294175,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "processor-4": {
+            "cpuMeanPercent": 1.3812329645828185,
+            "cpuPeakPercent": 6.467661691542292,
+            "containerCpu": {},
+            "rxPeakMiBPerSecond": 0.002458974436208323,
+            "txPeakMiBPerSecond": 0.002479934311294175,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "api": {
+            "cpuMeanPercent": 2.9594629936661025,
+            "cpuPeakPercent": 11.557788944723612,
+            "containerCpu": {
+              "fleet": {
+                "samples": 150,
+                "mean": 2.6724,
+                "p95": 5.4,
+                "max": 19.71
+              }
+            },
+            "rxPeakMiBPerSecond": 0.003179231961885771,
+            "txPeakMiBPerSecond": 0.003345005519382961,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          },
+          "loadgen-2": {
+            "cpuMeanPercent": 4.312566176478082,
+            "cpuPeakPercent": 54.1147132169576,
+            "containerCpu": {
+              "fleet-load": {
+                "samples": 143,
+                "mean": 14.152447552447553,
+                "p95": 112.26,
+                "max": 234.87
+              }
+            },
+            "rxPeakMiBPerSecond": 0.3327237261639728,
+            "txPeakMiBPerSecond": 0.3942104724499134,
+            "allowanceCounterDeltas": {
+              "bw_in_allowance_exceeded": 0,
+              "bw_out_allowance_exceeded": 0,
+              "linklocal_allowance_exceeded": 0,
+              "conntrack_allowance_exceeded": 0,
+              "pps_allowance_exceeded": 0
+            },
+            "samplerErrors": 0
+          }
+        },
+        "redis": {
+          "durationSeconds": 87.07,
+          "processCoreCpuPercent": 0.26822097163202235,
+          "mainThreadCoreCpuPercent": 0.2681532100608663,
+          "luaCalls": 0.0,
+          "luaTotalUsec": 0.0,
+          "luaUsecPerCall": null,
+          "luaMsPerSecond": 0.0,
+          "luaScope": "Aggregate EVAL/EVALSHA, including ingest token buckets and position batches; not isolated script profiling"
+        },
+        "lag": {
+          "samples": 64,
+          "mean": 0,
+          "p95": 0,
+          "max": 0
+        }
+      }
+    ]
+  },
+  "costCheckpoint": {
+    "at": "2026-10-09T19:17:28.731084+00:00",
+    "estimatedSpendUsd": 3.212161,
+    "remainingGrossUsd": 21.787839,
+    "fullFleetHourlyUsd": 1.3532698630136988,
+    "bedrockSpendUsd": 0,
+    "idleCleanupDeadline": "2026-10-09T20:17:28.731084+00:00",
+    "hardDeadline": "2026-10-09T21:38:01.628399+00:00",
+    "estimateMethod": "Actual instance launch cohorts: nine hosts at 16:38:18 UTC, five additions at 17:25:22 UTC; runbook EC2/EBS/public IPv4 hourly prices; gross estimate, no credit subtraction."
+  },
+  "samplingLimitations": {
+    "validGatewayPrometheusTimeouts": 226,
+    "singleGateway5000Timeouts": 71,
+    "twoGateway10000Timeouts": 155,
+    "dockerCollectionErrors": 0,
+    "networkCounterErrors": 0,
+    "samplingPeriodOverruns": 0,
+    "failedPreparationMissingAfterClockSnapshots": true,
+    "maximumAbsoluteValidChronyOffsetMs": 0.009832
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "tagging": {
+    "ResourceTagMappingList": [
+      {"ResourceARN":"arn:aws:ec2:us-east-1:<ACCOUNT_ID>:instance/i-08be3517de64adf77","Tags":[{"Key":"role","Value":"api"},{"Key":"project","Value":"fleet-bench"},{"Key":"Name","Value":"fleet-bench-api"}]},
+      {"ResourceARN":"arn:aws:ec2:us-east-1:<ACCOUNT_ID>:instance/i-096c0abc72ad54094","Tags":[{"Key":"role","Value":"loadgen"},{"Key":"project","Value":"fleet-bench"},{"Key":"Name","Value":"fleet-bench-loadgen-1"}]},
+      {"ResourceARN":"arn:aws:ec2:us-east-1:<ACCOUNT_ID>:volume/vol-072f60a88f03b4f8d","Tags":[{"Key":"project","Value":"fleet-bench"}]},
+      {"ResourceARN":"arn:aws:ec2:us-east-1:<ACCOUNT_ID>:instance/i-05bf66a5ac2ae20c8","Tags":[{"Key":"role","Value":"redis"},{"Key":"project","Value":"fleet-bench"},{"Key":"Name","Value":"fleet-bench-redis"}]},
+      {"ResourceARN":"arn:aws:ec2:us-east-1:<ACCOUNT_ID>:volume/vol-078c2cc67c24e6ed9","Tags":[{"Key":"project","Value":"fleet-bench"}]},
+      {"ResourceARN":"arn:aws:ec2:us-east-1:<ACCOUNT_ID>:instance/i-0e04953c16f316eae","Tags":[{"Key":"role","Value":"mysql"},{"Key":"project","Value":"fleet-bench"},{"Key":"Name","Value":"fleet-bench-mysql"}]},
+      {"ResourceARN":"arn:aws:ec2:us-east-1:<ACCOUNT_ID>:volume/vol-074405f3652730f8b","Tags":[{"Key":"project","Value":"fleet-bench"}]},
+      {"ResourceARN":"arn:aws:ec2:us-east-1:<ACCOUNT_ID>:instance/i-09d9026c5bc0f4e4c","Tags":[{"Key":"role","Value":"api"},{"Key":"project","Value":"fleet-bench"},{"Key":"Name","Value":"fleet-bench-api"}]},
+      {"ResourceARN":"arn:aws:ec2:us-east-1:<ACCOUNT_ID>:volume/vol-032ec02569594dc5c","Tags":[{"Key":"project","Value":"fleet-bench"}]},
+      {"ResourceARN":"arn:aws:ec2:us-east-1:<ACCOUNT_ID>:instance/i-029e957a8ad40aa10","Tags":[{"Key":"role","Value":"loadgen"},{"Key":"project","Value":"fleet-bench"},{"Key":"Name","Value":"fleet-bench-loadgen-1"}]},
+      {"ResourceARN":"arn:aws:ec2:us-east-1:<ACCOUNT_ID>:instance/i-06722a4b74c857724","Tags":[{"Key":"role","Value":"kafka"},{"Key":"project","Value":"fleet-bench"},{"Key":"Name","Value":"fleet-bench-kafka"}]},
+      {"ResourceARN":"arn:aws:ec2:us-east-1:<ACCOUNT_ID>:instance/i-08c9c432d591209a1","Tags":[{"Key":"role","Value":"kafka"},{"Key":"project","Value":"fleet-bench"},{"Key":"Name","Value":"fleet-bench-kafka"}]},
+      {"ResourceARN":"arn:aws:ec2:us-east-1:<ACCOUNT_ID>:volume/vol-0d040a62f6825b91b","Tags":[{"Key":"project","Value":"fleet-bench"}]},
+      {"ResourceARN":"arn:aws:ec2:us-east-1:<ACCOUNT_ID>:instance/i-077dae916df7ec1e4","Tags":[{"Key":"role","Value":"mysql"},{"Key":"project","Value":"fleet-bench"},{"Key":"Name","Value":"fleet-bench-mysql"}]},
+      {"ResourceARN":"arn:aws:ec2:us-east-1:<ACCOUNT_ID>:instance/i-0190c585a9c9a3ad2","Tags":[{"Key":"role","Value":"mysql"},{"Key":"project","Value":"fleet-bench"},{"Key":"Name","Value":"fleet-bench-mysql"}]},
+      {"ResourceARN":"arn:aws:ec2:us-east-1:<ACCOUNT_ID>:volume/vol-0135cd53a822813f7","Tags":[{"Key":"project","Value":"fleet-bench"}]},
+      {"ResourceARN":"arn:aws:ec2:us-east-1:<ACCOUNT_ID>:instance/i-07da050c8dcb966b5","Tags":[{"Key":"role","Value":"redis"},{"Key":"project","Value":"fleet-bench"},{"Key":"Name","Value":"fleet-bench-redis"}]},
+      {"ResourceARN":"arn:aws:ec2:us-east-1:<ACCOUNT_ID>:instance/i-0c0893cc9c4d8ad0d","Tags":[{"Key":"role","Value":"kafka"},{"Key":"project","Value":"fleet-bench"},{"Key":"Name","Value":"fleet-bench-kafka"}]},
+      {"ResourceARN":"arn:aws:ec2:us-east-1:<ACCOUNT_ID>:instance/i-075b6e52715dc4946","Tags":[{"Key":"role","Value":"copilot"},{"Key":"project","Value":"fleet-bench"},{"Key":"Name","Value":"fleet-bench-copilot"}]},
+      {"ResourceARN":"arn:aws:ec2:us-east-1:<ACCOUNT_ID>:instance/i-005ce1f55796f5901","Tags":[{"Key":"role","Value":"api"},{"Key":"project","Value":"fleet-bench"},{"Key":"Name","Value":"fleet-bench-api"}]}
+    ]
+  },
+  "instances": [{"id":"i-09d9026c5bc0f4e4c","state":"terminated","ip":null},{"id":"i-075b6e52715dc4946","state":"terminated","ip":null},{"id":"i-08c9c432d591209a1","state":"terminated","ip":null},{"id":"i-05bf66a5ac2ae20c8","state":"terminated","ip":null},{"id":"i-0e04953c16f316eae","state":"terminated","ip":null},{"id":"i-029e957a8ad40aa10","state":"terminated","ip":null}],
+  "volumes": {"Volumes":[]},
+  "snapshots": {"Snapshots":[]},
+  "activeFollowup": {"activeInstances":[],"vpcs":[],"subnets":[],"securityGroups":[],"addresses":[],"keyPairs":[],"ecr":[],"terraformStateResources":[]},
+  "note": "Account ID redacted; historical tag-cache ARNs remain, all checked active lists are empty."
+}

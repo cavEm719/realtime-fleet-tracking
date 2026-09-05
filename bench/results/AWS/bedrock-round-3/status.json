@@ -1,0 +1,50 @@
+{
+  "outcome": "complete; corrected matrices and mandatory cleanup finished",
+  "taskVersion": 2,
+  "checkerVersion": "review-v2",
+  "tracingEnabled": false,
+  "resourceRegion": "us-east-1",
+  "targetRunsPerModel": 120,
+  "firstApply": "2026-10-10T03:58:13.238400+00:00",
+  "hardDeadline": "2026-10-10T06:58:13.238400+00:00",
+  "destroyedAt": "2026-10-10T06:50:07.114557+00:00",
+  "elapsedMinutes": 171.89793595,
+  "destroyedResources": 18,
+  "copyHostsSucceeded": 6,
+  "destroyExitCode": 0,
+  "auditExitCode": 0,
+  "terraformStateEmpty": true,
+  "knownHostAndReturnedUsageEstimateUsd": 2.0436739403213187,
+  "unknownUseReserveUsd": 3,
+  "unmeasuredEcrAllowanceUsd": 0.01,
+  "protectedGrossEstimateUsd": 5.0536739403213184,
+  "grossLimitUsd": 12,
+  "billingInvoiceVerified": false,
+  "verification": {
+    "maven": {
+      "tests": 149,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "offlineEvaluatorTestsPassed": 83,
+    "benchToolingTestsPassed": 30,
+    "artifactJarHashBound": true,
+    "armImagesStarted": true,
+    "dockerConfigUnchanged": true
+  },
+  "invalidOldImageAttemptPreserved": true,
+  "invalidOldImagePrefixRuns": 98,
+  "pendingManualReviewEntries": 240,
+  "knownNewCheckerIssueCount": 1,
+  "additionalCheckerCorrectionApplied": false,
+  "originalRunnerSolved": {
+    "DeepSeek-V3.1": 106,
+    "gpt-oss-120b": 113
+  },
+  "reviewedCheckerSolved": {
+    "DeepSeek-V3.1": 109,
+    "gpt-oss-120b": 113
+  },
+  "approvedCheckerAppliedOffline": true
+}

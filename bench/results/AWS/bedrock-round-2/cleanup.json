@@ -1,0 +1,16 @@
+{
+  "destroyedResources": 18,
+  "destroyExitCode": 0,
+  "auditExitCode": 0,
+  "applyStartedAt": "2026-10-10T01:53:41.983078+00:00",
+  "destroyedAt": "2026-10-10T03:10:11.707895+00:00",
+  "elapsedMinutes": 76.49541361666667,
+  "activeAudit": {"activeInstances":[],"vpcs":[],"subnets":[],"securityGroups":[],"addresses":[],"keyPairs":[],"ecr":[],"terraformStateResources":[]},
+  "taggingCacheRecords": 20,
+  "taggingCacheTypes": {"instance":14,"volume":6},
+  "instancesInScriptAudit": {"terminated":6},
+  "Volumes": [],
+  "Snapshots": [],
+  "cost": {"knownLaunchTimeAndReturnedUsageEstimateUsd":1.4251675769467216,"unknownUsageReserveUsd":9.0,"guardEstimateUsd":10.425167576946722,"limitUsd":12,"actualBilledUsd":null,"invoiceOrCreditCoverageVerified":false,"correction":"Two missing DeepSeek followup receipts were initially hidden by successful earlier turns; final reserve includes all three 504s."},
+  "copies": [{"host":"api","exitCode":0,"bytes":17801,"sha256":"01d153ab2c6caa34ec307e3807623a173b04b491e4d09ad001954da13f8c2d12"},{"host":"copilot","exitCode":0,"bytes":17742,"sha256":"93e87d4d9b67713dfe76215d904300c6813e8d01cb72fd6df8915eda64acf863"},{"host":"kafka","exitCode":0,"bytes":17831,"sha256":"46f82644ea484fd3d1fb8a48befdabf3ac56ca1401bb23d711ad90ee84839ef9"},{"host":"loadgen-1","exitCode":0,"bytes":17749,"sha256":"7ea31e22bf4182d3dd93c50c3f10c8a3af27cbece362502310519c5158f1e0e5"},{"host":"mysql","exitCode":0,"bytes":17816,"sha256":"de928db96d9b1b5c1f8d3199258922d26f95678c8b9f8dd39b9d63874b729b13"},{"host":"redis","exitCode":0,"bytes":17779,"sha256":"8d0bf7961dbd474d2b9f5126adf509dfb40c0f1dbed7963d611b8f2afee2c837"}]
+}

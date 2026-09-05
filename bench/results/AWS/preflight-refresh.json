@@ -1,0 +1,105 @@
+{
+  "checkedAt": "2026-10-09T16:04:57.502820+00:00",
+  "accountId": "<ACCOUNT_ID>",
+  "identityArn": "arn:aws:iam::<ACCOUNT_ID>:root",
+  "loginProfile": "default; aws login",
+  "region": "us-east-1",
+  "pendingOrRunningInstances": 0,
+  "standardVcpuQuota": 32,
+  "smokeVcpu": 20,
+  "fullFleetVcpu": 32,
+  "publicIpUnchanged": true,
+  "ingressVerified": "SSH 22, API 8080, gateway 8082 only from current operator IP /32; internal ports only VPC CIDR",
+  "terraformPlan": {
+    "add": 25,
+    "change": 0,
+    "destroy": 0
+  },
+  "instances": [
+    {
+      "name": "aws_instance.host[\"api\"]",
+      "instanceType": "c7g.large"
+    },
+    {
+      "name": "aws_instance.host[\"copilot\"]",
+      "instanceType": "m7g.large"
+    },
+    {
+      "name": "aws_instance.host[\"gateway-1\"]",
+      "instanceType": "c7g.large"
+    },
+    {
+      "name": "aws_instance.host[\"kafka\"]",
+      "instanceType": "m7g.large"
+    },
+    {
+      "name": "aws_instance.host[\"loadgen-1\"]",
+      "instanceType": "c7g.xlarge"
+    },
+    {
+      "name": "aws_instance.host[\"mysql\"]",
+      "instanceType": "r7g.large"
+    },
+    {
+      "name": "aws_instance.host[\"nginx\"]",
+      "instanceType": "c7g.large"
+    },
+    {
+      "name": "aws_instance.host[\"processor-1\"]",
+      "instanceType": "c7g.large"
+    },
+    {
+      "name": "aws_instance.host[\"redis\"]",
+      "instanceType": "m7g.large"
+    }
+  ],
+  "exactBedrockArns": 9,
+  "smokeEstimatedHourlyUsd": 0.871352,
+  "estimatedPhaseSpendUsd": 0,
+  "fiveHourClockStarted": false,
+  "applyExecuted": false,
+  "modelInvocations": 0,
+  "bedrock": {
+    "target": {
+      "invocationId": "deepseek.v3-v1:0",
+      "invocationRegion": "us-west-2",
+      "availability": {
+        "modelId": "deepseek.v3-v1",
+        "agreementAvailability": {
+          "status": "AVAILABLE"
+        },
+        "authorizationStatus": "AUTHORIZED",
+        "entitlementAvailability": "AVAILABLE",
+        "regionAvailability": "AVAILABLE"
+      }
+    },
+    "comparison": {
+      "invocationId": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "invocationRegion": "us-east-1",
+      "availability": {
+        "modelId": "anthropic.claude-haiku-4-5-20251001-v1",
+        "agreementAvailability": {
+          "status": "NOT_AVAILABLE"
+        },
+        "authorizationStatus": "AUTHORIZED",
+        "entitlementAvailability": "AVAILABLE",
+        "regionAvailability": "AVAILABLE"
+      }
+    },
+    "judge": {
+      "invocationId": "us.anthropic.claude-sonnet-4-6",
+      "invocationRegion": "us-east-1",
+      "availability": {
+        "modelId": "anthropic.claude-sonnet-4-6",
+        "agreementAvailability": {
+          "status": "NOT_AVAILABLE"
+        },
+        "authorizationStatus": "AUTHORIZED",
+        "entitlementAvailability": "AVAILABLE",
+        "regionAvailability": "AVAILABLE"
+      }
+    }
+  },
+  "anthropicUseCase": "GetUseCaseForModelAccess returned ResourceNotFoundException: request form not filled out",
+  "gate": "Awaiting user go before apply"
+}

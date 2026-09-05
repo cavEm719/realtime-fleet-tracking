@@ -1,0 +1,267 @@
+{
+  "status": "Gate 1 passed; waiting for user go",
+  "completedAt": "2026-10-09T17:02:04.684716+00:00",
+  "applyStartedAt": "2026-10-09T16:38:01.628399+00:00",
+  "firstLaunchAt": "2026-10-09T16:38:18+00:00",
+  "elapsedFromApplySeconds": 1443.056317,
+  "hardDeadline": "2026-10-09T21:38:01.628399+00:00",
+  "idleCleanupDeadline": "2026-10-09T18:02:04.684716+00:00",
+  "hosts": {
+    "api": {
+      "role": "api",
+      "instanceType": "c7g.large"
+    },
+    "copilot": {
+      "role": "copilot",
+      "instanceType": "m7g.large"
+    },
+    "gateway-1": {
+      "role": "gateway",
+      "instanceType": "c7g.large"
+    },
+    "kafka": {
+      "role": "kafka",
+      "instanceType": "m7g.large"
+    },
+    "loadgen-1": {
+      "role": "loadgen",
+      "instanceType": "c7g.xlarge"
+    },
+    "mysql": {
+      "role": "mysql",
+      "instanceType": "r7g.large"
+    },
+    "nginx": {
+      "role": "nginx",
+      "instanceType": "c7g.large"
+    },
+    "processor-1": {
+      "role": "processor",
+      "instanceType": "c7g.large"
+    },
+    "redis": {
+      "role": "redis",
+      "instanceType": "m7g.large"
+    }
+  },
+  "operatingSystem": "Amazon Linux 2023 ARM64",
+  "serviceJvm": "-Xms256m -Xmx1g; container limit 2 GiB",
+  "generatorJvm": "-Xms512m -Xmx3g; container limit 4 GiB; one generator process",
+  "infrastructureHealth": "Kafka topic query, Redis PONG, MySQL ping, nginx config and generator ARM64 checked; S2 traversed nginx",
+  "finalApplicationHealth": {
+    "api": {
+      "exitCode": 0,
+      "health": {
+        "status": "UP"
+      }
+    },
+    "copilot": {
+      "exitCode": 0,
+      "health": {
+        "status": "UP"
+      }
+    },
+    "processor-1": {
+      "exitCode": 0,
+      "health": {
+        "status": "UP"
+      }
+    },
+    "gateway-1": {
+      "exitCode": 0,
+      "health": {
+        "status": "UP"
+      }
+    }
+  },
+  "S1": {
+    "outcome": "complete",
+    "rawDirectory": "bench/results/AWS/Gate1-S1-smoke/trial-3/",
+    "dataset": "west-coast-10m.csv",
+    "datasetSha256": "a8b50fee149c634e566b09bb096fba856b0f8986d0077c13f70ce31347537353",
+    "replay": {
+      "lanes": 12,
+      "acknowledged": 11669,
+      "positionsPerSecond": 6504.4383996119,
+      "http503Retries": 0,
+      "http429Retries": 0,
+      "mode": "max",
+      "elapsedSeconds": 1.794005767,
+      "offeredPositionsPerSecond": 0
+    },
+    "processedPositions": 11669.0,
+    "timing": {
+      "outcome": "complete",
+      "replayWallSeconds": 3.236367666046135,
+      "processingWallSeconds": 5.189648333005607
+    },
+    "processorPositionsPerSecondIncludingStartAndDrain": 2248.5145912077337,
+    "sampledPeakLag": 4175,
+    "finalLag": 0,
+    "lagObserverErrors": 0,
+    "api429MetricDelta": 0,
+    "clockOffsetsMs": {
+      "before": {
+        "api": 0.0008929999999999999,
+        "loadgen-1": 0.002171,
+        "redis": 0.00106,
+        "kafka": 0.002233,
+        "copilot": 0.001776,
+        "mysql": 0.001714,
+        "gateway-1": 0.000165,
+        "processor-1": 0.00019,
+        "nginx": 0.001124
+      },
+      "after": {
+        "kafka": 0.000695,
+        "mysql": 0.001269,
+        "copilot": 0.000533,
+        "redis": 0.001181,
+        "loadgen-1": 0.0026939999999999998,
+        "processor-1": 0.001294,
+        "gateway-1": 0.001635,
+        "api": 0.0031609999999999997,
+        "nginx": 0.000129
+      }
+    },
+    "hostSamples": 243,
+    "samplerErrors": 0,
+    "samplerOverruns": 0,
+    "tracingEnabled": false
+  },
+  "S2": {
+    "outcome": "complete",
+    "rawDirectory": "bench/results/AWS/Gate1-S2-1000/trial-2/",
+    "dataset": "west-coast-4h.csv",
+    "datasetSha256": "434ab651deea8d11eff98cef45a0bc3c3bf7d91704b3906d269deaeeb30472d6",
+    "replay": {
+      "offeredPositionsPerSecond": 1000,
+      "lanes": 12,
+      "acknowledged": 35000,
+      "positionsPerSecond": 996.4428356747192,
+      "http503Retries": 0,
+      "http429Retries": 0,
+      "mode": "max",
+      "elapsedSeconds": 35.124945202
+    },
+    "processedPositions": 35000.0,
+    "timing": {
+      "outcome": "complete",
+      "replayWallSeconds": 36.62163225002587,
+      "processingWallSeconds": 38.00743316707667
+    },
+    "processorPositionsPerSecondIncludingStartAndDrain": 920.8725000223953,
+    "sampledPeakLag": 464,
+    "finalLag": 0,
+    "lagObserverErrors": 0,
+    "api429MetricDelta": 0,
+    "clockOffsetsMs": {
+      "before": {
+        "api": 0.000836,
+        "loadgen-1": 0.0006770000000000001,
+        "redis": 0.00091,
+        "kafka": 0.00053,
+        "copilot": 0.001175,
+        "mysql": 0.000886,
+        "gateway-1": 0.000878,
+        "processor-1": 9e-06,
+        "nginx": 0.001665
+      },
+      "after": {
+        "kafka": 0.000174,
+        "mysql": 0.001237,
+        "copilot": 0.0006630000000000001,
+        "redis": 0.00084,
+        "loadgen-1": 0.00033099999999999997,
+        "processor-1": 0.0005430000000000001,
+        "gateway-1": 0.000399,
+        "api": 1.0000000000000002e-06,
+        "nginx": 0.001576
+      }
+    },
+    "hostSamples": 594,
+    "samplerErrors": 0,
+    "samplerOverruns": 0,
+    "tracingEnabled": false,
+    "pipeline": {
+      "samples": 8236669,
+      "p50Ms": 102,
+      "p95Ms": 657,
+      "p99Ms": 1142
+    },
+    "clients": {
+      "requested": 1000,
+      "connected": 1000,
+      "subscribed": 1000,
+      "failed": 0,
+      "terminated": 0,
+      "slowTerminatedObserved": 0,
+      "allPercent": 100,
+      "slowPercent": 0,
+      "elapsedSeconds": 30.000107776,
+      "messages": 61673,
+      "messagesPerSecond": 2055.7592812829234,
+      "pipelineSamples": 8236669,
+      "pipelineP50Ms": 102,
+      "pipelineP95Ms": 657,
+      "pipelineP99Ms": 1142,
+      "pipelineOverflow": 0,
+      "pipelineNegative": 0,
+      "pipelineMissing": 0,
+      "primaryLatency": "receipt minus server ingestedAt",
+      "secondaryLatency": "receipt minus generator emittedAt",
+      "retention": "bounded histograms; streaming timestamps; no per-message objects retained",
+      "positionSamples": 8236669,
+      "p50Ms": 1314,
+      "p95Ms": 2511,
+      "p99Ms": 3307,
+      "latencyOverflow": 0,
+      "latencyNegative": 0,
+      "connectionP99Ms": 2075,
+      "errors": []
+    }
+  },
+  "failedAttempts": [
+    {
+      "case": "Gate1-S1-smoke/trial-1",
+      "reason": "Observer watched fleet-processor while annotation used position-listener; bounded lag wait failed",
+      "validPerformanceTrial": false
+    },
+    {
+      "case": "Gate1-S1-smoke/trial-2",
+      "reason": "Partial group reset retried deleted group IDs; setup failed",
+      "validPerformanceTrial": false
+    },
+    {
+      "case": "Gate1-S2-1000/trial-1",
+      "reason": "Aborted during setup before deploying corrected processor",
+      "validPerformanceTrial": false
+    }
+  ],
+  "fixCommits": [
+    "818653b",
+    "4f7d661",
+    "554302d",
+    "21a9351",
+    "4be4254",
+    "553c51d",
+    "89bfc0f"
+  ],
+  "verification": {
+    "maven": "BUILD SUCCESS",
+    "tests": 139,
+    "unit": 93,
+    "integration": 46,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "benchPythonTests": 10
+  },
+  "resourceSpendEstimateUsd": 0.34531793907112,
+  "remainingGrossAllowanceUsd": 24.65468206092888,
+  "hourlyInfrastructureUsd": 0.871352,
+  "bedrockCalls": 0,
+  "costCaveat": "Estimate from actual instance launches and runbook rates; not invoice; credits not subtracted; ECR/transfer/tax outside this EC2/EBS/IPv4/Bedrock estimate",
+  "resultsCopiedFromEveryHost": true,
+  "cleanupWatchdog": "active; 60-minute gate idle or five-hour hard deadline; cleanup heartbeat also active"
+}

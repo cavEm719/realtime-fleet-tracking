@@ -1,0 +1,10 @@
+{
+  "api": {
+    "sha256": "58d1e93272faa2bfa712af54421d1bff367102900f076c6dd9512167989d4e8a",
+    "matchesVerifiedJar": true
+  },
+  "copilot": {
+    "sha256": "2ab5f099a04a1f18e8686d132578509bb01211cda4d99fa700d8c68507832ca3",
+    "matchesVerifiedJar": true
+  }
+}

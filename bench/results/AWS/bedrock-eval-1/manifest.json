@@ -1,0 +1,194 @@
+{
+  "status": "preflight refreshed; awaiting user go; no apply or inference",
+  "accountId": "<ACCOUNT_ID>",
+  "resourceRegion": "us-east-1",
+  "checkedAt": "2026-10-09T16:04:02.742020+00:00",
+  "bedrock": {
+    "target": {
+      "name": "DeepSeek-V3.1",
+      "provider": "DeepSeek",
+      "kind": "regional",
+      "modelId": "deepseek.v3-v1:0",
+      "invocationId": "deepseek.v3-v1:0",
+      "invocationRegion": "us-west-2",
+      "profileId": null,
+      "profileArn": null,
+      "foundationModelArns": [
+        "arn:aws:bedrock:us-west-2::foundation-model/deepseek.v3-v1:0"
+      ],
+      "destinationRegions": [
+        "us-west-2"
+      ],
+      "documentedUsRegions": [
+        "us-east-2",
+        "us-west-2"
+      ],
+      "inputUsdPerMillionTokens": 0.58,
+      "outputUsdPerMillionTokens": 1.68,
+      "tier": "Standard on-demand bedrock-runtime; no caching",
+      "pricePublication": "2026-10-06T14:47:26Z",
+      "priceSkus": [
+        "Z2K8WK6696RJH4Y5",
+        "JJ7XDCN9CKHV75P8"
+      ],
+      "priceOriginalUnit": "1K tokens",
+      "converseToolUseDocumented": true,
+      "sources": [
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-1.html",
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html",
+        "https://aws.amazon.com/about-aws/whats-new/2025/09/deepseek-v3-1-model-fully-managed-amazon-bedrock/"
+      ],
+      "regionalDocumentationNote": "Regional matrix lists US Ohio/Oregon; model card also lists Virginia. Select Oregon, verify live availability/access after upgrade; do not infer Virginia availability from sample code.",
+      "selectionStatus": "Selected by user plan update; account access pending refresh",
+      "accessStatus": {
+        "modelId": "deepseek.v3-v1",
+        "agreementAvailability": {
+          "status": "AVAILABLE"
+        },
+        "authorizationStatus": "AUTHORIZED",
+        "entitlementAvailability": "AVAILABLE",
+        "regionAvailability": "AVAILABLE"
+      }
+    },
+    "judge": {
+      "name": "Claude Sonnet 4.6",
+      "provider": "Anthropic",
+      "kind": "geo-profile",
+      "modelId": "anthropic.claude-sonnet-4-6",
+      "invocationId": "us.anthropic.claude-sonnet-4-6",
+      "invocationRegion": "us-east-1",
+      "profileId": "us.anthropic.claude-sonnet-4-6",
+      "profileArn": "arn:aws:bedrock:us-east-1:<ACCOUNT_ID>:inference-profile/us.anthropic.claude-sonnet-4-6",
+      "foundationModelArns": [
+        "arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-sonnet-4-6",
+        "arn:aws:bedrock:us-east-2::foundation-model/anthropic.claude-sonnet-4-6",
+        "arn:aws:bedrock:us-west-2::foundation-model/anthropic.claude-sonnet-4-6"
+      ],
+      "destinationRegions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "destinationVerification": "Verified live via GetInferenceProfile from us-east-1",
+      "inputUsdPerMillionTokens": 3.3,
+      "outputUsdPerMillionTokens": 16.5,
+      "tier": "Standard Geo on-demand; no caching",
+      "pricePublication": "2026-10-08T23:56:37Z",
+      "priceSkus": [
+        "KPFGPZJ8VWMREGAV",
+        "GMB9AQ5DYNAGYZEC"
+      ],
+      "priceOriginalUnit": "1M tokens",
+      "converseToolUseDocumented": true,
+      "selectionStatus": "Selected by user plan update; account access pending refresh",
+      "accessStatus": {
+        "modelId": "anthropic.claude-sonnet-4-6",
+        "agreementAvailability": {
+          "status": "NOT_AVAILABLE"
+        },
+        "authorizationStatus": "AUTHORIZED",
+        "entitlementAvailability": "AVAILABLE",
+        "regionAvailability": "AVAILABLE"
+      }
+    },
+    "comparison": {
+      "name": "Claude Haiku 4.5",
+      "provider": "Anthropic",
+      "kind": "geo-profile",
+      "modelId": "anthropic.claude-haiku-4-5-20251001-v1:0",
+      "invocationId": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "invocationRegion": "us-east-1",
+      "profileId": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "profileArn": "arn:aws:bedrock:us-east-1:<ACCOUNT_ID>:inference-profile/us.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "foundationModelArns": [
+        "arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-haiku-4-5-20251001-v1:0",
+        "arn:aws:bedrock:us-east-2::foundation-model/anthropic.claude-haiku-4-5-20251001-v1:0",
+        "arn:aws:bedrock:us-west-2::foundation-model/anthropic.claude-haiku-4-5-20251001-v1:0"
+      ],
+      "destinationRegions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "destinationVerification": "Verified live via GetInferenceProfile from us-east-1",
+      "inputUsdPerMillionTokens": 1.1,
+      "outputUsdPerMillionTokens": 5.5,
+      "tier": "Standard Geo on-demand; no caching",
+      "pricePublication": "2026-10-08T23:56:37Z",
+      "priceSkus": [
+        "JQDUC8Q4K8C6GSGH",
+        "X629GDA2GXAP6R54"
+      ],
+      "priceOriginalUnit": "1M tokens",
+      "converseToolUseDocumented": true,
+      "selectionStatus": "Selected by user plan update; account access pending refresh",
+      "accessStatus": {
+        "modelId": "anthropic.claude-haiku-4-5-20251001-v1",
+        "agreementAvailability": {
+          "status": "NOT_AVAILABLE"
+        },
+        "authorizationStatus": "AUTHORIZED",
+        "entitlementAvailability": "AVAILABLE",
+        "regionAvailability": "AVAILABLE"
+      }
+    },
+    "comparisonFallback": {
+      "name": "Claude Sonnet 4.5",
+      "provider": "Anthropic",
+      "kind": "geo-profile",
+      "modelId": "anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "invocationId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "invocationRegion": "us-east-1",
+      "profileId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "profileArn": "arn:aws:bedrock:us-east-1:<ACCOUNT_ID>:inference-profile/us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "foundationModelArns": [
+        "arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-sonnet-4-5-20250929-v1:0",
+        "arn:aws:bedrock:us-east-2::foundation-model/anthropic.claude-sonnet-4-5-20250929-v1:0",
+        "arn:aws:bedrock:us-west-2::foundation-model/anthropic.claude-sonnet-4-5-20250929-v1:0"
+      ],
+      "destinationRegions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "destinationVerification": "Recheck GetInferenceProfile from us-east-1 before adding comparison permissions/apply; judge destinations previously verified, not refreshed this turn.",
+      "inputUsdPerMillionTokens": 3.3,
+      "outputUsdPerMillionTokens": 16.5,
+      "tier": "Standard Geo on-demand; no caching",
+      "pricePublication": "2026-10-08T23:56:37Z",
+      "priceSkus": [
+        "SSK4DT4JBRUQJYP5",
+        "3YN5KGC2HJU9VC5A"
+      ],
+      "priceOriginalUnit": "1M tokens",
+      "converseToolUseDocumented": true,
+      "selectionStatus": "Fallback only if Haiku is unavailable",
+      "accessStatus": "Not refreshed; check authorization/entitlement/agreement after account upgrade, before any inference"
+    }
+  },
+  "tracingEnabled": false,
+  "humanReview": "PENDING",
+  "pilot": {
+    "tasks": [
+      "atlas-status",
+      "la-yesterday",
+      "draft-la"
+    ],
+    "repeats": 1,
+    "calibrationCases": 14,
+    "stopAfterPilot": true,
+    "requireUserGoForFull": true
+  },
+  "full": {
+    "tasks": 40,
+    "targetRepeats": 3,
+    "comparisonRepeats": 3,
+    "comparisonBudgetFallbackRepeats": 1,
+    "sameJudge": true
+  },
+  "priceSources": [
+    "https://aws.amazon.com/bedrock/pricing/",
+    "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-west-2/index.json",
+    "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrockFoundationModels/current/us-east-1/index.json"
+  ]
+}

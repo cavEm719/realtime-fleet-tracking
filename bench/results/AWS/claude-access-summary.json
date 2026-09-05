@@ -1,0 +1,119 @@
+{
+  "checkedAt": "2026-10-09T20:46:41.688978+00:00",
+  "existingUseCaseOnFile": {
+    "companyName": "Individual developer (personal project)",
+    "companyWebsite": "https://github.com/cavEm719",
+    "intendedUsers": "0",
+    "industryOption": "Software as a Service",
+    "otherIndustryOption": "",
+    "useCases": ". Personal software engineering project. I am evaluating an LLM assistant that uses tool calling to answer questions about synthetic vessel-tracking test data (vessel positions, port arrival events). Models will be used to run a fixed offline evaluation suite of about 40 tasks and to grade answers for faithfulness and data-isolation safety. No production use, no end users, and no personal or real customer data."
+  },
+  "putUseCaseRequestSent": false,
+  "reasonNoPut": "Use case already on file; authorized instruction was to submit only if missing. Existing text has a leading period and space; no rewrite performed.",
+  "models": [
+    {
+      "modelId": "anthropic.claude-haiku-4-5-20251001-v1:0",
+      "offerId": "offer-fudwqbphlos64",
+      "agreementCreateSucceeded": true,
+      "agreementStatusAfter": "PENDING",
+      "pricingType": "usage-based Standard US cross-region inference",
+      "pricesPerMillionInputOutputUsd": [
+        1.1,
+        5.5
+      ],
+      "refundPolicy": "No refunds",
+      "verificationRequest": {
+        "modelId": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "text": "Reply with OK"
+              }
+            ]
+          }
+        ],
+        "inferenceConfig": {
+          "maxTokens": 5
+        }
+      },
+      "converseCalls": 1,
+      "response": {
+        "message": {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "OK"
+            }
+          ]
+        }
+      },
+      "usage": {
+        "inputTokens": 10,
+        "outputTokens": 4,
+        "totalTokens": 14,
+        "cacheReadInputTokens": 0,
+        "cacheWriteInputTokens": 0
+      },
+      "estimatedTokenCostUsd": 3.3e-05
+    },
+    {
+      "modelId": "anthropic.claude-sonnet-4-6",
+      "offerId": "offer-ldnd26nhxx676",
+      "agreementCreateSucceeded": true,
+      "agreementStatusAfter": "PENDING",
+      "pricingType": "usage-based Standard US cross-region inference",
+      "pricesPerMillionInputOutputUsd": [
+        3.3,
+        16.5
+      ],
+      "refundPolicy": "No refunds",
+      "verificationRequest": {
+        "modelId": "us.anthropic.claude-sonnet-4-6",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "text": "Reply with OK"
+              }
+            ]
+          }
+        ],
+        "inferenceConfig": {
+          "maxTokens": 5
+        }
+      },
+      "converseCalls": 1,
+      "response": {
+        "message": {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "OK"
+            }
+          ]
+        }
+      },
+      "usage": {
+        "inputTokens": 10,
+        "outputTokens": 4,
+        "totalTokens": 14,
+        "cacheReadInputTokens": 0,
+        "cacheWriteInputTokens": 0
+      },
+      "estimatedTokenCostUsd": 9.9e-05
+    }
+  ],
+  "legalTermsUrl": "https://aws.amazon.com/legal/bedrock/third-party-models/",
+  "identityMatchesAuthorizedRootAccount": true,
+  "runningOrPendingUsEast1Instances": [],
+  "publicIpUnchanged": true,
+  "deepseekAgreementStatus": "AVAILABLE",
+  "gate3Status": "STOPPED_BEFORE_PROVISIONING",
+  "stopReason": "Both Claude agreements are PENDING, not AVAILABLE, despite successful minimal Converse responses. No API error returned.",
+  "resourcesCreated": 0,
+  "estimatedTokenSpendUsd": 0.000132,
+  "billingActualUsd": null
+}

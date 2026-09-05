@@ -1,0 +1,317 @@
+{
+  "outcome": "STOPPED_BEFORE_APPLICATION_DEPLOYMENT",
+  "failure": {
+    "stage": "ARM image push",
+    "exitCode": 125,
+    "exactError": "unknown flag: --platform",
+    "cause": "Temporary DOCKER_CONFIG omitted buildx plugin discovery paths; this was introduced by the operator script change."
+  },
+  "applyStartedAt": "2026-10-09T22:30:12.354827+00:00",
+  "destroyedAt": "2026-10-09T22:33:54.020444+00:00",
+  "hardDeadline": "2026-10-10T01:30:12.354827+00:00",
+  "limitUsd": 12,
+  "provisioning": {
+    "profile": "evaluation",
+    "add": 18,
+    "change": 0,
+    "destroy": 0,
+    "hosts": [
+      "api",
+      "copilot",
+      "kafka",
+      "loadgen-1",
+      "mysql",
+      "redis"
+    ]
+  },
+  "models": {
+    "target": {
+      "kind": "regional",
+      "modelId": "deepseek.v3-v1:0",
+      "invocationId": "deepseek.v3-v1:0",
+      "invocationRegion": "us-west-2",
+      "destinationRegions": [
+        "us-west-2"
+      ],
+      "foundationModelArns": [
+        "arn:aws:bedrock:us-west-2::foundation-model/deepseek.v3-v1:0"
+      ],
+      "inputUsdPerMillionTokens": 0.58,
+      "outputUsdPerMillionTokens": 1.68
+    },
+    "judge": {
+      "kind": "regional",
+      "modelId": "openai.gpt-oss-120b-1:0",
+      "invocationId": "openai.gpt-oss-120b-1:0",
+      "invocationRegion": "us-east-1",
+      "destinationRegions": [
+        "us-east-1"
+      ],
+      "foundationModelArns": [
+        "arn:aws:bedrock:us-east-1::foundation-model/openai.gpt-oss-120b-1:0"
+      ],
+      "inputUsdPerMillionTokens": 0.15,
+      "outputUsdPerMillionTokens": 0.6
+    },
+    "comparison": {
+      "kind": "regional",
+      "modelId": "openai.gpt-oss-120b-1:0",
+      "invocationId": "openai.gpt-oss-120b-1:0",
+      "invocationRegion": "us-east-1",
+      "destinationRegions": [
+        "us-east-1"
+      ],
+      "foundationModelArns": [
+        "arn:aws:bedrock:us-east-1::foundation-model/openai.gpt-oss-120b-1:0"
+      ],
+      "inputUsdPerMillionTokens": 0.15,
+      "outputUsdPerMillionTokens": 0.6
+    },
+    "comparisonJudge": {
+      "kind": "regional",
+      "modelId": "deepseek.v3-v1:0",
+      "invocationId": "deepseek.v3-v1:0",
+      "invocationRegion": "us-west-2",
+      "destinationRegions": [
+        "us-west-2"
+      ],
+      "foundationModelArns": [
+        "arn:aws:bedrock:us-west-2::foundation-model/deepseek.v3-v1:0"
+      ],
+      "inputUsdPerMillionTokens": 0.58,
+      "outputUsdPerMillionTokens": 1.68
+    }
+  },
+  "claudeCancellation": {
+    "haiku": "ValidationException: No agreement exists to cancel",
+    "sonnet": "ValidationException: No agreement exists to cancel",
+    "otherMarketplaceOrBillingChanges": false
+  },
+  "liveGptVerification": {
+    "usEast1": "AVAILABLE",
+    "usEast2": "AVAILABLE",
+    "usWest2": "AVAILABLE",
+    "toolUse": "lookup_asset called with correct assetId",
+    "strictTextJson": "FAILED: malformed JSON returned despite outputConfig.textFormat",
+    "structuredVerdictTool": "validated typed submit_verdict JSON input",
+    "newMarketplaceSubscriptionCreated": false
+  },
+  "plan": {
+    "kind": "planning assumptions; no inference measured",
+    "target": "DeepSeek-V3.1",
+    "comparison": "OpenAI gpt-oss-120b",
+    "judges": {
+      "DeepSeek target": "gpt-oss-120b",
+      "gpt-oss target": "DeepSeek-V3.1"
+    },
+    "assumedTokensPerTaskRun": {
+      "targetInput": 9000,
+      "targetOutput": 1400,
+      "judgeInput": 2000,
+      "judgeOutput": 200
+    },
+    "pricesUsdPerMillion": {
+      "deepseek": [
+        0.58,
+        1.68
+      ],
+      "gpt": [
+        0.15,
+        0.6
+      ]
+    },
+    "primary": {
+      "repeats": 3,
+      "targetUsd": 0.90864,
+      "taskJudgeUsd": 0.0504,
+      "calibrationUsd": 0.00588,
+      "warmupUsd": 0.040392,
+      "circuitPrimingUsd": 0.107712,
+      "totalUsd": 1.113024
+    },
+    "comparisonThreeRuns": {
+      "repeats": 3,
+      "targetUsd": 0.2628,
+      "taskJudgeUsd": 0.17952,
+      "calibrationUsd": 0.020944,
+      "warmupUsd": 0.01134,
+      "circuitPrimingUsd": 0.03024,
+      "totalUsd": 0.504844
+    },
+    "comparisonOneRun": {
+      "repeats": 1,
+      "targetUsd": 0.0876,
+      "taskJudgeUsd": 0.05984,
+      "calibrationUsd": 0.020944,
+      "warmupUsd": 0.00378,
+      "circuitPrimingUsd": 0.01008,
+      "totalUsd": 0.182244
+    },
+    "twoPilotsUsd": 0.061858,
+    "standaloneCalibrationsUsd": 0.026824,
+    "threeHourHostReserveUsd": 1.877104109589041,
+    "combinedHostAndInferenceEstimateUsd": 3.583654,
+    "threeRunComparisonTotalUsd": 1.70655,
+    "oneRunComparisonTotalUsd": 1.38395,
+    "doubleTokenSensitivityUsd": 3.4131,
+    "assumptions": "Includes two three-task pilots and 14 judge calibration calls in two standalone checks plus each pilot/full invocation (84 total); no calibration reuse. Includes full-suite outage warm-up/probes. Excludes AWS host costs and any unknown failed-call usage. Use actual pilot tokens before deciding full-run allowance; never subtract credits."
+  },
+  "estimatedHostSpendUsd": 0.03337429,
+  "returnedUsageTokenCostUsd": 0.0004599,
+  "estimatedGrossSpendUsd": 0.03383419,
+  "actualBilledSpendUsd": null,
+  "billingCaveat": "Returned usage was measured; monetary values use AWS list prices and conservative whole-fleet destroy completion, not a billed invoice. Credits not subtracted.",
+  "evaluation": {
+    "calibrationGpt": "NOT_RUN",
+    "calibrationDeepseek": "NOT_RUN",
+    "pilot": "NOT_RUN",
+    "full": "NOT_RUN",
+    "modelResults": [
+      {
+        "target": "deepseek.v3-v1:0",
+        "judge": "openai.gpt-oss-120b-1:0",
+        "plannedRuns": 120,
+        "attemptedRuns": 0,
+        "successRate": null,
+        "pass3": null,
+        "leaks": null,
+        "judgeCalibrationAccuracy": null,
+        "meanLatencySeconds": null,
+        "tokensPerTask": null,
+        "costPerTaskUsd": null
+      },
+      {
+        "target": "openai.gpt-oss-120b-1:0",
+        "judge": "deepseek.v3-v1:0",
+        "plannedRuns": 120,
+        "attemptedRuns": 0,
+        "successRate": null,
+        "pass3": null,
+        "leaks": null,
+        "judgeCalibrationAccuracy": null,
+        "meanLatencySeconds": null,
+        "tokensPerTask": null,
+        "costPerTaskUsd": null
+      }
+    ],
+    "categoryPlannedTasks": {
+      "lookup": 6,
+      "multi_step": 6,
+      "aggregation": 6,
+      "empty": 4,
+      "clarification": 3,
+      "write_action": 3,
+      "cross_tenant": 2,
+      "prompt_injection": 3,
+      "degraded_dependency": 3,
+      "multi_turn": 4
+    },
+    "capabilityGaps": [
+      {
+        "id": "name-lookup",
+        "gap": "No vessel-name lookup tool or vessel names in status responses."
+      },
+      {
+        "id": "inside-fleet",
+        "gap": "No complete asset inventory or bulk confirmed-state listing; GEO discovery is not a complete confirmed-state inventory."
+      },
+      {
+        "id": "name-gap-followup",
+        "gap": "No vessel-name resolver; asking for an MMSI is honest but does not complete the task."
+      }
+    ],
+    "humanReview": "PENDING"
+  },
+  "verification": {
+    "maven": {
+      "tests": 139,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "evaluationUnitTests": 47,
+    "benchmarkUnitTests": 23,
+    "terraformMockTests": 2,
+    "publicSafety": "PASS before every commit"
+  },
+  "cleanup": {
+    "terraformResourcesDestroyed": 18,
+    "terraformStateResources": 0,
+    "auditExitCode": 0,
+    "instanceStates": {
+      "terminated": 6
+    },
+    "Volumes": [],
+    "Snapshots": [],
+    "remainingFleetRoleCandidates": 0,
+    "remainingFleetInstanceProfileCandidates": 0,
+    "taggingApiRecordKinds": {
+      "instance": 19,
+      "volume": 6
+    },
+    "taggingCaveat": "Tagging API still returns deleted/terminated records; direct EC2 queries confirm no active fleet or tagged volumes.",
+    "hostArchives": [
+      {
+        "host": "api",
+        "exitCode": 0,
+        "files": [
+          "cloud-init-output.log",
+          "cloud-init.log"
+        ],
+        "bytes": 17744,
+        "sha256": "48de475172a28408edd685e5135914a5572d9b3cbcc9ab71172a2224af95e26e"
+      },
+      {
+        "host": "copilot",
+        "exitCode": 0,
+        "files": [
+          "cloud-init-output.log",
+          "cloud-init.log"
+        ],
+        "bytes": 17696,
+        "sha256": "8a5103eda3b62db49844170479141d175ff07625beecd675d6d347cde7190ce9"
+      },
+      {
+        "host": "kafka",
+        "exitCode": 0,
+        "files": [
+          "cloud-init-output.log",
+          "cloud-init.log"
+        ],
+        "bytes": 17815,
+        "sha256": "863ed11da2ae5beef75170158a389d52dc470d58f418969611b8972de178203b"
+      },
+      {
+        "host": "loadgen-1",
+        "exitCode": 0,
+        "files": [
+          "cloud-init-output.log",
+          "cloud-init.log"
+        ],
+        "bytes": 17671,
+        "sha256": "9b9194e7ad936ab3b9e675ff9a22f4d985b03064ace93da4b1d4f8112a5332f1"
+      },
+      {
+        "host": "mysql",
+        "exitCode": 0,
+        "files": [
+          "cloud-init-output.log",
+          "cloud-init.log"
+        ],
+        "bytes": 17767,
+        "sha256": "b35d0d7d21b6063d3b732038c758c187660ae77f20371766370fec49dd1ac6a6"
+      },
+      {
+        "host": "redis",
+        "exitCode": 0,
+        "files": [
+          "cloud-init-output.log",
+          "cloud-init.log"
+        ],
+        "bytes": 17768,
+        "sha256": "f2103dad285cb76cc5a2784414ba2faa0fff79fe401cf4d7632520364d79a84a"
+      }
+    ],
+    "automation": "PAUSED"
+  }
+}

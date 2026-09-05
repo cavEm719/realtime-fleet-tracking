@@ -1,0 +1,22 @@
+{
+  "destroyedAt": "2026-10-09T20:07:31.102002+00:00",
+  "terraformDestroyedResources": 30,
+  "terraformStateResources": 0,
+  "auditExitCode": 0,
+  "taggingApiRecordsByKind": {
+    "instance": 14,
+    "volume": 14
+  },
+  "ec2States": {
+    "terminated": 14
+  },
+  "Volumes": [],
+  "Snapshots": [],
+  "candidateRemainingFleetRoles": 0,
+  "candidateRemainingFleetInstanceProfiles": 0,
+  "caveat": "Tagging API returned instance/volume records immediately after destruction. EC2 confirms every instance terminated and no tagged volumes exist. No non-EC2 resource ARN was returned.",
+  "estimatedGrossSpendUsd": 4.340777,
+  "bedrockSpendUsd": 0,
+  "estimateCaveat": "Conservative runbook-price estimate to whole-fleet destroy completion, not an invoice; credits not subtracted.",
+  "cleanupAutomationStatus": "PAUSED"
+}

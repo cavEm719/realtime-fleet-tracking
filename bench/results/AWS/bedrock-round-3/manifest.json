@@ -1,0 +1,78 @@
+{
+  "resourceRegion": "us-east-1",
+  "tracingEnabled": false,
+  "fixedNow": "2024-01-08T12:00:00Z",
+  "fixtureSha256": "ae998bb78173e8c3e56a627798c665ed5ee5ef6db4d236b1a38b4c84e2417c1c",
+  "taskVersion": 2,
+  "checkerVersion": "review-v2",
+  "bedrock": {
+    "target": {
+      "kind": "regional",
+      "modelId": "deepseek.v3-v1:0",
+      "invocationId": "deepseek.v3-v1:0",
+      "invocationRegion": "us-west-2",
+      "destinationRegions": [
+        "us-west-2"
+      ],
+      "foundationModelArns": [
+        "arn:aws:bedrock:us-west-2::foundation-model/deepseek.v3-v1:0"
+      ],
+      "inputUsdPerMillionTokens": 0.58,
+      "outputUsdPerMillionTokens": 1.68
+    },
+    "judge": {
+      "kind": "regional",
+      "modelId": "openai.gpt-oss-120b-1:0",
+      "invocationId": "openai.gpt-oss-120b-1:0",
+      "invocationRegion": "us-east-1",
+      "destinationRegions": [
+        "us-east-1"
+      ],
+      "foundationModelArns": [
+        "arn:aws:bedrock:us-east-1::foundation-model/openai.gpt-oss-120b-1:0"
+      ],
+      "inputUsdPerMillionTokens": 0.15,
+      "outputUsdPerMillionTokens": 0.6
+    },
+    "comparison": {
+      "kind": "regional",
+      "modelId": "openai.gpt-oss-120b-1:0",
+      "invocationId": "openai.gpt-oss-120b-1:0",
+      "invocationRegion": "us-east-1",
+      "destinationRegions": [
+        "us-east-1"
+      ],
+      "foundationModelArns": [
+        "arn:aws:bedrock:us-east-1::foundation-model/openai.gpt-oss-120b-1:0"
+      ],
+      "inputUsdPerMillionTokens": 0.15,
+      "outputUsdPerMillionTokens": 0.6
+    },
+    "comparisonJudge": {
+      "kind": "inference-profile",
+      "modelId": "meta.llama4-maverick-17b-instruct-v1:0",
+      "invocationId": "us.meta.llama4-maverick-17b-instruct-v1:0",
+      "invocationRegion": "us-east-1",
+      "destinationRegions": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-2"
+      ],
+      "profileArn": "arn:aws:bedrock:us-east-1:<ACCOUNT_ID>:inference-profile/us.meta.llama4-maverick-17b-instruct-v1:0",
+      "foundationModelArns": [
+        "arn:aws:bedrock:us-east-1::foundation-model/meta.llama4-maverick-17b-instruct-v1:0",
+        "arn:aws:bedrock:us-east-2::foundation-model/meta.llama4-maverick-17b-instruct-v1:0",
+        "arn:aws:bedrock:us-west-2::foundation-model/meta.llama4-maverick-17b-instruct-v1:0"
+      ],
+      "inputUsdPerMillionTokens": 0.24,
+      "outputUsdPerMillionTokens": 0.97
+    }
+  },
+  "humanReview": "PENDING",
+  "judgeForDeepSeek": "gpt-oss-120b; 14/14 calibration",
+  "judgeForGpt": "unavailable: Mistral and Maverick rejected forced verdict requests",
+  "targetImageTag": "review-v2-round3-fixed",
+  "sourceGradesPreserved": true,
+  "uniformOfflineRegrade": true,
+  "originalRunnerScoresPreserved": true
+}

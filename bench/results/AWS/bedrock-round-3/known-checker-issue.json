@@ -1,0 +1,18 @@
+{
+  "checkerVersion": "review-v2",
+  "issue": "nine digits inside a returned event_id are misclassified as a vessel identifier",
+  "scoreCorrectionApplied": false,
+  "cases": [
+    {
+      "model": "gpt-oss-120b",
+      "task": "houston-week",
+      "trial": 1,
+      "checkerError": "fabricated vessel 453431085",
+      "returnedEventIdsContainingSubstring": [
+        "24270e3ed7d194cfd453431085fecc386ba0b167990ad1c57ff7e95433651314"
+      ],
+      "frozenScoreUnchanged": true,
+      "review": "PENDING"
+    }
+  ]
+}

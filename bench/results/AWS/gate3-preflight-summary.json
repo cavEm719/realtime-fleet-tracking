@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-09T20:41:19.193444+00:00",
+  "status": "STOPPED_BEFORE_PROVISIONING",
+  "reason": "Both Claude agreementAvailability statuses are NOT_AVAILABLE; operator requires stopping before creating resources.",
+  "identity": "arn:aws:iam::<ACCOUNT_ID>:root",
+  "identityMatchesAuthorizedAccount": true,
+  "runningOrPendingInstancesUsEast1": [],
+  "publicIpUnchanged": true,
+  "models": {
+    "deepseek": {
+      "modelId": "deepseek.v3-v1",
+      "agreementAvailability": {
+        "status": "AVAILABLE"
+      },
+      "authorizationStatus": "AUTHORIZED",
+      "entitlementAvailability": "AVAILABLE",
+      "regionAvailability": "AVAILABLE"
+    },
+    "haiku": {
+      "modelId": "anthropic.claude-haiku-4-5-20251001-v1",
+      "agreementAvailability": {
+        "status": "NOT_AVAILABLE"
+      },
+      "authorizationStatus": "AUTHORIZED",
+      "entitlementAvailability": "AVAILABLE",
+      "regionAvailability": "AVAILABLE"
+    },
+    "sonnet": {
+      "modelId": "anthropic.claude-sonnet-4-6",
+      "agreementAvailability": {
+        "status": "NOT_AVAILABLE"
+      },
+      "authorizationStatus": "AUTHORIZED",
+      "entitlementAvailability": "AVAILABLE",
+      "regionAvailability": "AVAILABLE"
+    }
+  },
+  "claudeProfilesActive": true,
+  "claudeProfileDestinations": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "resourcesCreated": 0,
+  "inferenceCalls": 0,
+  "sessionEstimatedSpendUsd": 0
+}
