@@ -1,0 +1,194 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-07T22:45:46.680-04:00  INFO 46862 --- [fleet-gateway] [           main] dev.fleet.gateway.GatewayApplication     : Starting GatewayApplication v0.1.0-SNAPSHOT using Java 21.0.12.1 with PID 46862 (<PROJECT_ROOT>/gateway/target/gateway-0.1.0-SNAPSHOT-exec.jar started by mzh in <PROJECT_ROOT>)
+2026-10-07T22:45:46.681-04:00  INFO 46862 --- [fleet-gateway] [           main] dev.fleet.gateway.GatewayApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-10-07T22:45:46.981-04:00  INFO 46862 --- [fleet-gateway] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-07T22:45:46.982-04:00  INFO 46862 --- [fleet-gateway] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-07T22:45:46.991-04:00  INFO 46862 --- [fleet-gateway] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-10-07T22:45:47.138-04:00  INFO 46862 --- [fleet-gateway] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 18082 (http)
+2026-10-07T22:45:47.143-04:00  INFO 46862 --- [fleet-gateway] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-07T22:45:47.143-04:00  INFO 46862 --- [fleet-gateway] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-10-07T22:45:47.151-04:00  INFO 46862 --- [fleet-gateway] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-07T22:45:47.151-04:00  INFO 46862 --- [fleet-gateway] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 454 ms
+2026-10-07T22:45:47.491-04:00  INFO 46862 --- [fleet-gateway] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-10-07T22:45:47.523-04:00  INFO 46862 --- [fleet-gateway] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 18082 (http) with context path '/'
+2026-10-07T22:45:47.534-04:00  INFO 46862 --- [fleet-gateway] [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:19092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2026-10-07T22:45:47.549-04:00  INFO 46862 --- [fleet-gateway] [           main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2026-10-07T22:45:47.593-04:00  INFO 46862 --- [fleet-gateway] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.9.2
+2026-10-07T22:45:47.593-04:00  INFO 46862 --- [fleet-gateway] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 5e9866f43ab8e7e4
+2026-10-07T22:45:47.593-04:00  INFO 46862 --- [fleet-gateway] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1791427547592
+2026-10-07T22:45:47.597-04:00  INFO 46862 --- [fleet-gateway] [           main] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Subscribed to topic(s): fence-events
+2026-10-07T22:45:47.731-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-10-07T22:45:47.731-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Discovered group coordinator localhost:19092 (id: 2147483646 rack: null)
+2026-10-07T22:45:47.732-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] (Re-)joining group
+2026-10-07T22:45:47.736-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Request joining group due to: need to re-join with the given member-id: consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1-14a69f7f-6c5e-499d-896b-a84a69a50073
+2026-10-07T22:45:47.736-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] (Re-)joining group
+2026-10-07T22:45:47.766-04:00  INFO 46862 --- [fleet-gateway] [           main] dev.fleet.gateway.GatewayApplication     : Started GatewayApplication in 1.239 seconds (process running for 1.405)
+2026-10-07T22:45:47.897-04:00  INFO 46862 --- [fleet-gateway] [omcat-handler-0] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-07T22:45:47.897-04:00  INFO 46862 --- [fleet-gateway] [omcat-handler-0] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-07T22:45:47.897-04:00  INFO 46862 --- [fleet-gateway] [omcat-handler-0] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-10-07T22:45:50.742-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Successfully joined group with generation Generation{generationId=1, memberId='consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1-14a69f7f-6c5e-499d-896b-a84a69a50073', protocol='range'}
+2026-10-07T22:45:50.745-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Finished assignment for group at generation 1: {consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1-14a69f7f-6c5e-499d-896b-a84a69a50073=Assignment(partitions=[fence-events-0, fence-events-1, fence-events-2, fence-events-3, fence-events-4, fence-events-5, fence-events-6, fence-events-7, fence-events-8, fence-events-9, fence-events-10, fence-events-11])}
+2026-10-07T22:45:50.748-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Successfully synced group in generation Generation{generationId=1, memberId='consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1-14a69f7f-6c5e-499d-896b-a84a69a50073', protocol='range'}
+2026-10-07T22:45:50.749-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Notifying assignor about the new Assignment(partitions=[fence-events-0, fence-events-1, fence-events-2, fence-events-3, fence-events-4, fence-events-5, fence-events-6, fence-events-7, fence-events-8, fence-events-9, fence-events-10, fence-events-11])
+2026-10-07T22:45:50.750-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Adding newly assigned partitions: fence-events-0, fence-events-1, fence-events-2, fence-events-3, fence-events-4, fence-events-5, fence-events-6, fence-events-7, fence-events-8, fence-events-9, fence-events-10, fence-events-11
+2026-10-07T22:45:50.752-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-8
+2026-10-07T22:45:50.752-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-7
+2026-10-07T22:45:50.752-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-10
+2026-10-07T22:45:50.752-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-9
+2026-10-07T22:45:50.752-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-11
+2026-10-07T22:45:50.752-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-0
+2026-10-07T22:45:50.752-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-2
+2026-10-07T22:45:50.752-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-1
+2026-10-07T22:45:50.752-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-4
+2026-10-07T22:45:50.752-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-3
+2026-10-07T22:45:50.752-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-6
+2026-10-07T22:45:50.752-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-5
+2026-10-07T22:45:50.754-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-8
+2026-10-07T22:45:50.754-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-7
+2026-10-07T22:45:50.754-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-10
+2026-10-07T22:45:50.754-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-9
+2026-10-07T22:45:50.754-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-11
+2026-10-07T22:45:50.754-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-0
+2026-10-07T22:45:50.754-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-2
+2026-10-07T22:45:50.754-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-1
+2026-10-07T22:45:50.754-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-4
+2026-10-07T22:45:50.754-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-3
+2026-10-07T22:45:50.754-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-6
+2026-10-07T22:45:50.754-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Found no committed offset for partition fence-events-5
+2026-10-07T22:45:50.759-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Resetting offset for partition fence-events-8 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:45:50.759-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Resetting offset for partition fence-events-7 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:45:50.760-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Resetting offset for partition fence-events-10 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:45:50.760-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Resetting offset for partition fence-events-9 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:45:50.760-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Resetting offset for partition fence-events-11 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:45:50.760-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Resetting offset for partition fence-events-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:45:50.760-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Resetting offset for partition fence-events-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:45:50.760-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Resetting offset for partition fence-events-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:45:50.760-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Resetting offset for partition fence-events-4 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:45:50.760-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Resetting offset for partition fence-events-3 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:45:50.760-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Resetting offset for partition fence-events-6 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:45:50.760-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Resetting offset for partition fence-events-5 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:45:50.763-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.s.k.l.KafkaMessageListenerContainer    : fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d: partitions assigned: [fence-events-0, fence-events-1, fence-events-2, fence-events-3, fence-events-4, fence-events-5, fence-events-6, fence-events-7, fence-events-8, fence-events-9, fence-events-10, fence-events-11]
+2026-10-07T22:46:12.898-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Revoke previously assigned partitions fence-events-0, fence-events-1, fence-events-2, fence-events-3, fence-events-4, fence-events-5, fence-events-6, fence-events-7, fence-events-8, fence-events-9, fence-events-10, fence-events-11
+2026-10-07T22:46:12.898-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.s.k.l.KafkaMessageListenerContainer    : fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d: partitions revoked: [fence-events-0, fence-events-1, fence-events-2, fence-events-3, fence-events-4, fence-events-5, fence-events-6, fence-events-7, fence-events-8, fence-events-9, fence-events-10, fence-events-11]
+2026-10-07T22:46:12.899-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Member consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1-14a69f7f-6c5e-499d-896b-a84a69a50073 sending LeaveGroup request to coordinator localhost:19092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2026-10-07T22:46:12.899-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-10-07T22:46:12.899-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Request joining group due to: consumer pro-actively leaving the group
+2026-10-07T22:46:12.899-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Unsubscribed all topics or patterns and assigned partitions
+2026-10-07T22:46:12.900-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-10-07T22:46:12.900-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1, groupId=fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d] Request joining group due to: consumer pro-actively leaving the group
+2026-10-07T22:46:12.929-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2026-10-07T22:46:12.929-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-10-07T22:46:12.929-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2026-10-07T22:46:12.929-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2026-10-07T22:46:12.932-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d-1 unregistered
+2026-10-07T22:46:12.932-04:00  INFO 46862 --- [fleet-gateway] [        kafka-1] o.s.k.l.KafkaMessageListenerContainer    : fleet-gateway-0c4c8781-079f-4457-affd-baa83b1da23d: Consumer stopped
+2026-10-07T22:46:12.933-04:00  INFO 46862 --- [fleet-gateway] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-07T22:46:12.936-04:00  INFO 46862 --- [fleet-gateway] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

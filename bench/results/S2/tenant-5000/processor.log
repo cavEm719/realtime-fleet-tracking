@@ -1,0 +1,798 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-07T22:46:54.942-04:00  INFO 46981 --- [fleet-processor] [           main] d.fleet.processor.ProcessorApplication   : Starting ProcessorApplication v0.1.0-SNAPSHOT using Java 21.0.12.1 with PID 46981 (<PROJECT_ROOT>/processor/target/processor-0.1.0-SNAPSHOT-exec.jar started by mzh in <PROJECT_ROOT>)
+2026-10-07T22:46:54.942-04:00  INFO 46981 --- [fleet-processor] [           main] d.fleet.processor.ProcessorApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-10-07T22:46:55.321-04:00  INFO 46981 --- [fleet-processor] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-07T22:46:55.322-04:00  INFO 46981 --- [fleet-processor] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-07T22:46:55.328-04:00  INFO 46981 --- [fleet-processor] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2026-10-07T22:46:55.551-04:00  INFO 46981 --- [fleet-processor] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 18081 (http)
+2026-10-07T22:46:55.557-04:00  INFO 46981 --- [fleet-processor] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-07T22:46:55.557-04:00  INFO 46981 --- [fleet-processor] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-10-07T22:46:55.566-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-07T22:46:55.566-04:00  INFO 46981 --- [fleet-processor] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 605 ms
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        null 
+2026-10-07T22:46:55.851-04:00  INFO 46981 --- [fleet-processor] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-07T22:46:55.993-04:00  INFO 46981 --- [fleet-processor] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@248d2cec
+2026-10-07T22:46:55.994-04:00  INFO 46981 --- [fleet-processor] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-07T22:46:56.013-04:00  INFO 46981 --- [fleet-processor] [           main] d.f.p.geofence.GeofenceConfiguration     : Loaded 8 circular fences into grid index
+2026-10-07T22:46:56.152-04:00  INFO 46981 --- [fleet-processor] [           main] b.m.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@41dd05a
+2026-10-07T22:46:56.240-04:00  INFO 46981 --- [fleet-processor] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-10-07T22:46:56.278-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:19092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = fleet-processor-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2026-10-07T22:46:56.324-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.9.2
+2026-10-07T22:46:56.325-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 5e9866f43ab8e7e4
+2026-10-07T22:46:56.325-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1791427616324
+2026-10-07T22:46:56.474-04:00  INFO 46981 --- [fleet-processor] [ocessor-admin-0] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for fleet-processor-admin-0 unregistered
+2026-10-07T22:46:56.476-04:00  INFO 46981 --- [fleet-processor] [ocessor-admin-0] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2026-10-07T22:46:56.476-04:00  INFO 46981 --- [fleet-processor] [ocessor-admin-0] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-10-07T22:46:56.476-04:00  INFO 46981 --- [fleet-processor] [ocessor-admin-0] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2026-10-07T22:46:56.480-04:00  INFO 46981 --- [fleet-processor] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 18081 (http) with context path '/'
+2026-10-07T22:46:56.488-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2026-10-07T22:46:56.501-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2026-10-07T22:46:56.517-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.9.2
+2026-10-07T22:46:56.517-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 5e9866f43ab8e7e4
+2026-10-07T22:46:56.517-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1791427616517
+2026-10-07T22:46:56.522-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Subscribed to topic(s): fence-changes
+2026-10-07T22:46:56.524-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-position-listener-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = position-listener
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2026-10-07T22:46:56.524-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2026-10-07T22:46:56.526-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.9.2
+2026-10-07T22:46:56.527-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 5e9866f43ab8e7e4
+2026-10-07T22:46:56.527-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1791427616526
+2026-10-07T22:46:56.528-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Subscribed to topic(s): positions
+2026-10-07T22:46:56.529-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-position-listener-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = position-listener
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2026-10-07T22:46:56.530-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-10-07T22:46:56.530-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2026-10-07T22:46:56.530-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Discovered group coordinator localhost:19092 (id: 2147483646 rack: null)
+2026-10-07T22:46:56.531-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] (Re-)joining group
+2026-10-07T22:46:56.531-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.9.2
+2026-10-07T22:46:56.531-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 5e9866f43ab8e7e4
+2026-10-07T22:46:56.531-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1791427616531
+2026-10-07T22:46:56.534-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Subscribed to topic(s): positions
+2026-10-07T22:46:56.535-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-position-listener-4
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = position-listener
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2026-10-07T22:46:56.536-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2026-10-07T22:46:56.537-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Request joining group due to: need to re-join with the given member-id: consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1-2d954b11-ab21-4ea5-920d-38817dcd3e2b
+2026-10-07T22:46:56.537-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] (Re-)joining group
+2026-10-07T22:46:56.537-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.9.2
+2026-10-07T22:46:56.537-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 5e9866f43ab8e7e4
+2026-10-07T22:46:56.537-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1791427616537
+2026-10-07T22:46:56.539-04:00  INFO 46981 --- [fleet-processor] [           main] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Subscribed to topic(s): positions
+2026-10-07T22:46:56.543-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-10-07T22:46:56.543-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-10-07T22:46:56.543-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Discovered group coordinator localhost:19092 (id: 2147483646 rack: null)
+2026-10-07T22:46:56.543-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-10-07T22:46:56.543-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Discovered group coordinator localhost:19092 (id: 2147483646 rack: null)
+2026-10-07T22:46:56.543-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Discovered group coordinator localhost:19092 (id: 2147483646 rack: null)
+2026-10-07T22:46:56.543-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] (Re-)joining group
+2026-10-07T22:46:56.544-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] (Re-)joining group
+2026-10-07T22:46:56.544-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] (Re-)joining group
+2026-10-07T22:46:56.546-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Request joining group due to: need to re-join with the given member-id: consumer-position-listener-3-ca7f2207-0f67-48d2-98b8-a65ca40ac2bc
+2026-10-07T22:46:56.546-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Request joining group due to: need to re-join with the given member-id: consumer-position-listener-2-b6ac3d34-f033-44e7-8521-6fcea3ad80de
+2026-10-07T22:46:56.546-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Request joining group due to: need to re-join with the given member-id: consumer-position-listener-4-106b16b1-55e2-4fc0-a6dc-d841ddef3da1
+2026-10-07T22:46:56.546-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] (Re-)joining group
+2026-10-07T22:46:56.546-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] (Re-)joining group
+2026-10-07T22:46:56.546-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] (Re-)joining group
+2026-10-07T22:46:56.549-04:00  INFO 46981 --- [fleet-processor] [           main] d.fleet.processor.ProcessorApplication   : Started ProcessorApplication in 1.77 seconds (process running for 1.94)
+2026-10-07T22:46:56.645-04:00  INFO 46981 --- [fleet-processor] [omcat-handler-0] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-07T22:46:56.645-04:00  INFO 46981 --- [fleet-processor] [omcat-handler-0] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-07T22:46:56.645-04:00  INFO 46981 --- [fleet-processor] [omcat-handler-0] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-10-07T22:46:59.541-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Successfully joined group with generation Generation{generationId=1, memberId='consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1-2d954b11-ab21-4ea5-920d-38817dcd3e2b', protocol='range'}
+2026-10-07T22:46:59.549-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Finished assignment for group at generation 1: {consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1-2d954b11-ab21-4ea5-920d-38817dcd3e2b=Assignment(partitions=[fence-changes-0, fence-changes-1, fence-changes-2, fence-changes-3, fence-changes-4, fence-changes-5, fence-changes-6, fence-changes-7, fence-changes-8, fence-changes-9, fence-changes-10, fence-changes-11])}
+2026-10-07T22:46:59.553-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Successfully synced group in generation Generation{generationId=1, memberId='consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1-2d954b11-ab21-4ea5-920d-38817dcd3e2b', protocol='range'}
+2026-10-07T22:46:59.554-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Notifying assignor about the new Assignment(partitions=[fence-changes-0, fence-changes-1, fence-changes-2, fence-changes-3, fence-changes-4, fence-changes-5, fence-changes-6, fence-changes-7, fence-changes-8, fence-changes-9, fence-changes-10, fence-changes-11])
+2026-10-07T22:46:59.555-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Adding newly assigned partitions: fence-changes-0, fence-changes-1, fence-changes-2, fence-changes-3, fence-changes-4, fence-changes-5, fence-changes-6, fence-changes-7, fence-changes-8, fence-changes-9, fence-changes-10, fence-changes-11
+2026-10-07T22:46:59.560-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Found no committed offset for partition fence-changes-2
+2026-10-07T22:46:59.560-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Found no committed offset for partition fence-changes-1
+2026-10-07T22:46:59.560-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Found no committed offset for partition fence-changes-4
+2026-10-07T22:46:59.560-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Found no committed offset for partition fence-changes-3
+2026-10-07T22:46:59.560-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Found no committed offset for partition fence-changes-6
+2026-10-07T22:46:59.560-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Found no committed offset for partition fence-changes-5
+2026-10-07T22:46:59.560-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Found no committed offset for partition fence-changes-8
+2026-10-07T22:46:59.560-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Found no committed offset for partition fence-changes-7
+2026-10-07T22:46:59.560-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Found no committed offset for partition fence-changes-10
+2026-10-07T22:46:59.560-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Found no committed offset for partition fence-changes-9
+2026-10-07T22:46:59.560-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Found no committed offset for partition fence-changes-11
+2026-10-07T22:46:59.560-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Found no committed offset for partition fence-changes-0
+2026-10-07T22:46:59.568-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Resetting offset for partition fence-changes-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:46:59.568-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Resetting offset for partition fence-changes-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:46:59.568-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Resetting offset for partition fence-changes-4 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:46:59.568-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Resetting offset for partition fence-changes-3 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:46:59.568-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Resetting offset for partition fence-changes-6 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:46:59.568-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Resetting offset for partition fence-changes-5 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:46:59.568-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Resetting offset for partition fence-changes-8 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:46:59.568-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Resetting offset for partition fence-changes-7 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:46:59.569-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Resetting offset for partition fence-changes-10 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:46:59.569-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Resetting offset for partition fence-changes-9 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:46:59.569-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Resetting offset for partition fence-changes-11 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:46:59.569-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Resetting offset for partition fence-changes-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:46:59.569-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8: partitions assigned: [fence-changes-0, fence-changes-1, fence-changes-2, fence-changes-3, fence-changes-4, fence-changes-5, fence-changes-6, fence-changes-7, fence-changes-8, fence-changes-9, fence-changes-10, fence-changes-11]
+2026-10-07T22:47:02.554-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Successfully joined group with generation Generation{generationId=1, memberId='consumer-position-listener-4-106b16b1-55e2-4fc0-a6dc-d841ddef3da1', protocol='range'}
+2026-10-07T22:47:02.554-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Successfully joined group with generation Generation{generationId=1, memberId='consumer-position-listener-2-b6ac3d34-f033-44e7-8521-6fcea3ad80de', protocol='range'}
+2026-10-07T22:47:02.554-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Successfully joined group with generation Generation{generationId=1, memberId='consumer-position-listener-3-ca7f2207-0f67-48d2-98b8-a65ca40ac2bc', protocol='range'}
+2026-10-07T22:47:02.555-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Finished assignment for group at generation 1: {consumer-position-listener-4-106b16b1-55e2-4fc0-a6dc-d841ddef3da1=Assignment(partitions=[positions-8, positions-9, positions-10, positions-11]), consumer-position-listener-2-b6ac3d34-f033-44e7-8521-6fcea3ad80de=Assignment(partitions=[positions-0, positions-1, positions-2, positions-3]), consumer-position-listener-3-ca7f2207-0f67-48d2-98b8-a65ca40ac2bc=Assignment(partitions=[positions-4, positions-5, positions-6, positions-7])}
+2026-10-07T22:47:02.558-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Successfully synced group in generation Generation{generationId=1, memberId='consumer-position-listener-2-b6ac3d34-f033-44e7-8521-6fcea3ad80de', protocol='range'}
+2026-10-07T22:47:02.558-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Successfully synced group in generation Generation{generationId=1, memberId='consumer-position-listener-4-106b16b1-55e2-4fc0-a6dc-d841ddef3da1', protocol='range'}
+2026-10-07T22:47:02.558-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Successfully synced group in generation Generation{generationId=1, memberId='consumer-position-listener-3-ca7f2207-0f67-48d2-98b8-a65ca40ac2bc', protocol='range'}
+2026-10-07T22:47:02.558-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Notifying assignor about the new Assignment(partitions=[positions-4, positions-5, positions-6, positions-7])
+2026-10-07T22:47:02.558-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Notifying assignor about the new Assignment(partitions=[positions-0, positions-1, positions-2, positions-3])
+2026-10-07T22:47:02.558-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Notifying assignor about the new Assignment(partitions=[positions-8, positions-9, positions-10, positions-11])
+2026-10-07T22:47:02.558-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Adding newly assigned partitions: positions-4, positions-5, positions-6, positions-7
+2026-10-07T22:47:02.558-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Adding newly assigned partitions: positions-0, positions-1, positions-2, positions-3
+2026-10-07T22:47:02.558-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Adding newly assigned partitions: positions-8, positions-9, positions-10, positions-11
+2026-10-07T22:47:02.558-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Found no committed offset for partition positions-11
+2026-10-07T22:47:02.558-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Found no committed offset for partition positions-10
+2026-10-07T22:47:02.559-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Found no committed offset for partition positions-7
+2026-10-07T22:47:02.559-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Found no committed offset for partition positions-9
+2026-10-07T22:47:02.559-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Found no committed offset for partition positions-3
+2026-10-07T22:47:02.559-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Found no committed offset for partition positions-6
+2026-10-07T22:47:02.559-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Found no committed offset for partition positions-8
+2026-10-07T22:47:02.559-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Found no committed offset for partition positions-2
+2026-10-07T22:47:02.559-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Found no committed offset for partition positions-5
+2026-10-07T22:47:02.559-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Found no committed offset for partition positions-4
+2026-10-07T22:47:02.559-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Found no committed offset for partition positions-1
+2026-10-07T22:47:02.559-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Found no committed offset for partition positions-0
+2026-10-07T22:47:02.562-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Resetting offset for partition positions-3 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:47:02.562-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Resetting offset for partition positions-11 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:47:02.562-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Resetting offset for partition positions-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:47:02.562-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Resetting offset for partition positions-10 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:47:02.562-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Resetting offset for partition positions-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:47:02.562-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Resetting offset for partition positions-9 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:47:02.562-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Resetting offset for partition positions-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:47:02.562-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Resetting offset for partition positions-8 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:47:02.562-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] dev.fleet.processor.KafkaConfiguration   : Assigned [positions-8, positions-9, positions-10, positions-11]; geofence state starts in memory as OUTSIDE
+2026-10-07T22:47:02.562-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] dev.fleet.processor.KafkaConfiguration   : Assigned [positions-0, positions-1, positions-2, positions-3]; geofence state starts in memory as OUTSIDE
+2026-10-07T22:47:02.563-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Resetting offset for partition positions-7 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:47:02.563-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Resetting offset for partition positions-6 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:47:02.563-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Resetting offset for partition positions-5 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:47:02.563-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Resetting offset for partition positions-4 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:47:02.564-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] dev.fleet.processor.KafkaConfiguration   : Assigned [positions-4, positions-5, positions-6, positions-7]; geofence state starts in memory as OUTSIDE
+2026-10-07T22:47:03.655-04:00  INFO 46981 --- [fleet-processor] [   scheduling-2] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:19092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = fleet-processor-producer-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 10000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 1000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 5000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2026-10-07T22:47:03.656-04:00  INFO 46981 --- [fleet-processor] [   scheduling-2] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2026-10-07T22:47:03.663-04:00  INFO 46981 --- [fleet-processor] [   scheduling-2] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=fleet-processor-producer-1] Instantiated an idempotent producer.
+2026-10-07T22:47:03.670-04:00  INFO 46981 --- [fleet-processor] [   scheduling-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.9.2
+2026-10-07T22:47:03.671-04:00  INFO 46981 --- [fleet-processor] [   scheduling-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 5e9866f43ab8e7e4
+2026-10-07T22:47:03.671-04:00  INFO 46981 --- [fleet-processor] [   scheduling-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1791427623670
+2026-10-07T22:47:03.674-04:00  INFO 46981 --- [fleet-processor] [ssor-producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=fleet-processor-producer-1] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-10-07T22:47:03.675-04:00  INFO 46981 --- [fleet-processor] [ssor-producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=fleet-processor-producer-1] ProducerId set to 9 with epoch 0
+2026-10-07T22:47:29.559-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Revoke previously assigned partitions fence-changes-0, fence-changes-1, fence-changes-2, fence-changes-3, fence-changes-4, fence-changes-5, fence-changes-6, fence-changes-7, fence-changes-8, fence-changes-9, fence-changes-10, fence-changes-11
+2026-10-07T22:47:29.560-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8: partitions revoked: [fence-changes-0, fence-changes-1, fence-changes-2, fence-changes-3, fence-changes-4, fence-changes-5, fence-changes-6, fence-changes-7, fence-changes-8, fence-changes-9, fence-changes-10, fence-changes-11]
+2026-10-07T22:47:29.560-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Member consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1-2d954b11-ab21-4ea5-920d-38817dcd3e2b sending LeaveGroup request to coordinator localhost:19092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2026-10-07T22:47:29.560-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Revoke previously assigned partitions positions-4, positions-5, positions-6, positions-7
+2026-10-07T22:47:29.560-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] dev.fleet.processor.KafkaConfiguration   : Revoked [positions-4, positions-5, positions-6, positions-7]; synchronous batch commits have finished
+2026-10-07T22:47:29.560-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-10-07T22:47:29.560-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Member consumer-position-listener-3-ca7f2207-0f67-48d2-98b8-a65ca40ac2bc sending LeaveGroup request to coordinator localhost:19092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2026-10-07T22:47:29.560-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-10-07T22:47:29.560-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Request joining group due to: consumer pro-actively leaving the group
+2026-10-07T22:47:29.560-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Unsubscribed all topics or patterns and assigned partitions
+2026-10-07T22:47:29.560-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Revoke previously assigned partitions positions-0, positions-1, positions-2, positions-3
+2026-10-07T22:47:29.560-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] dev.fleet.processor.KafkaConfiguration   : Revoked [positions-0, positions-1, positions-2, positions-3]; synchronous batch commits have finished
+2026-10-07T22:47:29.561-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Member consumer-position-listener-2-b6ac3d34-f033-44e7-8521-6fcea3ad80de sending LeaveGroup request to coordinator localhost:19092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2026-10-07T22:47:29.561-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-10-07T22:47:29.561-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Request joining group due to: consumer pro-actively leaving the group
+2026-10-07T22:47:29.561-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Unsubscribed all topics or patterns and assigned partitions
+2026-10-07T22:47:29.562-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Revoke previously assigned partitions positions-8, positions-9, positions-10, positions-11
+2026-10-07T22:47:29.560-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Request joining group due to: consumer pro-actively leaving the group
+2026-10-07T22:47:29.562-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Unsubscribed all topics or patterns and assigned partitions
+2026-10-07T22:47:29.562-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] dev.fleet.processor.KafkaConfiguration   : Revoked [positions-8, positions-9, positions-10, positions-11]; synchronous batch commits have finished
+2026-10-07T22:47:29.562-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Member consumer-position-listener-4-106b16b1-55e2-4fc0-a6dc-d841ddef3da1 sending LeaveGroup request to coordinator localhost:19092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2026-10-07T22:47:29.562-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-10-07T22:47:29.562-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1, groupId=fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8] Request joining group due to: consumer pro-actively leaving the group
+2026-10-07T22:47:29.562-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-10-07T22:47:29.562-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-3, groupId=position-listener] Request joining group due to: consumer pro-actively leaving the group
+2026-10-07T22:47:29.563-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-10-07T22:47:29.563-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Request joining group due to: consumer pro-actively leaving the group
+2026-10-07T22:47:29.563-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-10-07T22:47:29.563-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-2, groupId=position-listener] Request joining group due to: consumer pro-actively leaving the group
+2026-10-07T22:47:29.563-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Unsubscribed all topics or patterns and assigned partitions
+2026-10-07T22:47:29.563-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-10-07T22:47:29.564-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-position-listener-4, groupId=position-listener] Request joining group due to: consumer pro-actively leaving the group
+2026-10-07T22:47:29.645-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2026-10-07T22:47:29.644-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2026-10-07T22:47:29.645-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-10-07T22:47:29.645-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-10-07T22:47:29.645-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2026-10-07T22:47:29.645-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2026-10-07T22:47:29.645-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2026-10-07T22:47:29.645-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2026-10-07T22:47:29.648-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-position-listener-3 unregistered
+2026-10-07T22:47:29.648-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-position-listener-4 unregistered
+2026-10-07T22:47:29.649-04:00  INFO 46981 --- [fleet-processor] [-listener-1-C-1] o.s.k.l.KafkaMessageListenerContainer    : position-listener: Consumer stopped
+2026-10-07T22:47:29.649-04:00  INFO 46981 --- [fleet-processor] [-listener-2-C-1] o.s.k.l.KafkaMessageListenerContainer    : position-listener: Consumer stopped
+2026-10-07T22:47:29.740-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2026-10-07T22:47:29.740-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-10-07T22:47:29.740-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2026-10-07T22:47:29.740-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2026-10-07T22:47:29.741-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-position-listener-2 unregistered
+2026-10-07T22:47:29.741-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : position-listener: Consumer stopped
+2026-10-07T22:47:29.863-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2026-10-07T22:47:29.863-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-10-07T22:47:29.863-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2026-10-07T22:47:29.863-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2026-10-07T22:47:29.865-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8-1 unregistered
+2026-10-07T22:47:29.865-04:00  INFO 46981 --- [fleet-processor] [-listener-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : fleet-fence-cache-b3d9a858-acef-44e4-afef-38698e5a6ac8: Consumer stopped
+2026-10-07T22:47:29.865-04:00  INFO 46981 --- [fleet-processor] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-07T22:47:29.867-04:00  INFO 46981 --- [fleet-processor] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-10-07T22:47:29.871-04:00  INFO 46981 --- [fleet-processor] [ionShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=fleet-processor-producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2026-10-07T22:47:29.872-04:00  INFO 46981 --- [fleet-processor] [ionShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2026-10-07T22:47:29.872-04:00  INFO 46981 --- [fleet-processor] [ionShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-10-07T22:47:29.872-04:00  INFO 46981 --- [fleet-processor] [ionShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2026-10-07T22:47:29.872-04:00  INFO 46981 --- [fleet-processor] [ionShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2026-10-07T22:47:29.872-04:00  INFO 46981 --- [fleet-processor] [ionShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for fleet-processor-producer-1 unregistered
+2026-10-07T22:47:29.875-04:00  INFO 46981 --- [fleet-processor] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-07T22:47:29.876-04:00  INFO 46981 --- [fleet-processor] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

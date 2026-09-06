@@ -1,0 +1,5 @@
+{
+  "status": "failed",
+  "error": "Command '['/opt/homebrew/opt/openjdk@21/bin/java', '-Xmx256m', '-jar', 'loadtest/target/loadtest-0.1.0-SNAPSHOT-exec.jar', 'reset-kafka', 'localhost:19092']' returned non-zero exit status 1.",
+  "finishedEpochMs": 1791427739507
+}

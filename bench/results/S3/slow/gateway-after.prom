@@ -1,0 +1,693 @@
+# HELP application_ready_time_seconds Time taken for the application to be ready to service requests
+# TYPE application_ready_time_seconds gauge
+application_ready_time_seconds{main_application_class="dev.fleet.gateway.GatewayApplication"} 1.341
+# HELP application_started_time_seconds Time taken to start the application
+# TYPE application_started_time_seconds gauge
+application_started_time_seconds{main_application_class="dev.fleet.gateway.GatewayApplication"} 1.336
+# HELP disk_free_bytes Usable space for path
+# TYPE disk_free_bytes gauge
+disk_free_bytes{path="<PROJECT_ROOT>/."} 2.83822272512E11
+# HELP disk_total_bytes Total space for path
+# TYPE disk_total_bytes gauge
+disk_total_bytes{path="<PROJECT_ROOT>/."} 4.94332366848E11
+# HELP gateway_delivery_latency_seconds  
+# TYPE gateway_delivery_latency_seconds summary
+gateway_delivery_latency_seconds_count 45675288
+gateway_delivery_latency_seconds_sum 3.8093629979E7
+# HELP gateway_delivery_latency_seconds_max  
+# TYPE gateway_delivery_latency_seconds_max gauge
+gateway_delivery_latency_seconds_max 5.119
+# HELP gateway_frames_sent_total  
+# TYPE gateway_frames_sent_total counter
+gateway_frames_sent_total 144269.0
+# HELP gateway_positions_coalesced_total  
+# TYPE gateway_positions_coalesced_total counter
+gateway_positions_coalesced_total 3.6809575E7
+# HELP gateway_sessions_open  
+# TYPE gateway_sessions_open gauge
+gateway_sessions_open 0.0
+# HELP gateway_sessions_terminated_total  
+# TYPE gateway_sessions_terminated_total counter
+gateway_sessions_terminated_total{reason="overflow"} 50.0
+gateway_sessions_terminated_total{reason="transport"} 950.0
+# HELP http_server_requests_active_seconds  
+# TYPE http_server_requests_active_seconds summary
+http_server_requests_active_seconds_count{exception="none",method="GET",outcome="SUCCESS",status="200",uri="UNKNOWN"} 1
+http_server_requests_active_seconds_sum{exception="none",method="GET",outcome="SUCCESS",status="200",uri="UNKNOWN"} 0.00366
+# HELP http_server_requests_active_seconds_max  
+# TYPE http_server_requests_active_seconds_max gauge
+http_server_requests_active_seconds_max{exception="none",method="GET",outcome="SUCCESS",status="200",uri="UNKNOWN"} 0.003662125
+# HELP http_server_requests_seconds  
+# TYPE http_server_requests_seconds summary
+http_server_requests_seconds_count{error="none",exception="none",method="GET",outcome="INFORMATIONAL",status="101",uri="/ws"} 1000
+http_server_requests_seconds_sum{error="none",exception="none",method="GET",outcome="INFORMATIONAL",status="101",uri="/ws"} 0.744645717
+http_server_requests_seconds_count{error="none",exception="none",method="GET",outcome="SUCCESS",status="200",uri="/actuator/health"} 1
+http_server_requests_seconds_sum{error="none",exception="none",method="GET",outcome="SUCCESS",status="200",uri="/actuator/health"} 0.05236525
+http_server_requests_seconds_count{error="none",exception="none",method="GET",outcome="SUCCESS",status="200",uri="/actuator/prometheus"} 2
+http_server_requests_seconds_sum{error="none",exception="none",method="GET",outcome="SUCCESS",status="200",uri="/actuator/prometheus"} 0.028723959
+# HELP http_server_requests_seconds_max  
+# TYPE http_server_requests_seconds_max gauge
+http_server_requests_seconds_max{error="none",exception="none",method="GET",outcome="INFORMATIONAL",status="101",uri="/ws"} 0.014056
+http_server_requests_seconds_max{error="none",exception="none",method="GET",outcome="SUCCESS",status="200",uri="/actuator/health"} 0.05236525
+http_server_requests_seconds_max{error="none",exception="none",method="GET",outcome="SUCCESS",status="200",uri="/actuator/prometheus"} 0.014374542
+# HELP jvm_info JVM version info
+# TYPE jvm_info gauge
+jvm_info{runtime="OpenJDK Runtime Environment",vendor="Homebrew",version="21.0.12.1"} 1
+# HELP jvm_buffer_count_buffers An estimate of the number of buffers in the pool
+# TYPE jvm_buffer_count_buffers gauge
+jvm_buffer_count_buffers{id="direct"} 117.0
+jvm_buffer_count_buffers{id="mapped"} 0.0
+jvm_buffer_count_buffers{id="mapped - 'non-volatile memory'"} 0.0
+# HELP jvm_buffer_memory_used_bytes An estimate of the memory that the Java virtual machine is using for this buffer pool
+# TYPE jvm_buffer_memory_used_bytes gauge
+jvm_buffer_memory_used_bytes{id="direct"} 1.3128682E7
+jvm_buffer_memory_used_bytes{id="mapped"} 0.0
+jvm_buffer_memory_used_bytes{id="mapped - 'non-volatile memory'"} 0.0
+# HELP jvm_buffer_total_capacity_bytes An estimate of the total capacity of the buffers in this pool
+# TYPE jvm_buffer_total_capacity_bytes gauge
+jvm_buffer_total_capacity_bytes{id="direct"} 1.3128681E7
+jvm_buffer_total_capacity_bytes{id="mapped"} 0.0
+jvm_buffer_total_capacity_bytes{id="mapped - 'non-volatile memory'"} 0.0
+# HELP jvm_classes_loaded_classes The number of classes that are currently loaded in the Java virtual machine
+# TYPE jvm_classes_loaded_classes gauge
+jvm_classes_loaded_classes 14354.0
+# HELP jvm_classes_unloaded_classes_total The number of classes unloaded in the Java virtual machine
+# TYPE jvm_classes_unloaded_classes_total counter
+jvm_classes_unloaded_classes_total 34.0
+# HELP jvm_compilation_time_ms_total The approximate accumulated elapsed time spent in compilation
+# TYPE jvm_compilation_time_ms_total counter
+jvm_compilation_time_ms_total{compiler="HotSpot 64-Bit Tiered Compilers"} 9280.0
+# HELP jvm_gc_concurrent_phase_time_seconds Time spent in concurrent phase
+# TYPE jvm_gc_concurrent_phase_time_seconds summary
+jvm_gc_concurrent_phase_time_seconds_count{action="end of concurrent GC pause",cause="No GC",gc="G1 Concurrent GC"} 56
+jvm_gc_concurrent_phase_time_seconds_sum{action="end of concurrent GC pause",cause="No GC",gc="G1 Concurrent GC"} 0.065
+# HELP jvm_gc_concurrent_phase_time_seconds_max Time spent in concurrent phase
+# TYPE jvm_gc_concurrent_phase_time_seconds_max gauge
+jvm_gc_concurrent_phase_time_seconds_max{action="end of concurrent GC pause",cause="No GC",gc="G1 Concurrent GC"} 0.012
+# HELP jvm_gc_live_data_size_bytes Size of long-lived heap memory pool after reclamation
+# TYPE jvm_gc_live_data_size_bytes gauge
+jvm_gc_live_data_size_bytes 1.59295936E8
+# HELP jvm_gc_max_data_size_bytes Max size of long-lived heap memory pool
+# TYPE jvm_gc_max_data_size_bytes gauge
+jvm_gc_max_data_size_bytes 1.073741824E9
+# HELP jvm_gc_memory_allocated_bytes_total Incremented for an increase in the size of the (young) heap memory pool after one GC to before the next
+# TYPE jvm_gc_memory_allocated_bytes_total counter
+jvm_gc_memory_allocated_bytes_total 8.9690996728E10
+# HELP jvm_gc_memory_promoted_bytes_total Count of positive increases in the size of the old generation memory pool before GC to after GC
+# TYPE jvm_gc_memory_promoted_bytes_total counter
+jvm_gc_memory_promoted_bytes_total 1.97554104E8
+# HELP jvm_gc_overhead An approximation of the percent of CPU time used by GC activities over the last lookback period or since monitoring began, whichever is shorter, in the range [0..1]
+# TYPE jvm_gc_overhead gauge
+jvm_gc_overhead 0.013583703946805924
+# HELP jvm_gc_pause_seconds Time spent in GC pause
+# TYPE jvm_gc_pause_seconds summary
+jvm_gc_pause_seconds_count{action="end of minor GC",cause="G1 Evacuation Pause",gc="G1 Young Generation"} 291
+jvm_gc_pause_seconds_sum{action="end of minor GC",cause="G1 Evacuation Pause",gc="G1 Young Generation"} 1.701
+jvm_gc_pause_seconds_count{action="end of minor GC",cause="Metadata GC Threshold",gc="G1 Young Generation"} 1
+jvm_gc_pause_seconds_sum{action="end of minor GC",cause="Metadata GC Threshold",gc="G1 Young Generation"} 0.002
+# HELP jvm_gc_pause_seconds_max Time spent in GC pause
+# TYPE jvm_gc_pause_seconds_max gauge
+jvm_gc_pause_seconds_max{action="end of minor GC",cause="G1 Evacuation Pause",gc="G1 Young Generation"} 0.019
+jvm_gc_pause_seconds_max{action="end of minor GC",cause="Metadata GC Threshold",gc="G1 Young Generation"} 0.002
+# HELP jvm_memory_committed_bytes The amount of memory in bytes that is committed for the Java virtual machine to use
+# TYPE jvm_memory_committed_bytes gauge
+jvm_memory_committed_bytes{area="heap",id="G1 Eden Space"} 3.54418688E8
+jvm_memory_committed_bytes{area="heap",id="G1 Old Gen"} 2.10763776E8
+jvm_memory_committed_bytes{area="heap",id="G1 Survivor Space"} 5242880.0
+jvm_memory_committed_bytes{area="nonheap",id="CodeHeap 'non-nmethods'"} 2555904.0
+jvm_memory_committed_bytes{area="nonheap",id="CodeHeap 'non-profiled nmethods'"} 6553600.0
+jvm_memory_committed_bytes{area="nonheap",id="CodeHeap 'profiled nmethods'"} 1.5990784E7
+jvm_memory_committed_bytes{area="nonheap",id="Compressed Class Space"} 9568256.0
+jvm_memory_committed_bytes{area="nonheap",id="Metaspace"} 7.5300864E7
+# HELP jvm_memory_max_bytes The maximum amount of memory in bytes that can be used for memory management
+# TYPE jvm_memory_max_bytes gauge
+jvm_memory_max_bytes{area="heap",id="G1 Eden Space"} -1.0
+jvm_memory_max_bytes{area="heap",id="G1 Old Gen"} 1.073741824E9
+jvm_memory_max_bytes{area="heap",id="G1 Survivor Space"} -1.0
+jvm_memory_max_bytes{area="nonheap",id="CodeHeap 'non-nmethods'"} 5849088.0
+jvm_memory_max_bytes{area="nonheap",id="CodeHeap 'non-profiled nmethods'"} 1.22912768E8
+jvm_memory_max_bytes{area="nonheap",id="CodeHeap 'profiled nmethods'"} 1.22896384E8
+jvm_memory_max_bytes{area="nonheap",id="Compressed Class Space"} 1.073741824E9
+jvm_memory_max_bytes{area="nonheap",id="Metaspace"} -1.0
+# HELP jvm_memory_usage_after_gc The percentage of long-lived heap pool used after the last GC event, in the range [0..1]
+# TYPE jvm_memory_usage_after_gc gauge
+jvm_memory_usage_after_gc{area="heap",pool="long-lived"} 0.15129807591438293
+# HELP jvm_memory_used_bytes The amount of used memory
+# TYPE jvm_memory_used_bytes gauge
+jvm_memory_used_bytes{area="heap",id="G1 Eden Space"} 3.16669952E8
+jvm_memory_used_bytes{area="heap",id="G1 Old Gen"} 1.62455072E8
+jvm_memory_used_bytes{area="heap",id="G1 Survivor Space"} 4734784.0
+jvm_memory_used_bytes{area="nonheap",id="CodeHeap 'non-nmethods'"} 1637760.0
+jvm_memory_used_bytes{area="nonheap",id="CodeHeap 'non-profiled nmethods'"} 6523264.0
+jvm_memory_used_bytes{area="nonheap",id="CodeHeap 'profiled nmethods'"} 1.5928576E7
+jvm_memory_used_bytes{area="nonheap",id="Compressed Class Space"} 9167240.0
+jvm_memory_used_bytes{area="nonheap",id="Metaspace"} 7.4419848E7
+# HELP jvm_threads_daemon_threads The current number of live daemon threads
+# TYPE jvm_threads_daemon_threads gauge
+jvm_threads_daemon_threads 71.0
+# HELP jvm_threads_live_threads The current number of live threads including both daemon and non-daemon threads
+# TYPE jvm_threads_live_threads gauge
+jvm_threads_live_threads 76.0
+# HELP jvm_threads_peak_threads The peak live thread count since the Java virtual machine started or peak was reset
+# TYPE jvm_threads_peak_threads gauge
+jvm_threads_peak_threads 77.0
+# HELP jvm_threads_started_threads_total The total number of application threads started in the JVM
+# TYPE jvm_threads_started_threads_total counter
+jvm_threads_started_threads_total 80.0
+# HELP jvm_threads_states_threads The current number of threads
+# TYPE jvm_threads_states_threads gauge
+jvm_threads_states_threads{state="blocked"} 0.0
+jvm_threads_states_threads{state="new"} 0.0
+jvm_threads_states_threads{state="runnable"} 9.0
+jvm_threads_states_threads{state="terminated"} 0.0
+jvm_threads_states_threads{state="timed-waiting"} 10.0
+jvm_threads_states_threads{state="waiting"} 57.0
+# HELP kafka_app_info_start_time_ms Metric indicating start-time-ms
+# TYPE kafka_app_info_start_time_ms gauge
+kafka_app_info_start_time_ms{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 1.791428408338E12
+# HELP kafka_consumer_commit_sync_time_ns_total The total time the consumer has spent in commitSync in nanoseconds
+# TYPE kafka_consumer_commit_sync_time_ns_total counter
+kafka_consumer_commit_sync_time_ns_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 1.04419497E8
+# HELP kafka_consumer_committed_time_ns_total The total time the consumer has spent in committed in nanoseconds
+# TYPE kafka_consumer_committed_time_ns_total counter
+kafka_consumer_committed_time_ns_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 2105750.0
+# HELP kafka_consumer_connection_close_total The total number of connections closed
+# TYPE kafka_consumer_connection_close_total counter
+kafka_consumer_connection_close_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+# HELP kafka_consumer_connection_close_rate The number of connections closed per second
+# TYPE kafka_consumer_connection_close_rate gauge
+kafka_consumer_connection_close_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+# HELP kafka_consumer_connection_count The current number of active connections.
+# TYPE kafka_consumer_connection_count gauge
+kafka_consumer_connection_count{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 3.0
+# HELP kafka_consumer_connection_creation_total The total number of new connections established
+# TYPE kafka_consumer_connection_creation_total counter
+kafka_consumer_connection_creation_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 3.0
+# HELP kafka_consumer_connection_creation_rate The number of new connections established per second
+# TYPE kafka_consumer_connection_creation_rate gauge
+kafka_consumer_connection_creation_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+# HELP kafka_consumer_coordinator_assigned_partitions The number of partitions currently assigned to this consumer
+# TYPE kafka_consumer_coordinator_assigned_partitions gauge
+kafka_consumer_coordinator_assigned_partitions{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 12.0
+# HELP kafka_consumer_coordinator_commit_total The total number of commit calls
+# TYPE kafka_consumer_coordinator_commit_total counter
+kafka_consumer_coordinator_commit_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 66.0
+# HELP kafka_consumer_coordinator_commit_latency_avg The average time taken for a commit request
+# TYPE kafka_consumer_coordinator_commit_latency_avg gauge
+kafka_consumer_coordinator_commit_latency_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.7142857142857143
+# HELP kafka_consumer_coordinator_commit_latency_max The max time taken for a commit request
+# TYPE kafka_consumer_coordinator_commit_latency_max gauge
+kafka_consumer_coordinator_commit_latency_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 2.0
+# HELP kafka_consumer_coordinator_commit_rate The number of commit calls per second
+# TYPE kafka_consumer_coordinator_commit_rate gauge
+kafka_consumer_coordinator_commit_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.24339190965292315
+# HELP kafka_consumer_coordinator_failed_rebalance_total The total number of failed rebalance events
+# TYPE kafka_consumer_coordinator_failed_rebalance_total counter
+kafka_consumer_coordinator_failed_rebalance_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 1.0
+# HELP kafka_consumer_coordinator_failed_rebalance_rate_per_hour The number of failed rebalance events per hour
+# TYPE kafka_consumer_coordinator_failed_rebalance_rate_per_hour gauge
+kafka_consumer_coordinator_failed_rebalance_rate_per_hour{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+# HELP kafka_consumer_coordinator_heartbeat_total The total number of heartbeats
+# TYPE kafka_consumer_coordinator_heartbeat_total counter
+kafka_consumer_coordinator_heartbeat_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 40.0
+# HELP kafka_consumer_coordinator_heartbeat_rate The number of heartbeats per second
+# TYPE kafka_consumer_coordinator_heartbeat_rate gauge
+kafka_consumer_coordinator_heartbeat_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.33864909796194814
+# HELP kafka_consumer_coordinator_heartbeat_response_time_max The max time taken to receive a response to a heartbeat request
+# TYPE kafka_consumer_coordinator_heartbeat_response_time_max gauge
+kafka_consumer_coordinator_heartbeat_response_time_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 7.0
+# HELP kafka_consumer_coordinator_join_total The total number of group joins
+# TYPE kafka_consumer_coordinator_join_total counter
+kafka_consumer_coordinator_join_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 1.0
+# HELP kafka_consumer_coordinator_join_rate The number of group joins per second
+# TYPE kafka_consumer_coordinator_join_rate gauge
+kafka_consumer_coordinator_join_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+# HELP kafka_consumer_coordinator_join_time_avg The average time taken for a group rejoin
+# TYPE kafka_consumer_coordinator_join_time_avg gauge
+kafka_consumer_coordinator_join_time_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} NaN
+# HELP kafka_consumer_coordinator_join_time_max The max time taken for a group rejoin
+# TYPE kafka_consumer_coordinator_join_time_max gauge
+kafka_consumer_coordinator_join_time_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} NaN
+# HELP kafka_consumer_coordinator_last_heartbeat_seconds_ago The number of seconds since the last coordinator heartbeat was sent
+# TYPE kafka_consumer_coordinator_last_heartbeat_seconds_ago gauge
+kafka_consumer_coordinator_last_heartbeat_seconds_ago{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 1.0
+# HELP kafka_consumer_coordinator_last_rebalance_seconds_ago The number of seconds since the last successful rebalance event
+# TYPE kafka_consumer_coordinator_last_rebalance_seconds_ago gauge
+kafka_consumer_coordinator_last_rebalance_seconds_ago{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 122.0
+# HELP kafka_consumer_coordinator_partition_assigned_latency_avg The average time taken for a partition-assigned rebalance listener callback
+# TYPE kafka_consumer_coordinator_partition_assigned_latency_avg gauge
+kafka_consumer_coordinator_partition_assigned_latency_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} NaN
+# HELP kafka_consumer_coordinator_partition_assigned_latency_max The max time taken for a partition-assigned rebalance listener callback
+# TYPE kafka_consumer_coordinator_partition_assigned_latency_max gauge
+kafka_consumer_coordinator_partition_assigned_latency_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} NaN
+# HELP kafka_consumer_coordinator_partition_lost_latency_avg The average time taken for a partition-lost rebalance listener callback
+# TYPE kafka_consumer_coordinator_partition_lost_latency_avg gauge
+kafka_consumer_coordinator_partition_lost_latency_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} NaN
+# HELP kafka_consumer_coordinator_partition_lost_latency_max The max time taken for a partition-lost rebalance listener callback
+# TYPE kafka_consumer_coordinator_partition_lost_latency_max gauge
+kafka_consumer_coordinator_partition_lost_latency_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} NaN
+# HELP kafka_consumer_coordinator_partition_revoked_latency_avg The average time taken for a partition-revoked rebalance listener callback
+# TYPE kafka_consumer_coordinator_partition_revoked_latency_avg gauge
+kafka_consumer_coordinator_partition_revoked_latency_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} NaN
+# HELP kafka_consumer_coordinator_partition_revoked_latency_max The max time taken for a partition-revoked rebalance listener callback
+# TYPE kafka_consumer_coordinator_partition_revoked_latency_max gauge
+kafka_consumer_coordinator_partition_revoked_latency_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} NaN
+# HELP kafka_consumer_coordinator_rebalance_total The total number of successful rebalance events, each event is composed of several failed re-trials until it succeeded
+# TYPE kafka_consumer_coordinator_rebalance_total counter
+kafka_consumer_coordinator_rebalance_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 1.0
+# HELP kafka_consumer_coordinator_rebalance_latency_total The total number of milliseconds this consumer has spent in successful rebalances since creation
+# TYPE kafka_consumer_coordinator_rebalance_latency_total counter
+kafka_consumer_coordinator_rebalance_latency_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 3017.0
+# HELP kafka_consumer_coordinator_rebalance_latency_avg The average time taken for a group to complete a successful rebalance, which may be composed of several failed re-trials until it succeeded
+# TYPE kafka_consumer_coordinator_rebalance_latency_avg gauge
+kafka_consumer_coordinator_rebalance_latency_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} NaN
+# HELP kafka_consumer_coordinator_rebalance_latency_max The max time taken for a group to complete a successful rebalance, which may be composed of several failed re-trials until it succeeded
+# TYPE kafka_consumer_coordinator_rebalance_latency_max gauge
+kafka_consumer_coordinator_rebalance_latency_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} NaN
+# HELP kafka_consumer_coordinator_rebalance_rate_per_hour The number of successful rebalance events per hour, each event is composed of several failed re-trials until it succeeded
+# TYPE kafka_consumer_coordinator_rebalance_rate_per_hour gauge
+kafka_consumer_coordinator_rebalance_rate_per_hour{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+# HELP kafka_consumer_coordinator_sync_total The total number of group syncs
+# TYPE kafka_consumer_coordinator_sync_total counter
+kafka_consumer_coordinator_sync_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 1.0
+# HELP kafka_consumer_coordinator_sync_rate The number of group syncs per second
+# TYPE kafka_consumer_coordinator_sync_rate gauge
+kafka_consumer_coordinator_sync_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+# HELP kafka_consumer_coordinator_sync_time_avg The average time taken for a group sync
+# TYPE kafka_consumer_coordinator_sync_time_avg gauge
+kafka_consumer_coordinator_sync_time_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} NaN
+# HELP kafka_consumer_coordinator_sync_time_max The max time taken for a group sync
+# TYPE kafka_consumer_coordinator_sync_time_max gauge
+kafka_consumer_coordinator_sync_time_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} NaN
+# HELP kafka_consumer_failed_authentication_total The total number of connections with failed authentication
+# TYPE kafka_consumer_failed_authentication_total counter
+kafka_consumer_failed_authentication_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+# HELP kafka_consumer_failed_authentication_rate The number of connections with failed authentication per second
+# TYPE kafka_consumer_failed_authentication_rate gauge
+kafka_consumer_failed_authentication_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+# HELP kafka_consumer_failed_reauthentication_total The total number of failed re-authentication of connections
+# TYPE kafka_consumer_failed_reauthentication_total counter
+kafka_consumer_failed_reauthentication_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+# HELP kafka_consumer_failed_reauthentication_rate The number of failed re-authentication of connections per second
+# TYPE kafka_consumer_failed_reauthentication_rate gauge
+kafka_consumer_failed_reauthentication_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+# HELP kafka_consumer_fetch_manager_bytes_consumed_total The total number of bytes consumed for a topic
+# TYPE kafka_consumer_fetch_manager_bytes_consumed_total counter
+kafka_consumer_fetch_manager_bytes_consumed_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 14225.0
+# HELP kafka_consumer_fetch_manager_bytes_consumed_rate The average number of bytes consumed per second for a topic
+# TYPE kafka_consumer_fetch_manager_bytes_consumed_rate gauge
+kafka_consumer_fetch_manager_bytes_consumed_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 58.26462803937623
+# HELP kafka_consumer_fetch_manager_fetch_total The total number of fetch requests.
+# TYPE kafka_consumer_fetch_manager_fetch_total counter
+kafka_consumer_fetch_manager_fetch_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 271.0
+# HELP kafka_consumer_fetch_manager_fetch_latency_avg The average time taken for a fetch request.
+# TYPE kafka_consumer_fetch_manager_fetch_latency_avg gauge
+kafka_consumer_fetch_manager_fetch_latency_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 462.9312977099237
+# HELP kafka_consumer_fetch_manager_fetch_latency_max The max time taken for any fetch request.
+# TYPE kafka_consumer_fetch_manager_fetch_latency_max gauge
+kafka_consumer_fetch_manager_fetch_latency_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 509.0
+# HELP kafka_consumer_fetch_manager_fetch_rate The number of fetch requests per second.
+# TYPE kafka_consumer_fetch_manager_fetch_rate gauge
+kafka_consumer_fetch_manager_fetch_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 2.1642010233579128
+# HELP kafka_consumer_fetch_manager_fetch_size_avg The average number of bytes fetched per request for a topic
+# TYPE kafka_consumer_fetch_manager_fetch_size_avg gauge
+kafka_consumer_fetch_manager_fetch_size_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 278.1818181818182
+# HELP kafka_consumer_fetch_manager_fetch_size_max The maximum number of bytes fetched per request for a topic
+# TYPE kafka_consumer_fetch_manager_fetch_size_max gauge
+kafka_consumer_fetch_manager_fetch_size_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 438.0
+# HELP kafka_consumer_fetch_manager_fetch_throttle_time_avg The average throttle time in ms
+# TYPE kafka_consumer_fetch_manager_fetch_throttle_time_avg gauge
+kafka_consumer_fetch_manager_fetch_throttle_time_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+# HELP kafka_consumer_fetch_manager_fetch_throttle_time_max The maximum throttle time in ms
+# TYPE kafka_consumer_fetch_manager_fetch_throttle_time_max gauge
+kafka_consumer_fetch_manager_fetch_throttle_time_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+# HELP kafka_consumer_fetch_manager_preferred_read_replica The current read replica for the partition, or -1 if reading from leader
+# TYPE kafka_consumer_fetch_manager_preferred_read_replica gauge
+kafka_consumer_fetch_manager_preferred_read_replica{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="0",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} -1.0
+kafka_consumer_fetch_manager_preferred_read_replica{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} -1.0
+kafka_consumer_fetch_manager_preferred_read_replica{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="10",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} -1.0
+kafka_consumer_fetch_manager_preferred_read_replica{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="11",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} -1.0
+kafka_consumer_fetch_manager_preferred_read_replica{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} -1.0
+kafka_consumer_fetch_manager_preferred_read_replica{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="3",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} -1.0
+kafka_consumer_fetch_manager_preferred_read_replica{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="4",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} -1.0
+kafka_consumer_fetch_manager_preferred_read_replica{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="5",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} -1.0
+kafka_consumer_fetch_manager_preferred_read_replica{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="6",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} -1.0
+kafka_consumer_fetch_manager_preferred_read_replica{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="7",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} -1.0
+kafka_consumer_fetch_manager_preferred_read_replica{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="8",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} -1.0
+kafka_consumer_fetch_manager_preferred_read_replica{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="9",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} -1.0
+# HELP kafka_consumer_fetch_manager_records_consumed_total The total number of records consumed for a topic
+# TYPE kafka_consumer_fetch_manager_records_consumed_total counter
+kafka_consumer_fetch_manager_records_consumed_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 65.0
+# HELP kafka_consumer_fetch_manager_records_consumed_rate The average number of records consumed per second for a topic
+# TYPE kafka_consumer_fetch_manager_records_consumed_rate gauge
+kafka_consumer_fetch_manager_records_consumed_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.266570193644205
+# HELP kafka_consumer_fetch_manager_records_lag The latest lag of the partition
+# TYPE kafka_consumer_fetch_manager_records_lag gauge
+kafka_consumer_fetch_manager_records_lag{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="0",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+kafka_consumer_fetch_manager_records_lag{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+kafka_consumer_fetch_manager_records_lag{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="10",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+kafka_consumer_fetch_manager_records_lag{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="11",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+kafka_consumer_fetch_manager_records_lag{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+kafka_consumer_fetch_manager_records_lag{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="3",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+kafka_consumer_fetch_manager_records_lag{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="4",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+kafka_consumer_fetch_manager_records_lag{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="5",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+kafka_consumer_fetch_manager_records_lag{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="6",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+kafka_consumer_fetch_manager_records_lag{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="7",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+kafka_consumer_fetch_manager_records_lag{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="8",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+kafka_consumer_fetch_manager_records_lag{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="9",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+# HELP kafka_consumer_fetch_manager_records_lag_avg The average lag of the partition
+# TYPE kafka_consumer_fetch_manager_records_lag_avg gauge
+kafka_consumer_fetch_manager_records_lag_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="0",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+kafka_consumer_fetch_manager_records_lag_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+kafka_consumer_fetch_manager_records_lag_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="10",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lag_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="11",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+kafka_consumer_fetch_manager_records_lag_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+kafka_consumer_fetch_manager_records_lag_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="3",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lag_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="4",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+kafka_consumer_fetch_manager_records_lag_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="5",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lag_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="6",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lag_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="7",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lag_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="8",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lag_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="9",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+# HELP kafka_consumer_fetch_manager_records_lag_max The max lag of the partition
+# TYPE kafka_consumer_fetch_manager_records_lag_max gauge
+kafka_consumer_fetch_manager_records_lag_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="0",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+kafka_consumer_fetch_manager_records_lag_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+kafka_consumer_fetch_manager_records_lag_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="10",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lag_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="11",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+kafka_consumer_fetch_manager_records_lag_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+kafka_consumer_fetch_manager_records_lag_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="3",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lag_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="4",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+kafka_consumer_fetch_manager_records_lag_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="5",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lag_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="6",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lag_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="7",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lag_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="8",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lag_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="9",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 0.0
+# HELP kafka_consumer_fetch_manager_records_lead The latest lead of the partition
+# TYPE kafka_consumer_fetch_manager_records_lead gauge
+kafka_consumer_fetch_manager_records_lead{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="0",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 2.0
+kafka_consumer_fetch_manager_records_lead{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 15.0
+kafka_consumer_fetch_manager_records_lead{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="10",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 1.0
+kafka_consumer_fetch_manager_records_lead{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="11",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 7.0
+kafka_consumer_fetch_manager_records_lead{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 5.0
+kafka_consumer_fetch_manager_records_lead{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="3",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 1.0
+kafka_consumer_fetch_manager_records_lead{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="4",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 8.0
+kafka_consumer_fetch_manager_records_lead{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="5",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 7.0
+kafka_consumer_fetch_manager_records_lead{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="6",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 5.0
+kafka_consumer_fetch_manager_records_lead{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="7",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 4.0
+kafka_consumer_fetch_manager_records_lead{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="8",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 4.0
+kafka_consumer_fetch_manager_records_lead{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="9",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 6.0
+# HELP kafka_consumer_fetch_manager_records_lead_avg The average lead of the partition
+# TYPE kafka_consumer_fetch_manager_records_lead_avg gauge
+kafka_consumer_fetch_manager_records_lead_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="0",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 1.5
+kafka_consumer_fetch_manager_records_lead_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 13.25
+kafka_consumer_fetch_manager_records_lead_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="10",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lead_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="11",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 7.0
+kafka_consumer_fetch_manager_records_lead_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 5.0
+kafka_consumer_fetch_manager_records_lead_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="3",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lead_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="4",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 6.0
+kafka_consumer_fetch_manager_records_lead_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="5",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lead_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="6",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lead_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="7",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lead_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="8",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lead_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="9",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 5.5
+# HELP kafka_consumer_fetch_manager_records_lead_min The min lead of the partition
+# TYPE kafka_consumer_fetch_manager_records_lead_min gauge
+kafka_consumer_fetch_manager_records_lead_min{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="0",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 1.0
+kafka_consumer_fetch_manager_records_lead_min{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 11.0
+kafka_consumer_fetch_manager_records_lead_min{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="10",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lead_min{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="11",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 7.0
+kafka_consumer_fetch_manager_records_lead_min{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 5.0
+kafka_consumer_fetch_manager_records_lead_min{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="3",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lead_min{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="4",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 4.0
+kafka_consumer_fetch_manager_records_lead_min{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="5",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lead_min{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="6",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lead_min{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="7",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lead_min{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="8",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} NaN
+kafka_consumer_fetch_manager_records_lead_min{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",partition="9",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 5.0
+# HELP kafka_consumer_fetch_manager_records_per_request_avg The average number of records in each request for a topic
+# TYPE kafka_consumer_fetch_manager_records_per_request_avg gauge
+kafka_consumer_fetch_manager_records_per_request_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",topic="fence-events"} 1.2727272727272727
+# HELP kafka_consumer_incoming_byte_total The total number of bytes read off all sockets
+# TYPE kafka_consumer_incoming_byte_total counter
+kafka_consumer_incoming_byte_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 33286.0
+# HELP kafka_consumer_incoming_byte_rate The number of bytes read off all sockets per second
+# TYPE kafka_consumer_incoming_byte_rate gauge
+kafka_consumer_incoming_byte_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 134.35133304599472
+# HELP kafka_consumer_io_ratio The fraction of time the I/O thread spent doing I/O
+# TYPE kafka_consumer_io_ratio gauge
+kafka_consumer_io_ratio{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 4.972928807819595E-4
+# HELP kafka_consumer_io_time_ns_total The total time the I/O thread spent doing I/O
+# TYPE kafka_consumer_io_time_ns_total counter
+kafka_consumer_io_time_ns_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 7.6920883E7
+# HELP kafka_consumer_io_time_ns_avg The average length of time for I/O per select call in nanoseconds.
+# TYPE kafka_consumer_io_time_ns_avg gauge
+kafka_consumer_io_time_ns_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 56877.873239436616
+# HELP kafka_consumer_io_wait_ratio The fraction of time the I/O thread spent waiting
+# TYPE kafka_consumer_io_wait_ratio gauge
+kafka_consumer_io_wait_ratio{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.9989332819518202
+# HELP kafka_consumer_io_wait_time_ns_total The total time the I/O thread spent waiting
+# TYPE kafka_consumer_io_wait_time_ns_total counter
+kafka_consumer_io_wait_time_ns_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 1.24220504284E11
+# HELP kafka_consumer_io_wait_time_ns_avg The average length of time the I/O thread spent waiting for a socket ready for reads or writes in nanoseconds.
+# TYPE kafka_consumer_io_wait_time_ns_avg gauge
+kafka_consumer_io_wait_time_ns_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 1.1425299412323944E8
+# HELP kafka_consumer_io_waittime_total *Deprecated* The total time the I/O thread spent waiting
+# TYPE kafka_consumer_io_waittime_total counter
+kafka_consumer_io_waittime_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 1.24220504284E11
+# HELP kafka_consumer_iotime_total *Deprecated* The total time the I/O thread spent doing I/O
+# TYPE kafka_consumer_iotime_total counter
+kafka_consumer_iotime_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 7.6920883E7
+# HELP kafka_consumer_last_poll_seconds_ago The number of seconds since the last poll() invocation.
+# TYPE kafka_consumer_last_poll_seconds_ago gauge
+kafka_consumer_last_poll_seconds_ago{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+# HELP kafka_consumer_network_io_total The total number of network operations (reads or writes) on all connections
+# TYPE kafka_consumer_network_io_total counter
+kafka_consumer_network_io_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 783.0
+# HELP kafka_consumer_network_io_rate The number of network operations (reads or writes) on all connections per second
+# TYPE kafka_consumer_network_io_rate gauge
+kafka_consumer_network_io_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 5.46448087431694
+# HELP kafka_consumer_node_incoming_byte_total The total number of incoming bytes
+# TYPE kafka_consumer_node_incoming_byte_total counter
+kafka_consumer_node_incoming_byte_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node--1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 1023.0
+kafka_consumer_node_incoming_byte_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 27329.0
+kafka_consumer_node_incoming_byte_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-2147483646",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 4934.0
+# HELP kafka_consumer_node_incoming_byte_rate The number of incoming bytes per second
+# TYPE kafka_consumer_node_incoming_byte_rate gauge
+kafka_consumer_node_incoming_byte_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node--1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+kafka_consumer_node_incoming_byte_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 119.70747987697139
+kafka_consumer_node_incoming_byte_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-2147483646",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 13.961363811282999
+# HELP kafka_consumer_node_outgoing_byte_total The total number of outgoing bytes
+# TYPE kafka_consumer_node_outgoing_byte_total counter
+kafka_consumer_node_outgoing_byte_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node--1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 341.0
+kafka_consumer_node_outgoing_byte_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 30734.0
+kafka_consumer_node_outgoing_byte_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-2147483646",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 28699.0
+# HELP kafka_consumer_node_outgoing_byte_rate The number of outgoing bytes per second
+# TYPE kafka_consumer_node_outgoing_byte_rate gauge
+kafka_consumer_node_outgoing_byte_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node--1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+kafka_consumer_node_outgoing_byte_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 228.3718343040377
+kafka_consumer_node_outgoing_byte_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-2147483646",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 139.9809130930025
+# HELP kafka_consumer_node_request_total The total number of requests sent
+# TYPE kafka_consumer_node_request_total counter
+kafka_consumer_node_request_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node--1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 3.0
+kafka_consumer_node_request_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 274.0
+kafka_consumer_node_request_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-2147483646",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 112.0
+# TYPE kafka_consumer_node_request_latency_avg gauge
+kafka_consumer_node_request_latency_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node--1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} NaN
+kafka_consumer_node_request_latency_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} NaN
+kafka_consumer_node_request_latency_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-2147483646",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} NaN
+# TYPE kafka_consumer_node_request_latency_max gauge
+kafka_consumer_node_request_latency_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node--1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} NaN
+kafka_consumer_node_request_latency_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} NaN
+kafka_consumer_node_request_latency_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-2147483646",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} NaN
+# HELP kafka_consumer_node_request_rate The number of requests sent per second
+# TYPE kafka_consumer_node_request_rate gauge
+kafka_consumer_node_request_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node--1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+kafka_consumer_node_request_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 2.159544532425888
+kafka_consumer_node_request_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-2147483646",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.5695286765384971
+# HELP kafka_consumer_node_request_size_avg The average size of requests sent.
+# TYPE kafka_consumer_node_request_size_avg gauge
+kafka_consumer_node_request_size_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node--1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} NaN
+kafka_consumer_node_request_size_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 105.75
+kafka_consumer_node_request_size_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-2147483646",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 245.78378378378378
+# HELP kafka_consumer_node_request_size_max The maximum size of any request sent.
+# TYPE kafka_consumer_node_request_size_max gauge
+kafka_consumer_node_request_size_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node--1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} NaN
+kafka_consumer_node_request_size_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 185.0
+kafka_consumer_node_request_size_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-2147483646",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 266.0
+# HELP kafka_consumer_node_response_total The total number of responses received
+# TYPE kafka_consumer_node_response_total counter
+kafka_consumer_node_response_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node--1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 3.0
+kafka_consumer_node_response_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 273.0
+kafka_consumer_node_response_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-2147483646",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 112.0
+# HELP kafka_consumer_node_response_rate The number of responses received per second
+# TYPE kafka_consumer_node_response_rate gauge
+kafka_consumer_node_response_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node--1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+kafka_consumer_node_response_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-1",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 2.159544532425888
+kafka_consumer_node_response_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",node_id="node-2147483646",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.569537443238667
+# HELP kafka_consumer_outgoing_byte_total The total number of outgoing bytes sent to all servers
+# TYPE kafka_consumer_outgoing_byte_total counter
+kafka_consumer_outgoing_byte_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 59774.0
+# HELP kafka_consumer_outgoing_byte_rate The number of outgoing bytes sent to all servers per second
+# TYPE kafka_consumer_outgoing_byte_rate gauge
+kafka_consumer_outgoing_byte_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 368.075117370892
+# HELP kafka_consumer_poll_idle_ratio_avg The average fraction of time the consumer's poll() is idle as opposed to waiting for the user code to process records.
+# TYPE kafka_consumer_poll_idle_ratio_avg gauge
+kafka_consumer_poll_idle_ratio_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.5267273798260357
+# HELP kafka_consumer_reauthentication_latency_avg The average latency observed due to re-authentication
+# TYPE kafka_consumer_reauthentication_latency_avg gauge
+kafka_consumer_reauthentication_latency_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} NaN
+# HELP kafka_consumer_reauthentication_latency_max The max latency observed due to re-authentication
+# TYPE kafka_consumer_reauthentication_latency_max gauge
+kafka_consumer_reauthentication_latency_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} NaN
+# HELP kafka_consumer_request_total The total number of requests sent
+# TYPE kafka_consumer_request_total counter
+kafka_consumer_request_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 389.0
+# HELP kafka_consumer_request_rate The number of requests sent per second
+# TYPE kafka_consumer_request_rate gauge
+kafka_consumer_request_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 2.724543985222812
+# HELP kafka_consumer_request_size_avg The average size of requests sent.
+# TYPE kafka_consumer_request_size_avg gauge
+kafka_consumer_request_size_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 135.09604519774012
+# HELP kafka_consumer_request_size_max The maximum size of any request sent.
+# TYPE kafka_consumer_request_size_max gauge
+kafka_consumer_request_size_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 266.0
+# HELP kafka_consumer_response_total The total number of responses received
+# TYPE kafka_consumer_response_total counter
+kafka_consumer_response_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 388.0
+# HELP kafka_consumer_response_rate The number of responses received per second
+# TYPE kafka_consumer_response_rate gauge
+kafka_consumer_response_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 2.7245859245120374
+# HELP kafka_consumer_select_total The total number of times the I/O layer checked for new I/O to perform
+# TYPE kafka_consumer_select_total counter
+kafka_consumer_select_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 1250.0
+# HELP kafka_consumer_select_rate The number of times the I/O layer checked for new I/O to perform per second
+# TYPE kafka_consumer_select_rate gauge
+kafka_consumer_select_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 8.743169398907103
+# HELP kafka_consumer_successful_authentication_total The total number of connections with successful authentication
+# TYPE kafka_consumer_successful_authentication_total counter
+kafka_consumer_successful_authentication_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+# HELP kafka_consumer_successful_authentication_no_reauth_total The total number of connections with successful authentication where the client does not support re-authentication
+# TYPE kafka_consumer_successful_authentication_no_reauth_total counter
+kafka_consumer_successful_authentication_no_reauth_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+# HELP kafka_consumer_successful_authentication_rate The number of connections with successful authentication per second
+# TYPE kafka_consumer_successful_authentication_rate gauge
+kafka_consumer_successful_authentication_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+# HELP kafka_consumer_successful_reauthentication_total The total number of successful re-authentication of connections
+# TYPE kafka_consumer_successful_reauthentication_total counter
+kafka_consumer_successful_reauthentication_total{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+# HELP kafka_consumer_successful_reauthentication_rate The number of successful re-authentication of connections per second
+# TYPE kafka_consumer_successful_reauthentication_rate gauge
+kafka_consumer_successful_reauthentication_rate{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 0.0
+# HELP kafka_consumer_time_between_poll_avg The average delay between invocations of poll() in milliseconds.
+# TYPE kafka_consumer_time_between_poll_avg gauge
+kafka_consumer_time_between_poll_avg{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 3329.3
+# HELP kafka_consumer_time_between_poll_max The max delay between invocations of poll() in milliseconds.
+# TYPE kafka_consumer_time_between_poll_max gauge
+kafka_consumer_time_between_poll_max{client_id="consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1",kafka_version="3.9.2",spring_id="kafkaConsumerFactory.consumer-fleet-gateway-249ebb72-6182-4a85-95f2-1601d4ebafb7-1"} 5003.0
+# HELP lettuce_command_completion_seconds Latency between command send and command completion (complete response received
+# TYPE lettuce_command_completion_seconds summary
+lettuce_command_completion_seconds_count{command="CLIENT",local="local:any",remote="localhost/127.0.0.1:16379"} 6
+lettuce_command_completion_seconds_sum{command="CLIENT",local="local:any",remote="localhost/127.0.0.1:16379"} 0.003248249
+lettuce_command_completion_seconds_count{command="HELLO",local="local:any",remote="localhost/127.0.0.1:16379"} 3
+lettuce_command_completion_seconds_sum{command="HELLO",local="local:any",remote="localhost/127.0.0.1:16379"} 0.008421916
+lettuce_command_completion_seconds_count{command="INFO",local="local:any",remote="localhost/127.0.0.1:16379"} 1
+lettuce_command_completion_seconds_sum{command="INFO",local="local:any",remote="localhost/127.0.0.1:16379"} 5.07042E-4
+# HELP lettuce_command_completion_seconds_max Latency between command send and command completion (complete response received
+# TYPE lettuce_command_completion_seconds_max gauge
+lettuce_command_completion_seconds_max{command="CLIENT",local="local:any",remote="localhost/127.0.0.1:16379"} 9.75292E-4
+lettuce_command_completion_seconds_max{command="HELLO",local="local:any",remote="localhost/127.0.0.1:16379"} 0.006800916
+lettuce_command_completion_seconds_max{command="INFO",local="local:any",remote="localhost/127.0.0.1:16379"} 5.07042E-4
+# HELP lettuce_command_firstresponse_seconds Latency between command send and first response (first response received)
+# TYPE lettuce_command_firstresponse_seconds summary
+lettuce_command_firstresponse_seconds_count{command="CLIENT",local="local:any",remote="localhost/127.0.0.1:16379"} 6
+lettuce_command_firstresponse_seconds_sum{command="CLIENT",local="local:any",remote="localhost/127.0.0.1:16379"} 0.003116249
+lettuce_command_firstresponse_seconds_count{command="HELLO",local="local:any",remote="localhost/127.0.0.1:16379"} 3
+lettuce_command_firstresponse_seconds_sum{command="HELLO",local="local:any",remote="localhost/127.0.0.1:16379"} 0.004499041
+lettuce_command_firstresponse_seconds_count{command="INFO",local="local:any",remote="localhost/127.0.0.1:16379"} 1
+lettuce_command_firstresponse_seconds_sum{command="INFO",local="local:any",remote="localhost/127.0.0.1:16379"} 3.69042E-4
+# HELP lettuce_command_firstresponse_seconds_max Latency between command send and first response (first response received)
+# TYPE lettuce_command_firstresponse_seconds_max gauge
+lettuce_command_firstresponse_seconds_max{command="CLIENT",local="local:any",remote="localhost/127.0.0.1:16379"} 9.6375E-4
+lettuce_command_firstresponse_seconds_max{command="HELLO",local="local:any",remote="localhost/127.0.0.1:16379"} 0.003442125
+lettuce_command_firstresponse_seconds_max{command="INFO",local="local:any",remote="localhost/127.0.0.1:16379"} 3.69042E-4
+# HELP logback_events_total Number of log events that were enabled by the effective log level
+# TYPE logback_events_total counter
+logback_events_total{level="debug"} 0.0
+logback_events_total{level="error"} 0.0
+logback_events_total{level="info"} 58.0
+logback_events_total{level="trace"} 0.0
+logback_events_total{level="warn"} 0.0
+# HELP process_cpu_time_ns_total The "cpu time" used by the Java Virtual Machine process
+# TYPE process_cpu_time_ns_total counter
+process_cpu_time_ns_total 1.02817341E11
+# HELP process_cpu_usage The "recent cpu usage" for the Java Virtual Machine process
+# TYPE process_cpu_usage gauge
+process_cpu_usage 0.035994463639192426
+# HELP process_files_max_files The maximum file descriptor count
+# TYPE process_files_max_files gauge
+process_files_max_files 1048576.0
+# HELP process_files_open_files The open file descriptor count
+# TYPE process_files_open_files gauge
+process_files_open_files 55.0
+# HELP process_start_time_seconds Start time of the process since unix epoch.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.791428407072E9
+# HELP process_uptime_seconds The uptime of the Java virtual machine
+# TYPE process_uptime_seconds gauge
+process_uptime_seconds 126.482
+# HELP spring_kafka_listener_seconds Kafka Listener Timer
+# TYPE spring_kafka_listener_seconds summary
+spring_kafka_listener_seconds_count{exception="none",name="gateway-fence-events-0",result="success"} 65
+spring_kafka_listener_seconds_sum{exception="none",name="gateway-fence-events-0",result="success"} 0.340647956
+# HELP spring_kafka_listener_seconds_max Kafka Listener Timer
+# TYPE spring_kafka_listener_seconds_max gauge
+spring_kafka_listener_seconds_max{exception="none",name="gateway-fence-events-0",result="success"} 0.103591583
+# HELP spring_kafka_template_seconds KafkaTemplate Timer
+# TYPE spring_kafka_template_seconds summary
+spring_kafka_template_seconds_count{exception="none",name="kafkaTemplate",result="success"} 0
+spring_kafka_template_seconds_sum{exception="none",name="kafkaTemplate",result="success"} 0.0
+# HELP spring_kafka_template_seconds_max KafkaTemplate Timer
+# TYPE spring_kafka_template_seconds_max gauge
+spring_kafka_template_seconds_max{exception="none",name="kafkaTemplate",result="success"} 0.0
+# HELP system_cpu_count The number of processors available to the Java virtual machine
+# TYPE system_cpu_count gauge
+system_cpu_count 10.0
+# HELP system_cpu_usage The "recent cpu usage" of the system the application is running in
+# TYPE system_cpu_usage gauge
+system_cpu_usage 0.20652451807536942
+# HELP system_load_average_1m The sum of the number of runnable entities queued to available processors and the number of runnable entities running on the available processors averaged over a period of time
+# TYPE system_load_average_1m gauge
+system_load_average_1m 3.470703125
+# HELP tasks_scheduled_execution_active_seconds  
+# TYPE tasks_scheduled_execution_active_seconds summary
+tasks_scheduled_execution_active_seconds_count{code_function="flush",code_namespace="dev.fleet.gateway.GatewayHub",exception="none",outcome="UNKNOWN"} 0
+tasks_scheduled_execution_active_seconds_sum{code_function="flush",code_namespace="dev.fleet.gateway.GatewayHub",exception="none",outcome="UNKNOWN"} 0.0
+# HELP tasks_scheduled_execution_active_seconds_max  
+# TYPE tasks_scheduled_execution_active_seconds_max gauge
+tasks_scheduled_execution_active_seconds_max{code_function="flush",code_namespace="dev.fleet.gateway.GatewayHub",exception="none",outcome="UNKNOWN"} 0.0
+# HELP tasks_scheduled_execution_seconds  
+# TYPE tasks_scheduled_execution_seconds summary
+tasks_scheduled_execution_seconds_count{code_function="flush",code_namespace="dev.fleet.gateway.GatewayHub",error="none",exception="none",outcome="SUCCESS"} 973
+tasks_scheduled_execution_seconds_sum{code_function="flush",code_namespace="dev.fleet.gateway.GatewayHub",error="none",exception="none",outcome="SUCCESS"} 21.228814125
+# HELP tasks_scheduled_execution_seconds_max  
+# TYPE tasks_scheduled_execution_seconds_max gauge
+tasks_scheduled_execution_seconds_max{code_function="flush",code_namespace="dev.fleet.gateway.GatewayHub",error="none",exception="none",outcome="SUCCESS"} 0.751039
+# HELP tomcat_sessions_active_current_sessions  
+# TYPE tomcat_sessions_active_current_sessions gauge
+tomcat_sessions_active_current_sessions 0.0
+# HELP tomcat_sessions_active_max_sessions  
+# TYPE tomcat_sessions_active_max_sessions gauge
+tomcat_sessions_active_max_sessions 0.0
+# HELP tomcat_sessions_alive_max_seconds  
+# TYPE tomcat_sessions_alive_max_seconds gauge
+tomcat_sessions_alive_max_seconds 0.0
+# HELP tomcat_sessions_created_sessions_total  
+# TYPE tomcat_sessions_created_sessions_total counter
+tomcat_sessions_created_sessions_total 0.0
+# HELP tomcat_sessions_expired_sessions_total  
+# TYPE tomcat_sessions_expired_sessions_total counter
+tomcat_sessions_expired_sessions_total 0.0
+# HELP tomcat_sessions_rejected_sessions_total  
+# TYPE tomcat_sessions_rejected_sessions_total counter
+tomcat_sessions_rejected_sessions_total 0.0
