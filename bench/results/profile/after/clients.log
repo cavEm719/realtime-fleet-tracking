@@ -1,0 +1,4 @@
+{"failed":0,"event":"ready","connectSeconds":1.247216917,"requested":5000,"connected":5000}
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "HttpClient-1-SelectorManager"
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space

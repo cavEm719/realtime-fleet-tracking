@@ -1,0 +1,350 @@
+[0.137s][info][jfr,startup] Started recording 1.
+[0.137s][info][jfr,startup] 
+[0.137s][info][jfr,startup] Use jcmd 47454 JFR.dump name=1 to copy recording data to file.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-07T22:52:50.703-04:00  INFO 47454 --- [fleet-gateway] [           main] dev.fleet.gateway.GatewayApplication     : Starting GatewayApplication v0.1.0-SNAPSHOT using Java 21.0.12.1 with PID 47454 (<PROJECT_ROOT>/gateway/target/gateway-0.1.0-SNAPSHOT-exec.jar started by mzh in <PROJECT_ROOT>)
+2026-10-07T22:52:50.704-04:00  INFO 47454 --- [fleet-gateway] [           main] dev.fleet.gateway.GatewayApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-10-07T22:52:51.017-04:00  INFO 47454 --- [fleet-gateway] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-07T22:52:51.018-04:00  INFO 47454 --- [fleet-gateway] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-07T22:52:51.027-04:00  INFO 47454 --- [fleet-gateway] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-10-07T22:52:51.177-04:00  INFO 47454 --- [fleet-gateway] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 18082 (http)
+2026-10-07T22:52:51.183-04:00  INFO 47454 --- [fleet-gateway] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-07T22:52:51.183-04:00  INFO 47454 --- [fleet-gateway] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-10-07T22:52:51.192-04:00  INFO 47454 --- [fleet-gateway] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-07T22:52:51.192-04:00  INFO 47454 --- [fleet-gateway] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 473 ms
+2026-10-07T22:52:51.573-04:00  INFO 47454 --- [fleet-gateway] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-10-07T22:52:51.606-04:00  INFO 47454 --- [fleet-gateway] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 18082 (http) with context path '/'
+2026-10-07T22:52:51.618-04:00  INFO 47454 --- [fleet-gateway] [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:19092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2026-10-07T22:52:51.635-04:00  INFO 47454 --- [fleet-gateway] [           main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2026-10-07T22:52:51.679-04:00  INFO 47454 --- [fleet-gateway] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.9.2
+2026-10-07T22:52:51.680-04:00  INFO 47454 --- [fleet-gateway] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 5e9866f43ab8e7e4
+2026-10-07T22:52:51.680-04:00  INFO 47454 --- [fleet-gateway] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1791427971679
+2026-10-07T22:52:51.684-04:00  INFO 47454 --- [fleet-gateway] [           main] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Subscribed to topic(s): fence-events
+2026-10-07T22:52:51.830-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-10-07T22:52:51.831-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Discovered group coordinator localhost:19092 (id: 2147483646 rack: null)
+2026-10-07T22:52:51.832-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] (Re-)joining group
+2026-10-07T22:52:51.834-04:00  INFO 47454 --- [fleet-gateway] [omcat-handler-0] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-07T22:52:51.834-04:00  INFO 47454 --- [fleet-gateway] [omcat-handler-0] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-07T22:52:51.835-04:00  INFO 47454 --- [fleet-gateway] [omcat-handler-0] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-10-07T22:52:51.837-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Request joining group due to: need to re-join with the given member-id: consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1-65d60a29-1c3e-4a05-aef1-0d7eef380c89
+2026-10-07T22:52:51.837-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] (Re-)joining group
+2026-10-07T22:52:51.846-04:00  INFO 47454 --- [fleet-gateway] [           main] dev.fleet.gateway.GatewayApplication     : Started GatewayApplication in 1.296 seconds (process running for 1.554)
+2026-10-07T22:52:54.845-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Successfully joined group with generation Generation{generationId=1, memberId='consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1-65d60a29-1c3e-4a05-aef1-0d7eef380c89', protocol='range'}
+2026-10-07T22:52:54.849-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Finished assignment for group at generation 1: {consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1-65d60a29-1c3e-4a05-aef1-0d7eef380c89=Assignment(partitions=[fence-events-0, fence-events-1, fence-events-2, fence-events-3, fence-events-4, fence-events-5, fence-events-6, fence-events-7, fence-events-8, fence-events-9, fence-events-10, fence-events-11])}
+2026-10-07T22:52:54.852-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Successfully synced group in generation Generation{generationId=1, memberId='consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1-65d60a29-1c3e-4a05-aef1-0d7eef380c89', protocol='range'}
+2026-10-07T22:52:54.853-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Notifying assignor about the new Assignment(partitions=[fence-events-0, fence-events-1, fence-events-2, fence-events-3, fence-events-4, fence-events-5, fence-events-6, fence-events-7, fence-events-8, fence-events-9, fence-events-10, fence-events-11])
+2026-10-07T22:52:54.855-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Adding newly assigned partitions: fence-events-0, fence-events-1, fence-events-2, fence-events-3, fence-events-4, fence-events-5, fence-events-6, fence-events-7, fence-events-8, fence-events-9, fence-events-10, fence-events-11
+2026-10-07T22:52:54.857-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-8
+2026-10-07T22:52:54.858-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-7
+2026-10-07T22:52:54.858-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-10
+2026-10-07T22:52:54.858-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-9
+2026-10-07T22:52:54.858-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-11
+2026-10-07T22:52:54.858-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-0
+2026-10-07T22:52:54.858-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-2
+2026-10-07T22:52:54.858-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-1
+2026-10-07T22:52:54.858-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-4
+2026-10-07T22:52:54.858-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-3
+2026-10-07T22:52:54.858-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-6
+2026-10-07T22:52:54.858-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-5
+2026-10-07T22:52:54.861-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-8
+2026-10-07T22:52:54.861-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-7
+2026-10-07T22:52:54.861-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-10
+2026-10-07T22:52:54.861-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-9
+2026-10-07T22:52:54.861-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-11
+2026-10-07T22:52:54.861-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-0
+2026-10-07T22:52:54.861-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-2
+2026-10-07T22:52:54.861-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-1
+2026-10-07T22:52:54.861-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-4
+2026-10-07T22:52:54.861-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-3
+2026-10-07T22:52:54.861-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-6
+2026-10-07T22:52:54.861-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Found no committed offset for partition fence-events-5
+2026-10-07T22:52:54.867-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Resetting offset for partition fence-events-8 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:52:54.868-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Resetting offset for partition fence-events-7 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:52:54.868-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Resetting offset for partition fence-events-10 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:52:54.868-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Resetting offset for partition fence-events-9 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:52:54.868-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Resetting offset for partition fence-events-11 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:52:54.868-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Resetting offset for partition fence-events-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:52:54.868-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Resetting offset for partition fence-events-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:52:54.868-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Resetting offset for partition fence-events-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:52:54.868-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Resetting offset for partition fence-events-4 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:52:54.868-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Resetting offset for partition fence-events-3 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:52:54.868-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Resetting offset for partition fence-events-6 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:52:54.868-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Resetting offset for partition fence-events-5 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2026-10-07T22:52:54.873-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.s.k.l.KafkaMessageListenerContainer    : fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4: partitions assigned: [fence-events-0, fence-events-1, fence-events-2, fence-events-3, fence-events-4, fence-events-5, fence-events-6, fence-events-7, fence-events-8, fence-events-9, fence-events-10, fence-events-11]
+Exception in thread "" java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.lang.String.encodeUTF8(String.java:1292)
+	at java.base/java.lang.String.encode(String.java:856)
+	at java.base/java.lang.String.getBytes(String.java:1807)
+	at org.springframework.web.socket.TextMessage.asBytes(TextMessage.java:74)
+	at org.springframework.web.socket.TextMessage.getPayloadLength(TextMessage.java:70)
+	at dev.fleet.gateway.ClientSession.sendLoop(ClientSession.java:156)
+	at dev.fleet.gateway.ClientSession$$Lambda/0x0000000301917330.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:314)
+	at java.base/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)
+	at java.base/java.lang.VirtualThread$VThreadContinuation$1.run(VirtualThread.java:209)
+	at java.base/jdk.internal.vm.Continuation.enter0(Continuation.java:320)
+	at java.base/jdk.internal.vm.Continuation.enter(Continuation.java:312)
+	at java.base/jdk.internal.vm.Continuation.enterSpecial(Native Method)
+2026-10-07T22:53:09.241-04:00  WARN 47454 --- [fleet-gateway] [  virtual-32501] o.s.d.r.l.RedisMessageListenerContainer  : Execution of message listener failed, and no ErrorHandler has been set
+
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.HashMap.newNode(HashMap.java:1909) ~[na:na]
+	at java.base/java.util.HashMap.putVal(HashMap.java:648) ~[na:na]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[na:na]
+	at dev.fleet.gateway.ClientSession.position(ClientSession.java:76) ~[!/:0.1.0-SNAPSHOT]
+	at dev.fleet.gateway.GatewayHub.lambda$position$0(GatewayHub.java:64) ~[!/:0.1.0-SNAPSHOT]
+	at dev.fleet.gateway.GatewayHub$$Lambda/0x0000000301937c10.accept(Unknown Source) ~[na:na]
+	at dev.fleet.gateway.SubscriptionRegistry.forEachTarget(SubscriptionRegistry.java:85) ~[!/:0.1.0-SNAPSHOT]
+	at dev.fleet.gateway.GatewayHub.position(GatewayHub.java:63) ~[!/:0.1.0-SNAPSHOT]
+	at dev.fleet.gateway.PositionSubscriber.lambda$positionSubscription$0(PositionSubscriber.java:36) ~[!/:0.1.0-SNAPSHOT]
+	at dev.fleet.gateway.PositionSubscriber$$Lambda/0x0000000301577630.onMessage(Unknown Source) ~[na:na]
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.processMessage(RedisMessageListenerContainer.java:821) ~[spring-data-redis-3.5.13.jar!/:3.5.13]
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.lambda$dispatchMessage$23(RedisMessageListenerContainer.java:978) ~[spring-data-redis-3.5.13.jar!/:3.5.13]
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer$$Lambda/0x000000030192d000.run(Unknown Source) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:314) ~[na:na]
+	at java.base/java.lang.Thread.runWith(Thread.java:1596) ~[na:na]
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329) ~[na:na]
+	at java.base/java.lang.VirtualThread$VThreadContinuation$1.run(VirtualThread.java:209) ~[na:na]
+	at java.base/jdk.internal.vm.Continuation.enter0(Continuation.java:320) ~[na:na]
+	at java.base/jdk.internal.vm.Continuation.enter(Continuation.java:312) ~[na:na]
+	at java.base/jdk.internal.vm.Continuation.enterSpecial(Native Method) ~[na:na]
+
+2026-10-07T22:53:12.679-04:00 ERROR 47454 --- [fleet-gateway] [   scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.lang.String.encodeUTF8(String.java:1292) ~[na:na]
+	at java.base/java.lang.String.encode(String.java:856) ~[na:na]
+	at java.base/java.lang.String.getBytes(String.java:1807) ~[na:na]
+	at org.springframework.web.socket.TextMessage.asBytes(TextMessage.java:74) ~[spring-websocket-6.2.19.jar!/:6.2.19]
+	at org.springframework.web.socket.TextMessage.getPayloadLength(TextMessage.java:70) ~[spring-websocket-6.2.19.jar!/:6.2.19]
+	at dev.fleet.gateway.ClientSession.enqueue(ClientSession.java:138) ~[!/:0.1.0-SNAPSHOT]
+	at dev.fleet.gateway.ClientSession.flushPositions(ClientSession.java:92) ~[!/:0.1.0-SNAPSHOT]
+	at dev.fleet.gateway.GatewayHub.flush(GatewayHub.java:78) ~[!/:0.1.0-SNAPSHOT]
+	at java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeSpecial(DirectMethodHandle$Holder) ~[na:na]
+	at java.base/java.lang.invoke.LambdaForm$MH/0x0000000301884400.invoke(LambdaForm$MH) ~[na:na]
+	at java.base/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:153) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130) ~[spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124) ~[spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable$$Lambda/0x0000000301882f98.run(Unknown Source) ~[na:na]
+	at io.micrometer.observation.Observation.observe(Observation.java:498) ~[micrometer-observation-1.15.12.jar!/:1.15.12]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124) ~[spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:87) ~[spring-context-6.2.19.jar!/:6.2.19]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.2.19.jar!/:6.2.19]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.runWith(Thread.java:1596) ~[na:na]
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329) ~[na:na]
+	at java.base/java.lang.VirtualThread$VThreadContinuation$1.run(VirtualThread.java:209) ~[na:na]
+	at java.base/jdk.internal.vm.Continuation.enter0(Continuation.java:320) ~[na:na]
+	at java.base/jdk.internal.vm.Continuation.enter(Continuation.java:312) ~[na:na]
+
+2026-10-07T22:53:13.023-04:00  WARN 47454 --- [fleet-gateway] [  virtual-32690] o.s.d.r.l.RedisMessageListenerContainer  : Execution of message listener failed, and no ErrorHandler has been set
+
+java.lang.OutOfMemoryError: Java heap space
+
+2026-10-07T22:53:13.023-04:00  WARN 47454 --- [fleet-gateway] [  virtual-32686] o.s.d.r.l.RedisMessageListenerContainer  : Execution of message listener failed, and no ErrorHandler has been set
+
+java.lang.OutOfMemoryError: Java heap space
+
+2026-10-07T22:53:13.023-04:00  WARN 47454 --- [fleet-gateway] [  virtual-32684] o.s.d.r.l.RedisMessageListenerContainer  : Execution of message listener failed, and no ErrorHandler has been set
+
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.lang.invoke.DirectMethodHandle.allocateInstance(DirectMethodHandle.java:501) ~[na:na]
+	at java.base/java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(DirectMethodHandle$Holder) ~[na:na]
+	at java.base/java.lang.invoke.Invokers$Holder.linkToTargetMethod(Invokers$Holder) ~[na:na]
+	at io.micrometer.core.instrument.MeterRegistry.registerMeterIfNecessary(MeterRegistry.java:609) ~[micrometer-core-1.15.12.jar!/:1.15.12]
+	at io.micrometer.core.instrument.MeterRegistry.counter(MeterRegistry.java:338) ~[micrometer-core-1.15.12.jar!/:1.15.12]
+	at io.micrometer.core.instrument.Counter$Builder.register(Counter.java:150) ~[micrometer-core-1.15.12.jar!/:1.15.12]
+	at io.micrometer.core.instrument.Counter$Builder.register(Counter.java:146) ~[micrometer-core-1.15.12.jar!/:1.15.12]
+	at io.micrometer.core.instrument.MeterRegistry.counter(MeterRegistry.java:442) ~[micrometer-core-1.15.12.jar!/:1.15.12]
+	at io.micrometer.core.instrument.MeterRegistry.counter(MeterRegistry.java:453) ~[micrometer-core-1.15.12.jar!/:1.15.12]
+	at dev.fleet.gateway.ClientSession.position(ClientSession.java:77) ~[!/:0.1.0-SNAPSHOT]
+	at dev.fleet.gateway.GatewayHub.lambda$position$0(GatewayHub.java:64) ~[!/:0.1.0-SNAPSHOT]
+	at dev.fleet.gateway.GatewayHub$$Lambda/0x0000000301937c10.accept(Unknown Source) ~[na:na]
+	at dev.fleet.gateway.SubscriptionRegistry.forEachTarget(SubscriptionRegistry.java:85) ~[!/:0.1.0-SNAPSHOT]
+	at dev.fleet.gateway.GatewayHub.position(GatewayHub.java:63) ~[!/:0.1.0-SNAPSHOT]
+	at dev.fleet.gateway.PositionSubscriber.lambda$positionSubscription$0(PositionSubscriber.java:36) ~[!/:0.1.0-SNAPSHOT]
+	at dev.fleet.gateway.PositionSubscriber$$Lambda/0x0000000301577630.onMessage(Unknown Source) ~[na:na]
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.processMessage(RedisMessageListenerContainer.java:821) ~[spring-data-redis-3.5.13.jar!/:3.5.13]
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.lambda$dispatchMessage$23(RedisMessageListenerContainer.java:978) ~[spring-data-redis-3.5.13.jar!/:3.5.13]
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer$$Lambda/0x000000030192d000.run(Unknown Source) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:314) ~[na:na]
+	at java.base/java.lang.Thread.runWith(Thread.java:1596) ~[na:na]
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329) ~[na:na]
+	at java.base/java.lang.VirtualThread$VThreadContinuation$1.run(VirtualThread.java:209) ~[na:na]
+	at java.base/jdk.internal.vm.Continuation.enter0(Continuation.java:320) ~[na:na]
+	at java.base/jdk.internal.vm.Continuation.enter(Continuation.java:312) ~[na:na]
+	at java.base/jdk.internal.vm.Continuation.enterSpecial(Native Method) ~[na:na]
+
+2026-10-07T22:53:13.371-04:00  WARN 47454 --- [fleet-gateway] [  virtual-32703] o.s.d.r.l.RedisMessageListenerContainer  : Execution of message listener failed, and no ErrorHandler has been set
+
+java.lang.OutOfMemoryError: Java heap space
+
+2026-10-07T22:53:13.371-04:00  WARN 47454 --- [fleet-gateway] [  virtual-32700] o.s.d.r.l.RedisMessageListenerContainer  : Execution of message listener failed, and no ErrorHandler has been set
+
+java.lang.OutOfMemoryError: Java heap space
+
+2026-10-07T22:53:16.065-04:00  WARN 47454 --- [fleet-gateway] [  virtual-32790] o.s.d.r.l.RedisMessageListenerContainer  : Execution of message listener failed, and no ErrorHandler has been set
+
+java.lang.OutOfMemoryError: Java heap space
+
+2026-10-07T22:53:16.393-04:00  WARN 47454 --- [fleet-gateway] [  virtual-32800] o.s.d.r.l.RedisMessageListenerContainer  : Execution of message listener failed, and no ErrorHandler has been set
+
+java.lang.OutOfMemoryError: Java heap space
+
+Exception in thread "" java.lang.OutOfMemoryError: Java heap space
+2026-10-07T22:53:17.082-04:00 ERROR 47454 --- [fleet-gateway] [io-18082-Poller] org.apache.tomcat.util.net.NioEndpoint   : Error allocating socket processor
+
+java.lang.UnsupportedOperationException: java.lang.reflect.InvocationTargetException
+	at org.apache.tomcat.util.compat.Jre21Compat.threadBuilderStart(Jre21Compat.java:94) ~[tomcat-embed-core-10.1.55.jar!/:na]
+	at org.apache.tomcat.util.threads.VirtualThreadExecutor.execute(VirtualThreadExecutor.java:52) ~[tomcat-embed-core-10.1.55.jar!/:na]
+	at org.apache.tomcat.util.net.AbstractEndpoint.processSocket(AbstractEndpoint.java:1393) ~[tomcat-embed-core-10.1.55.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$Poller.processKey(NioEndpoint.java:840) ~[tomcat-embed-core-10.1.55.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$Poller.run(NioEndpoint.java:807) ~[tomcat-embed-core-10.1.55.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:118) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.apache.tomcat.util.compat.Jre21Compat.threadBuilderStart(Jre21Compat.java:92) ~[tomcat-embed-core-10.1.55.jar!/:na]
+	... 5 common frames omitted
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+2026-10-07T22:53:17.446-04:00 ERROR 47454 --- [fleet-gateway] [at-handler-9965] o.a.coyote.http11.Http11NioProtocol      : Failed to complete processing of a request
+
+java.lang.OutOfMemoryError: Java heap space
+
+2026-10-07T22:53:17.446-04:00  WARN 47454 --- [fleet-gateway] [  virtual-32834] o.s.d.r.l.RedisMessageListenerContainer  : Execution of message listener failed, and no ErrorHandler has been set
+
+java.lang.OutOfMemoryError: Java heap space
+
+2026-10-07T22:53:24.266-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Revoke previously assigned partitions fence-events-0, fence-events-1, fence-events-2, fence-events-3, fence-events-4, fence-events-5, fence-events-6, fence-events-7, fence-events-8, fence-events-9, fence-events-10, fence-events-11
+2026-10-07T22:53:24.266-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.s.k.l.KafkaMessageListenerContainer    : fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4: partitions revoked: [fence-events-0, fence-events-1, fence-events-2, fence-events-3, fence-events-4, fence-events-5, fence-events-6, fence-events-7, fence-events-8, fence-events-9, fence-events-10, fence-events-11]
+2026-10-07T22:53:24.266-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Member consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1-65d60a29-1c3e-4a05-aef1-0d7eef380c89 sending LeaveGroup request to coordinator localhost:19092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2026-10-07T22:53:24.267-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-10-07T22:53:24.271-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Request joining group due to: consumer pro-actively leaving the group
+2026-10-07T22:53:24.271-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Unsubscribed all topics or patterns and assigned partitions
+2026-10-07T22:53:24.272-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-10-07T22:53:24.272-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1, groupId=fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4] Request joining group due to: consumer pro-actively leaving the group
+2026-10-07T22:53:24.624-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2026-10-07T22:53:24.624-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-10-07T22:53:24.624-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2026-10-07T22:53:24.624-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2026-10-07T22:53:24.627-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4-1 unregistered
+2026-10-07T22:53:24.627-04:00  INFO 47454 --- [fleet-gateway] [        kafka-1] o.s.k.l.KafkaMessageListenerContainer    : fleet-gateway-1c321ea7-8e84-48ad-9138-49200171fcd4: Consumer stopped
+2026-10-07T22:53:24.628-04:00  INFO 47454 --- [fleet-gateway] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-07T22:53:24.631-04:00  INFO 47454 --- [fleet-gateway] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

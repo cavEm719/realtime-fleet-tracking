@@ -1,0 +1,11 @@
+{"lag":0,"timeMs":1791428204111,"partitions":{"positions-0":0,"positions-1":0,"positions-10":0,"positions-11":0,"positions-2":0,"positions-3":0,"positions-4":0,"positions-5":0,"positions-6":0,"positions-7":0,"positions-8":0,"positions-9":0}}
+{"lag":0,"timeMs":1791428205228,"partitions":{"positions-0":0,"positions-1":0,"positions-10":0,"positions-11":0,"positions-2":0,"positions-3":0,"positions-4":0,"positions-5":0,"positions-6":0,"positions-7":0,"positions-8":0,"positions-9":0}}
+{"lag":3092,"timeMs":1791428206237,"partitions":{"positions-0":302,"positions-1":272,"positions-10":274,"positions-11":265,"positions-2":241,"positions-3":236,"positions-4":286,"positions-5":241,"positions-6":255,"positions-7":220,"positions-8":222,"positions-9":278}}
+{"lag":0,"timeMs":1791428207263,"partitions":{"positions-0":0,"positions-1":0,"positions-10":0,"positions-11":0,"positions-2":0,"positions-3":0,"positions-4":0,"positions-5":0,"positions-6":0,"positions-7":0,"positions-8":0,"positions-9":0}}
+{"lag":0,"timeMs":1791428208305,"partitions":{"positions-0":0,"positions-1":0,"positions-10":0,"positions-11":0,"positions-2":0,"positions-3":0,"positions-4":0,"positions-5":0,"positions-6":0,"positions-7":0,"positions-8":0,"positions-9":0}}
+{"lag":0,"timeMs":1791428209321,"partitions":{"positions-0":0,"positions-1":0,"positions-10":0,"positions-11":0,"positions-2":0,"positions-3":0,"positions-4":0,"positions-5":0,"positions-6":0,"positions-7":0,"positions-8":0,"positions-9":0}}
+{"lag":0,"timeMs":1791428210339,"partitions":{"positions-0":0,"positions-1":0,"positions-10":0,"positions-11":0,"positions-2":0,"positions-3":0,"positions-4":0,"positions-5":0,"positions-6":0,"positions-7":0,"positions-8":0,"positions-9":0}}
+{"lag":0,"timeMs":1791428211354,"partitions":{"positions-0":0,"positions-1":0,"positions-10":0,"positions-11":0,"positions-2":0,"positions-3":0,"positions-4":0,"positions-5":0,"positions-6":0,"positions-7":0,"positions-8":0,"positions-9":0}}
+{"lag":0,"timeMs":1791428212376,"partitions":{"positions-0":0,"positions-1":0,"positions-10":0,"positions-11":0,"positions-2":0,"positions-3":0,"positions-4":0,"positions-5":0,"positions-6":0,"positions-7":0,"positions-8":0,"positions-9":0}}
+{"error":"java.util.concurrent.TimeoutException","timeMs":1791428218394}
+{"error":"java.util.concurrent.TimeoutException","timeMs":1791428224412}

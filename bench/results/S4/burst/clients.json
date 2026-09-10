@@ -1,0 +1,1 @@
+{"requested":1000,"connected":1000,"subscribed":1000,"failed":0,"terminated":0,"slowTerminatedObserved":0,"allPercent":100,"slowPercent":0,"elapsedSeconds":25.010165209,"messages":104284,"messagesPerSecond":4169.66457952357,"positionSamples":3889502,"p50Ms":284,"p95Ms":497,"p99Ms":1400,"latencyOverflow":0,"connectionP99Ms":352,"errors":[]}

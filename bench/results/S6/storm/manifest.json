@@ -1,0 +1,48 @@
+{
+  "scenario": "S6/storm",
+  "dataset": "data/west-coast-10m.csv",
+  "clients": 5000,
+  "all": 100,
+  "slow": 0,
+  "seconds": 5,
+  "concurrency": 5000,
+  "mode": "none",
+  "speed": 100,
+  "switch_after": 0,
+  "rate": 10000,
+  "geofence": "hysteresis",
+  "jfr": false,
+  "startedEpochMs": 1791428622376,
+  "jarSha256": {
+    "api": "21268993b4d6e1a3484b76f458a1dc85fe001943e48ea85489e20a21df575a38",
+    "processor": "65810cbb4dd6cded6200fe748b8123bf87fdc4f25a9061f780519ed7738d2d69",
+    "gateway": "ff2edd63e05bac9d89da0f1a407b1b5d185607b8beb9c591a3942b31edf0761e",
+    "loadtest": "fad72e67fc15723becc5438b729f2cd049c0f66290c93407c1226463ef6d43a0",
+    "replayer": "0b8079bb676b2f21c463f6d78fa199c05957b2723ab5142bc8175aea37bc05ff"
+  },
+  "gatewayMaxConnections": 20000,
+  "gitCommit": "b5800f19c490a9865bf64e4841cea9d2924759c4",
+  "jvmFlags": {
+    "api": [
+      "-Xms128m",
+      "-Xmx512m"
+    ],
+    "processor": [
+      "-Xms128m",
+      "-Xmx512m"
+    ],
+    "gateway": [
+      "-Xms128m",
+      "-Xmx1024m"
+    ],
+    "loadtest": [
+      "-Xms128m",
+      "-Xmx1024m"
+    ],
+    "replayer": [
+      "-Xms128m",
+      "-Xmx512m"
+    ]
+  },
+  "replayStartedEpochMs": 1791428635631
+}
