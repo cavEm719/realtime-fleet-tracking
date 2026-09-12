@@ -1,0 +1,30 @@
+[project]
+name = "fleet-copilot"
+version = "0.1.0"
+description = "Operations copilot: answers fleet questions through the API's read-only gRPC queries"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "grpcio>=1.66",
+    "protobuf>=5.28",
+    "openai>=1.50",
+    "redis>=5.0",
+]
+
+[dependency-groups]
+dev = [
+    "grpcio-tools>=1.66",
+    "pytest>=8.3",
+    "pytest-asyncio>=0.24",
+    "httpx>=0.27",
+    "fakeredis[lua]>=2.25",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+
+[tool.uv]
+package = false

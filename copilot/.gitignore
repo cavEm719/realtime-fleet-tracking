@@ -1,0 +1,4 @@
+.venv/
+__pycache__/
+.pytest_cache/
+fleet_copilot/rpc/fleet_data_pb2*.py
