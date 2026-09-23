@@ -1,0 +1,68 @@
+{
+  "bedrock": {
+    "target": {
+      "kind": "regional",
+      "modelId": "deepseek.v3-v1:0",
+      "invocationId": "deepseek.v3-v1:0",
+      "invocationRegion": "us-west-2",
+      "destinationRegions": [
+        "us-west-2"
+      ],
+      "foundationModelArns": [
+        "arn:aws:bedrock:us-west-2::foundation-model/deepseek.v3-v1:0"
+      ],
+      "inputUsdPerMillionTokens": 0.58,
+      "outputUsdPerMillionTokens": 1.68
+    },
+    "judge": {
+      "kind": "regional",
+      "modelId": "openai.gpt-oss-120b-1:0",
+      "invocationId": "openai.gpt-oss-120b-1:0",
+      "invocationRegion": "us-east-1",
+      "destinationRegions": [
+        "us-east-1"
+      ],
+      "foundationModelArns": [
+        "arn:aws:bedrock:us-east-1::foundation-model/openai.gpt-oss-120b-1:0"
+      ],
+      "inputUsdPerMillionTokens": 0.15,
+      "outputUsdPerMillionTokens": 0.6
+    },
+    "comparison": {
+      "kind": "regional",
+      "modelId": "openai.gpt-oss-120b-1:0",
+      "invocationId": "openai.gpt-oss-120b-1:0",
+      "invocationRegion": "us-east-1",
+      "destinationRegions": [
+        "us-east-1"
+      ],
+      "foundationModelArns": [
+        "arn:aws:bedrock:us-east-1::foundation-model/openai.gpt-oss-120b-1:0"
+      ],
+      "inputUsdPerMillionTokens": 0.15,
+      "outputUsdPerMillionTokens": 0.6
+    },
+    "comparisonJudge": {
+      "kind": "regional",
+      "modelId": "mistral.mistral-large-2407-v1:0",
+      "invocationId": "mistral.mistral-large-2407-v1:0",
+      "invocationRegion": "us-west-2",
+      "destinationRegions": [
+        "us-west-2"
+      ],
+      "foundationModelArns": [
+        "arn:aws:bedrock:us-west-2::foundation-model/mistral.mistral-large-2407-v1:0"
+      ],
+      "inputUsdPerMillionTokens": 2.0,
+      "outputUsdPerMillionTokens": 6.0
+    }
+  },
+  "crossJudging": false,
+  "sources": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-120b.html",
+    "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
+    "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-west-2/index.json"
+  ],
+  "judgeTransport": "submit_verdict tool JSON input; strict text outputConfig verification returned malformed JSON and is not used",
+  "independentJudging": true
+}

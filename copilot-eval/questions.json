@@ -1,0 +1,125 @@
+[
+  {
+    "id": 1,
+    "tenantId": 1,
+    "question": "Where is vessel 366000000 now, and which ports is it confirmed inside?",
+    "expectedTools": [
+      "getAssetStatus"
+    ]
+  },
+  {
+    "id": 2,
+    "tenantId": 1,
+    "question": "List the most recent 10 arrivals and departures of vessel 366000000.",
+    "expectedTools": [
+      "listEvents"
+    ]
+  },
+  {
+    "id": 3,
+    "tenantId": 1,
+    "question": "Show up to 50 events at Los Angeles fence 1 during 2023-01-01 UTC.",
+    "expectedTools": [
+      "listEvents"
+    ]
+  },
+  {
+    "id": 4,
+    "tenantId": 1,
+    "question": "Which vessels are within 5000 meters of Los Angeles fence 1?",
+    "expectedTools": [
+      "findNearby"
+    ]
+  },
+  {
+    "id": 5,
+    "tenantId": 1,
+    "question": "Find vessels within 3000 meters of latitude 33.73, longitude -118.2625.",
+    "expectedTools": [
+      "findNearby"
+    ]
+  },
+  {
+    "id": 6,
+    "tenantId": 1,
+    "question": "List our configured ports, their IDs and enter/exit radii.",
+    "expectedTools": [
+      "listFences"
+    ]
+  },
+  {
+    "id": 7,
+    "tenantId": 1,
+    "question": "Draft an alert rule at fence 1 for vessel 366000000. Do not activate it.",
+    "expectedTools": [
+      "createAlertRule"
+    ]
+  },
+  {
+    "id": 8,
+    "tenantId": 1,
+    "question": "Draft a rule covering all our vessels at fence 1; explain what happens next.",
+    "expectedTools": [
+      "createAlertRule"
+    ]
+  },
+  {
+    "id": 9,
+    "tenantId": 1,
+    "question": "Has vessel 366000000 left Los Angeles? Check its confirmed state and recent events.",
+    "expectedTools": [
+      "getAssetStatus",
+      "listEvents"
+    ]
+  },
+  {
+    "id": 10,
+    "tenantId": 1,
+    "question": "Compare the entry and exit radius settings of Seattle fence 4 and Los Angeles fence 1.",
+    "expectedTools": [
+      "listFences"
+    ]
+  },
+  {
+    "id": 11,
+    "tenantId": 1,
+    "question": "List all our port events between epoch milliseconds 1672531200000 and 1672617600000.",
+    "expectedTools": [
+      "listEvents"
+    ]
+  },
+  {
+    "id": 12,
+    "tenantId": 1,
+    "question": "Inspect vessel 366000000 and find other vessels near Los Angeles fence 1 within 2000 meters.",
+    "expectedTools": [
+      "getAssetStatus",
+      "findNearby"
+    ]
+  },
+  {
+    "id": 13,
+    "tenantId": 1,
+    "question": "Which vessels are within 10000 meters of Port Newark fence 7?",
+    "expectedTools": [
+      "findNearby"
+    ]
+  },
+  {
+    "id": 14,
+    "tenantId": 1,
+    "question": "Show the five newest EXIT or ENTER records for vessel 366000000 at fence 1.",
+    "expectedTools": [
+      "listEvents"
+    ]
+  },
+  {
+    "id": 15,
+    "tenantId": 1,
+    "question": "Check vessel 366000000 and draft a rule for it at fence 1, leaving it for human confirmation.",
+    "expectedTools": [
+      "getAssetStatus",
+      "createAlertRule"
+    ]
+  }
+]

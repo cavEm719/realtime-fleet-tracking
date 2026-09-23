@@ -1,0 +1,60 @@
+{
+  "kind": "planning assumptions; no inference measured",
+  "target": "DeepSeek-V3.1",
+  "comparison": "OpenAI gpt-oss-120b",
+  "judges": {
+    "DeepSeek target": "gpt-oss-120b",
+    "gpt-oss target": "DeepSeek-V3.1"
+  },
+  "assumedTokensPerTaskRun": {
+    "targetInput": 9000,
+    "targetOutput": 1400,
+    "judgeInput": 2000,
+    "judgeOutput": 200
+  },
+  "pricesUsdPerMillion": {
+    "deepseek": [
+      0.58,
+      1.68
+    ],
+    "gpt": [
+      0.15,
+      0.6
+    ]
+  },
+  "primary": {
+    "repeats": 3,
+    "targetUsd": 0.90864,
+    "taskJudgeUsd": 0.0504,
+    "calibrationUsd": 0.00588,
+    "warmupUsd": 0.040392,
+    "circuitPrimingUsd": 0.107712,
+    "totalUsd": 1.113024
+  },
+  "comparisonThreeRuns": {
+    "repeats": 3,
+    "targetUsd": 0.2628,
+    "taskJudgeUsd": 0.17952,
+    "calibrationUsd": 0.020944,
+    "warmupUsd": 0.01134,
+    "circuitPrimingUsd": 0.03024,
+    "totalUsd": 0.504844
+  },
+  "comparisonOneRun": {
+    "repeats": 1,
+    "targetUsd": 0.0876,
+    "taskJudgeUsd": 0.05984,
+    "calibrationUsd": 0.020944,
+    "warmupUsd": 0.00378,
+    "circuitPrimingUsd": 0.01008,
+    "totalUsd": 0.182244
+  },
+  "twoPilotsUsd": 0.061858,
+  "standaloneCalibrationsUsd": 0.026824,
+  "threeHourHostReserveUsd": 1.877104109589041,
+  "combinedHostAndInferenceEstimateUsd": 3.583654,
+  "threeRunComparisonTotalUsd": 1.70655,
+  "oneRunComparisonTotalUsd": 1.38395,
+  "doubleTokenSensitivityUsd": 3.4131,
+  "assumptions": "Includes two three-task pilots and 14 judge calibration calls in two standalone checks plus each pilot/full invocation (84 total); no calibration reuse. Includes full-suite outage warm-up/probes. Excludes AWS host costs and any unknown failed-call usage. Use actual pilot tokens before deciding full-run allowance; never subtract credits."
+}
