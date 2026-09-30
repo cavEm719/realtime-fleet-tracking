@@ -1,0 +1,238 @@
+[
+  {
+    "id": "ships-today",
+    "suiteVersion": "query-transparency-v1",
+    "tenantId": 1,
+    "turns": [
+      "How many ships arrived today?"
+    ],
+    "expectedTools": [
+      "queryEvents"
+    ],
+    "spec": {
+      "metric": "distinct_vessels",
+      "eventType": "ENTER",
+      "ports": [],
+      "vessels": [],
+      "timeWindow": "today",
+      "groupBy": "none"
+    },
+    "reference": {
+      "total": 0,
+      "groups": {
+        "none": 0
+      },
+      "fromTs": 1704672000000,
+      "toTs": 1704715200000
+    },
+    "transparencyRequired": true
+  },
+  {
+    "id": "arrivals-today",
+    "suiteVersion": "query-transparency-v1",
+    "tenantId": 1,
+    "turns": [
+      "How many arrivals were there today?"
+    ],
+    "expectedTools": [
+      "queryEvents"
+    ],
+    "spec": {
+      "metric": "event_count",
+      "eventType": "ENTER",
+      "ports": [],
+      "vessels": [],
+      "timeWindow": "today",
+      "groupBy": "none"
+    },
+    "reference": {
+      "total": 0,
+      "groups": {
+        "none": 0
+      },
+      "fromTs": 1704672000000,
+      "toTs": 1704715200000
+    },
+    "transparencyRequired": true
+  },
+  {
+    "id": "ports-calendar-week",
+    "suiteVersion": "query-transparency-v1",
+    "tenantId": 1,
+    "turns": [
+      "Arrivals per port this week, please."
+    ],
+    "expectedTools": [
+      "queryEvents"
+    ],
+    "spec": {
+      "metric": "event_count",
+      "eventType": "ENTER",
+      "ports": [],
+      "vessels": [],
+      "timeWindow": "thisWeek",
+      "groupBy": "port"
+    },
+    "reference": {
+      "total": 0,
+      "groups": {},
+      "fromTs": 1704672000000,
+      "toTs": 1704715200000
+    },
+    "transparencyRequired": true
+  },
+  {
+    "id": "unique-ports-week",
+    "suiteVersion": "query-transparency-v1",
+    "tenantId": 1,
+    "turns": [
+      "Which ports received the most different vessels over the last seven days?"
+    ],
+    "expectedTools": [
+      "queryEvents"
+    ],
+    "spec": {
+      "metric": "distinct_vessels",
+      "eventType": "ENTER",
+      "ports": [],
+      "vessels": [],
+      "timeWindow": "last7days",
+      "groupBy": "port"
+    },
+    "reference": {
+      "total": 10,
+      "groups": {
+        "1": 4,
+        "4": 3,
+        "7": 3
+      },
+      "fromTs": 1704110400000,
+      "toTs": 1704715199999
+    },
+    "transparencyRequired": true
+  },
+  {
+    "id": "atlas-week",
+    "suiteVersion": "query-transparency-v1",
+    "tenantId": 1,
+    "turns": [
+      "How many times did Atlas arrive over the last seven days?"
+    ],
+    "expectedTools": [
+      "queryEvents"
+    ],
+    "spec": {
+      "metric": "event_count",
+      "eventType": "ENTER",
+      "ports": [],
+      "vessels": [
+        366000000
+      ],
+      "timeWindow": "last7days",
+      "groupBy": "none"
+    },
+    "reference": {
+      "total": 2,
+      "groups": {
+        "none": 2
+      },
+      "fromTs": 1704110400000,
+      "toTs": 1704715199999
+    },
+    "transparencyRequired": true
+  },
+  {
+    "id": "daily-la",
+    "suiteVersion": "query-transparency-v1",
+    "tenantId": 1,
+    "turns": [
+      "Show daily arrivals at Los Angeles over the last seven days."
+    ],
+    "expectedTools": [
+      "queryEvents"
+    ],
+    "spec": {
+      "metric": "event_count",
+      "eventType": "ENTER",
+      "ports": [
+        1
+      ],
+      "vessels": [],
+      "timeWindow": "last7days",
+      "groupBy": "day"
+    },
+    "reference": {
+      "total": 8,
+      "groups": {
+        "2024-01-01": 1,
+        "2024-01-02": 2,
+        "2024-01-03": 1,
+        "2024-01-05": 3,
+        "2024-01-07": 1
+      },
+      "fromTs": 1704110400000,
+      "toTs": 1704715199999
+    },
+    "transparencyRequired": true
+  },
+  {
+    "id": "vessels-yesterday",
+    "suiteVersion": "query-transparency-v1",
+    "tenantId": 1,
+    "turns": [
+      "Give me yesterday's arrival counts for each of our vessels."
+    ],
+    "expectedTools": [
+      "queryEvents"
+    ],
+    "spec": {
+      "metric": "event_count",
+      "eventType": "ENTER",
+      "ports": [],
+      "vessels": [],
+      "timeWindow": "yesterday",
+      "groupBy": "vessel"
+    },
+    "reference": {
+      "total": 3,
+      "groups": {
+        "366000000": 1,
+        "366000004": 1,
+        "366000008": 1
+      },
+      "fromTs": 1704585600000,
+      "toTs": 1704671999999
+    },
+    "transparencyRequired": true
+  },
+  {
+    "id": "chinese-ports",
+    "suiteVersion": "query-transparency-v1",
+    "tenantId": 1,
+    "turns": [
+      "昨天各港口分别有多少艘不同的船抵港？"
+    ],
+    "expectedTools": [
+      "queryEvents"
+    ],
+    "spec": {
+      "metric": "distinct_vessels",
+      "eventType": "ENTER",
+      "ports": [],
+      "vessels": [],
+      "timeWindow": "yesterday",
+      "groupBy": "port"
+    },
+    "reference": {
+      "total": 3,
+      "groups": {
+        "1": 1,
+        "4": 1,
+        "7": 1
+      },
+      "fromTs": 1704585600000,
+      "toTs": 1704671999999
+    },
+    "transparencyRequired": true
+  }
+]
