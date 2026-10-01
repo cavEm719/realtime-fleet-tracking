@@ -1,0 +1,35 @@
+# Overrides for the existing multi-instance profile, isolated as fleetbench61scale.
+services:
+  kafka:
+    mem_limit: 1536m
+  mysql:
+    mem_limit: 1024m
+  redis:
+    mem_limit: 512m
+  jaeger:
+    mem_limit: 256m
+  api:
+    environment:
+      TRACING_ENABLED: "false"
+      SERVER_TOMCAT_MAX_CONNECTIONS: "20000"
+  copilot:
+    environment:
+      TRACING_ENABLED: "false"
+  processor-1:
+    environment:
+      TRACING_ENABLED: "false"
+  processor-2:
+    environment:
+      TRACING_ENABLED: "false"
+  gateway-1:
+    environment:
+      TRACING_ENABLED: "false"
+      SERVER_TOMCAT_MAX_CONNECTIONS: "20000"
+  gateway-2:
+    environment:
+      TRACING_ENABLED: "false"
+      SERVER_TOMCAT_MAX_CONNECTIONS: "20000"
+  nginx:
+    volumes:
+      - ./bench/nginx61.conf:/etc/nginx/nginx.conf:ro
+    mem_limit: 128m
