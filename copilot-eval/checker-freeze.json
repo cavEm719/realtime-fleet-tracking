@@ -1,0 +1,130 @@
+{
+  "checkerVersion": "review-v2",
+  "status": "FROZEN",
+  "frozenOn": "2026-10-10",
+  "checkerFile": "copilot-eval/graders.py",
+  "checkerSha256": "9b7de1ac3e15c32cc97f853f51713ea90148e6ae168ec70266558fc9762d9d41",
+  "policy": "Do not tune on reviewed runs. Any future authorized checker change requires new out-of-sample validation and a new version; preserve this version and original scores.",
+  "reviewFiles": {
+    "docs/review/round3-review.md": "30579c4550139d249c8900643df76fdd1480314427a483fe22fcf5f9480a6d02",
+    "docs/review/round3-independent-review.json": "8e5bf31d656674881784b3e99808e33568a5c627641cdfe63650119e548658e6"
+  },
+  "knownFalseFailPatterns": [
+    {
+      "pattern": "Correctly labelled extra vessels mistaken for non-matching vessels",
+      "runs": 5,
+      "examples": [
+        "DeepSeek ny-chinese trials 1/2/3",
+        "DeepSeek corrected-chinese trial 2",
+        "gpt-oss la-today-empty trial 1"
+      ]
+    },
+    {
+      "pattern": "Digits inside event hashes mistaken for fabricated MMSIs",
+      "runs": 1,
+      "examples": [
+        "gpt-oss houston-week trial 1"
+      ]
+    },
+    {
+      "pattern": "Counts in emphasized phrases not recognized",
+      "runs": 3,
+      "examples": [
+        "gpt-oss savannah-week trials 1/2/3"
+      ]
+    },
+    {
+      "pattern": "Negation in an unrelated port clause contradicts the required inside state",
+      "runs": 1,
+      "examples": [
+        "DeepSeek name-lookup trial 3"
+      ]
+    }
+  ],
+  "round2Validation": {
+    "agreement": 240,
+    "runs": 240,
+    "method": "in-sample: the labels used to identify and revise the checker defects"
+  },
+  "round3Validation": {
+    "checkerFailuresReviewed": 18,
+    "falseFails": 10,
+    "sampledCheckerSuccesses": 53,
+    "falsePassesInSample": 0,
+    "method": "All checker failures reviewed plus a seeded random sample of successes (seed 20261010). Review-corrected scores assume unreviewed successes are correct, not proven."
+  },
+  "scores": [
+    {
+      "round": 1,
+      "model": "DeepSeek-V3.1",
+      "runs": 120,
+      "originalCheckerSolved": 57,
+      "frozenCheckerSolved": 73,
+      "reviewCorrectedSolved": null,
+      "reviewMethod": "Not independently reviewed; offline checker regrade only",
+      "taskVersion": 1
+    },
+    {
+      "round": 2,
+      "model": "DeepSeek-V3.1",
+      "runs": 120,
+      "originalCheckerSolved": 59,
+      "frozenCheckerSolved": 113,
+      "reviewCorrectedSolved": 113,
+      "reviewMethod": "Full independent review of all 120 runs; revised checker agreement is in-sample",
+      "taskVersion": 1
+    },
+    {
+      "round": 3,
+      "model": "DeepSeek-V3.1",
+      "runs": 120,
+      "originalCheckerSolved": 106,
+      "frozenCheckerSolved": 109,
+      "reviewCorrectedSolved": 114,
+      "reviewMethod": "All 11 checker failures reviewed; 0 false passes in 28 sampled successes; estimate assumes remaining successes correct",
+      "taskVersion": 2,
+      "originalRunnerHeadline": {
+        "task_success_rate": 0.8833333333333333,
+        "leaked_task_runs": 3,
+        "data_leaked_task_runs": 0,
+        "attempted_task_runs": 120
+      }
+    },
+    {
+      "round": 1,
+      "model": "gpt-oss-120b",
+      "runs": 19,
+      "originalCheckerSolved": 13,
+      "frozenCheckerSolved": 15,
+      "reviewCorrectedSolved": null,
+      "reviewMethod": "Not independently reviewed; offline checker regrade only",
+      "taskVersion": 1
+    },
+    {
+      "round": 2,
+      "model": "gpt-oss-120b",
+      "runs": 120,
+      "originalCheckerSolved": 45,
+      "frozenCheckerSolved": 98,
+      "reviewCorrectedSolved": 98,
+      "reviewMethod": "Full independent review of all 120 runs; revised checker agreement is in-sample",
+      "taskVersion": 1
+    },
+    {
+      "round": 3,
+      "model": "gpt-oss-120b",
+      "runs": 120,
+      "originalCheckerSolved": 113,
+      "frozenCheckerSolved": 113,
+      "reviewCorrectedSolved": 118,
+      "reviewMethod": "All 7 checker failures reviewed; 0 false passes in 25 sampled successes; estimate assumes remaining successes correct",
+      "taskVersion": 2,
+      "originalRunnerHeadline": {
+        "task_success_rate": 0.9416666666666667,
+        "leaked_task_runs": 0,
+        "data_leaked_task_runs": 0,
+        "attempted_task_runs": 120
+      }
+    }
+  ]
+}
