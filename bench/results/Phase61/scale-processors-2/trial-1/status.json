@@ -1,0 +1,5 @@
+{
+  "status": "failed",
+  "error": "Command '['docker', 'compose', '-p', 'fleetbench61scale', '-f', 'compose.yaml', '-f', 'bench/scale61.yaml', '--profile', 'multi', 'up', '-d', 'api', 'copilot']' returned non-zero exit status 1.",
+  "finishedEpochMs": 1791481698754
+}

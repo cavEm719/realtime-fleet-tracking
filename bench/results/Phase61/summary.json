@@ -1,0 +1,3002 @@
+{
+  "runs": [
+    {
+      "run": "S1/trial-1",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": null,
+      "tracingEnabled": false,
+      "connected": null,
+      "failedClients": null,
+      "terminatedObserved": null,
+      "slowTerminatedObserved": null,
+      "ingestPositionsPerSecond": 27313.355081143418,
+      "processedPositions": 261255.0,
+      "processorDrainWindowSeconds": 10.462,
+      "processorDrainPositionsPerSecond": 24971.802714586123,
+      "peakLag": 37616,
+      "lastLag": 0,
+      "framesPerSecond": null,
+      "serverFrames": 0.0,
+      "pipelineP50Ms": null,
+      "pipelineP95Ms": null,
+      "pipelineP99Ms": null,
+      "endToEndP99Ms": null,
+      "pipelineSamples": null,
+      "pipelineMissing": null,
+      "pipelineNegative": null,
+      "api429": 14.0,
+      "replayer429": 14,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": null,
+      "gatewayGcPauseMs": 56.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 55,
+        "EXIT": 10,
+        "exitEnterWithin30m": 3,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 3
+      },
+      "latencyQualified": null
+    },
+    {
+      "run": "S1/trial-2",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": null,
+      "tracingEnabled": false,
+      "connected": null,
+      "failedClients": null,
+      "terminatedObserved": null,
+      "slowTerminatedObserved": null,
+      "ingestPositionsPerSecond": 29623.834394175497,
+      "processedPositions": 261255.0,
+      "processorDrainWindowSeconds": 9.451,
+      "processorDrainPositionsPerSecond": 27643.106549571472,
+      "peakLag": 33320,
+      "lastLag": 0,
+      "framesPerSecond": null,
+      "serverFrames": 0.0,
+      "pipelineP50Ms": null,
+      "pipelineP95Ms": null,
+      "pipelineP99Ms": null,
+      "endToEndP99Ms": null,
+      "pipelineSamples": null,
+      "pipelineMissing": null,
+      "pipelineNegative": null,
+      "api429": 18.0,
+      "replayer429": 18,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": null,
+      "gatewayGcPauseMs": 43.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 55,
+        "EXIT": 10,
+        "exitEnterWithin30m": 3,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 3
+      },
+      "latencyQualified": null
+    },
+    {
+      "run": "S1/trial-3",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": null,
+      "tracingEnabled": false,
+      "connected": null,
+      "failedClients": null,
+      "terminatedObserved": null,
+      "slowTerminatedObserved": null,
+      "ingestPositionsPerSecond": 27436.730741381918,
+      "processedPositions": 261255.0,
+      "processorDrainWindowSeconds": 10.484,
+      "processorDrainPositionsPerSecond": 24919.40099198779,
+      "peakLag": 35242,
+      "lastLag": 0,
+      "framesPerSecond": null,
+      "serverFrames": 0.0,
+      "pipelineP50Ms": null,
+      "pipelineP95Ms": null,
+      "pipelineP99Ms": null,
+      "endToEndP99Ms": null,
+      "pipelineSamples": null,
+      "pipelineMissing": null,
+      "pipelineNegative": null,
+      "api429": 17.0,
+      "replayer429": 17,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": null,
+      "gatewayGcPauseMs": 47.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 55,
+        "EXIT": 10,
+        "exitEnterWithin30m": 3,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 3
+      },
+      "latencyQualified": null
+    },
+    {
+      "run": "S2-after-10000/trial-1",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": 10000.0,
+      "tracingEnabled": false,
+      "connected": 10000,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 194.672241790769,
+      "processedPositions": 11669.0,
+      "processorDrainWindowSeconds": 60.816,
+      "processorDrainPositionsPerSecond": 191.87384898710866,
+      "peakLag": 24,
+      "lastLag": 0,
+      "framesPerSecond": 61809.213391960766,
+      "serverFrames": 4326668.0,
+      "pipelineP50Ms": 208,
+      "pipelineP95Ms": 893,
+      "pipelineP99Ms": 1273,
+      "endToEndP99Ms": 1535,
+      "pipelineSamples": 39009840,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": 765.0461120605469,
+      "gatewayGcPauseMs": 1496.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 34,
+        "EXIT": 0,
+        "exitEnterWithin30m": 0,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 0
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "S2-after-5000/trial-1",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": 5000.0,
+      "tracingEnabled": false,
+      "connected": 5000,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 194.64927589622812,
+      "processedPositions": 11669.0,
+      "processorDrainWindowSeconds": 60.472,
+      "processorDrainPositionsPerSecond": 192.96533933059928,
+      "peakLag": 125,
+      "lastLag": 0,
+      "framesPerSecond": 36733.52621971603,
+      "serverFrames": 2571673.0,
+      "pipelineP50Ms": 98,
+      "pipelineP95Ms": 333,
+      "pipelineP99Ms": 642,
+      "endToEndP99Ms": 1059,
+      "pipelineSamples": 19503299,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": 396.56359100341797,
+      "gatewayGcPauseMs": 323.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 33,
+        "EXIT": 0,
+        "exitEnterWithin30m": 0,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 0
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "S2-after-5000/trial-2",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": 5000.0,
+      "tracingEnabled": false,
+      "connected": 5000,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 194.7025156340059,
+      "processedPositions": 11669.0,
+      "processorDrainWindowSeconds": 60.55,
+      "processorDrainPositionsPerSecond": 192.71676300578036,
+      "peakLag": 119,
+      "lastLag": 0,
+      "framesPerSecond": 34662.76257708146,
+      "serverFrames": 2426674.0,
+      "pipelineP50Ms": 102,
+      "pipelineP95Ms": 216,
+      "pipelineP99Ms": 596,
+      "endToEndP99Ms": 870,
+      "pipelineSamples": 19498298,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": 395.5116653442383,
+      "gatewayGcPauseMs": 313.00000000000006,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 30,
+        "EXIT": 0,
+        "exitEnterWithin30m": 0,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 0
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "S2-after-5000/trial-3",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": 5000.0,
+      "tracingEnabled": false,
+      "connected": 5000,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 194.70862378598568,
+      "processedPositions": 11669.0,
+      "processorDrainWindowSeconds": 60.34,
+      "processorDrainPositionsPerSecond": 193.3874709976798,
+      "peakLag": 84,
+      "lastLag": 0,
+      "framesPerSecond": 35447.39247761369,
+      "serverFrames": 2481678.0,
+      "pipelineP50Ms": 99,
+      "pipelineP95Ms": 210,
+      "pipelineP99Ms": 519,
+      "endToEndP99Ms": 775,
+      "pipelineSamples": 19501632,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": 396.54270935058594,
+      "gatewayGcPauseMs": 273.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 32,
+        "EXIT": 0,
+        "exitEnterWithin30m": 0,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 0
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "S2-before-10000/trial-1",
+      "status": "failed",
+      "error": "timed out",
+      "gatewayOutOfMemory": true,
+      "serverOpenSessionsBeforeClientAbort": null,
+      "tracingEnabled": false,
+      "connected": 10000,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 194.44599646124615,
+      "processedPositions": 11669.0,
+      "processorDrainWindowSeconds": null,
+      "processorDrainPositionsPerSecond": null,
+      "peakLag": null,
+      "lastLag": null,
+      "framesPerSecond": 341.53082909412,
+      "serverFrames": 0,
+      "pipelineP50Ms": 1469,
+      "pipelineP95Ms": 3081,
+      "pipelineP99Ms": 3392,
+      "endToEndP99Ms": 3735,
+      "pipelineSamples": 4007197,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": null,
+      "gatewayGcPauseMs": 0,
+      "overflowTerminations": 0,
+      "sendTimeTerminations": 0,
+      "flaps": null,
+      "latencyQualified": false
+    },
+    {
+      "run": "S2-before-5000/trial-1",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": null,
+      "tracingEnabled": false,
+      "connected": 5000,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 194.70894149996957,
+      "processedPositions": 11669.0,
+      "processorDrainWindowSeconds": 60.576,
+      "processorDrainPositionsPerSecond": 192.6340464870576,
+      "peakLag": 188,
+      "lastLag": 0,
+      "framesPerSecond": 28093.00766768595,
+      "serverFrames": 1966656.0,
+      "pipelineP50Ms": 113,
+      "pipelineP95Ms": 561,
+      "pipelineP99Ms": 1099,
+      "endToEndP99Ms": 1405,
+      "pipelineSamples": 19491630,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": 581.5079879760742,
+      "gatewayGcPauseMs": 1953.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 26,
+        "EXIT": 0,
+        "exitEnterWithin30m": 0,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 0
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "S2-before-5000/trial-2",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": null,
+      "tracingEnabled": false,
+      "connected": 5000,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 194.69146527199266,
+      "processedPositions": 11669.0,
+      "processorDrainWindowSeconds": 60.507,
+      "processorDrainPositionsPerSecond": 192.85371940436644,
+      "peakLag": 44,
+      "lastLag": 0,
+      "framesPerSecond": 29210.85815334459,
+      "serverFrames": 2044899.0,
+      "pipelineP50Ms": 107,
+      "pipelineP95Ms": 443,
+      "pipelineP99Ms": 1156,
+      "endToEndP99Ms": 1451,
+      "pipelineSamples": 19503299,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": 579.4234008789062,
+      "gatewayGcPauseMs": 1877.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 33,
+        "EXIT": 0,
+        "exitEnterWithin30m": 0,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 0
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "S2-before-5000/trial-3",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": null,
+      "tracingEnabled": false,
+      "connected": 5000,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 194.5852952172551,
+      "processedPositions": 11669.0,
+      "processorDrainWindowSeconds": 60.636,
+      "processorDrainPositionsPerSecond": 192.4434329441256,
+      "peakLag": 104,
+      "lastLag": 0,
+      "framesPerSecond": 27651.689085612485,
+      "serverFrames": 1935903.0,
+      "pipelineP50Ms": 110,
+      "pipelineP95Ms": 427,
+      "pipelineP99Ms": 1028,
+      "endToEndP99Ms": 1336,
+      "pipelineSamples": 19501632,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": 578.5041351318359,
+      "gatewayGcPauseMs": 1830.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 32,
+        "EXIT": 0,
+        "exitEnterWithin30m": 0,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 0
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "S3-slow-0/trial-1",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": 1000.0,
+      "tracingEnabled": false,
+      "connected": 1000,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 2997.12062379895,
+      "processedPositions": 261255.0,
+      "processorDrainWindowSeconds": 87.631,
+      "processorDrainPositionsPerSecond": 2981.307984617316,
+      "peakLag": 1305,
+      "lastLag": 0,
+      "framesPerSecond": 3960.3347866387126,
+      "serverFrames": 435677.0,
+      "pipelineP50Ms": 84,
+      "pipelineP95Ms": 142,
+      "pipelineP99Ms": 267,
+      "endToEndP99Ms": 1609,
+      "pipelineSamples": 60250950,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": 104.03601837158203,
+      "gatewayGcPauseMs": 823.9999999999999,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 55,
+        "EXIT": 10,
+        "exitEnterWithin30m": 3,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 3
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "S3-slow-0/trial-2",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": 1000.0,
+      "tracingEnabled": false,
+      "connected": 1000,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 2996.9775386023252,
+      "processedPositions": 261255.0,
+      "processorDrainWindowSeconds": 88.47,
+      "processorDrainPositionsPerSecond": 2953.03492709393,
+      "peakLag": 1317,
+      "lastLag": 0,
+      "framesPerSecond": 3936.145975467069,
+      "serverFrames": 433016.0,
+      "pipelineP50Ms": 82,
+      "pipelineP95Ms": 139,
+      "pipelineP99Ms": 434,
+      "endToEndP99Ms": 1606,
+      "pipelineSamples": 60226771,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": 103.91541290283203,
+      "gatewayGcPauseMs": 802.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 55,
+        "EXIT": 10,
+        "exitEnterWithin30m": 3,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 3
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "S3-slow-0/trial-3",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": 1000.0,
+      "tracingEnabled": false,
+      "connected": 1000,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 2997.2693405293344,
+      "processedPositions": 261255.0,
+      "processorDrainWindowSeconds": 88.409,
+      "processorDrainPositionsPerSecond": 2955.072447375267,
+      "peakLag": 2217,
+      "lastLag": 0,
+      "framesPerSecond": 3921.2240900277075,
+      "serverFrames": 431341.0,
+      "pipelineP50Ms": 81,
+      "pipelineP95Ms": 137,
+      "pipelineP99Ms": 424,
+      "endToEndP99Ms": 1596,
+      "pipelineSamples": 60182913,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": 104.10037994384766,
+      "gatewayGcPauseMs": 764.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 55,
+        "EXIT": 10,
+        "exitEnterWithin30m": 3,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 3
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "S3-slow-5/trial-1",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": 950.0,
+      "tracingEnabled": false,
+      "connected": 1000,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 2997.526984304305,
+      "processedPositions": 261255.0,
+      "processorDrainWindowSeconds": 88.582,
+      "processorDrainPositionsPerSecond": 2949.301212435935,
+      "peakLag": 2214,
+      "lastLag": 0,
+      "framesPerSecond": 3739.1539651850503,
+      "serverFrames": 413271.0,
+      "pipelineP50Ms": 82,
+      "pipelineP95Ms": 138,
+      "pipelineP99Ms": 554,
+      "endToEndP99Ms": 1606,
+      "pipelineSamples": 57113176,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": 103.67264556884766,
+      "gatewayGcPauseMs": 739.0,
+      "overflowTerminations": 50.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 55,
+        "EXIT": 10,
+        "exitEnterWithin30m": 3,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 3
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "S3-slow-5/trial-2",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": 950.0,
+      "tracingEnabled": false,
+      "connected": 1000,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 2997.106320537031,
+      "processedPositions": 261255.0,
+      "processorDrainWindowSeconds": 88.435,
+      "processorDrainPositionsPerSecond": 2954.2036524000678,
+      "peakLag": 3367,
+      "lastLag": 0,
+      "framesPerSecond": 3733.743204209563,
+      "serverFrames": 412944.0,
+      "pipelineP50Ms": 81,
+      "pipelineP95Ms": 139,
+      "pipelineP99Ms": 649,
+      "endToEndP99Ms": 1603,
+      "pipelineSamples": 57160663,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": 103.56999206542969,
+      "gatewayGcPauseMs": 778.0,
+      "overflowTerminations": 50.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 55,
+        "EXIT": 10,
+        "exitEnterWithin30m": 3,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 3
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "S3-slow-5/trial-3",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": 950.0,
+      "tracingEnabled": false,
+      "connected": 1000,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 2997.5575493542574,
+      "processedPositions": 261255.0,
+      "processorDrainWindowSeconds": 88.413,
+      "processorDrainPositionsPerSecond": 2954.9387533507515,
+      "peakLag": 2138,
+      "lastLag": 0,
+      "framesPerSecond": 3739.145928960994,
+      "serverFrames": 413567.0,
+      "pipelineP50Ms": 81,
+      "pipelineP95Ms": 137,
+      "pipelineP99Ms": 446,
+      "endToEndP99Ms": 1596,
+      "pipelineSamples": 57172411,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": 103.646240234375,
+      "gatewayGcPauseMs": 753.0,
+      "overflowTerminations": 50.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 55,
+        "EXIT": 10,
+        "exitEnterWithin30m": 3,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 3
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "S5-hysteresis/trial-1",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": null,
+      "tracingEnabled": false,
+      "connected": null,
+      "failedClients": null,
+      "terminatedObserved": null,
+      "slowTerminatedObserved": null,
+      "ingestPositionsPerSecond": 28982.757007609416,
+      "processedPositions": 261255.0,
+      "processorDrainWindowSeconds": 10.416,
+      "processorDrainPositionsPerSecond": 25082.085253456222,
+      "peakLag": 45307,
+      "lastLag": 0,
+      "framesPerSecond": null,
+      "serverFrames": 0.0,
+      "pipelineP50Ms": null,
+      "pipelineP95Ms": null,
+      "pipelineP99Ms": null,
+      "endToEndP99Ms": null,
+      "pipelineSamples": null,
+      "pipelineMissing": null,
+      "pipelineNegative": null,
+      "api429": 22.0,
+      "replayer429": 22,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": null,
+      "gatewayGcPauseMs": 34.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 55,
+        "EXIT": 10,
+        "exitEnterWithin30m": 3,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 3
+      },
+      "latencyQualified": null
+    },
+    {
+      "run": "S5-naive/trial-1",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": null,
+      "tracingEnabled": false,
+      "connected": null,
+      "failedClients": null,
+      "terminatedObserved": null,
+      "slowTerminatedObserved": null,
+      "ingestPositionsPerSecond": 28850.28845508509,
+      "processedPositions": 261255.0,
+      "processorDrainWindowSeconds": 10.444,
+      "processorDrainPositionsPerSecond": 25014.841057066256,
+      "peakLag": 57821,
+      "lastLag": 0,
+      "framesPerSecond": null,
+      "serverFrames": 0.0,
+      "pipelineP50Ms": null,
+      "pipelineP95Ms": null,
+      "pipelineP99Ms": null,
+      "endToEndP99Ms": null,
+      "pipelineSamples": null,
+      "pipelineMissing": null,
+      "pipelineNegative": null,
+      "api429": 25.0,
+      "replayer429": 25,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": null,
+      "gatewayGcPauseMs": 37.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 61,
+        "EXIT": 19,
+        "exitEnterWithin30m": 4,
+        "enterExitWithin10m": 4,
+        "totalFlaps": 8
+      },
+      "latencyQualified": null
+    },
+    {
+      "run": "scale-gateways-1/trial-1",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": 5000.0,
+      "tracingEnabled": false,
+      "connected": 5000,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 194.56171319397413,
+      "processedPositions": 11669.0,
+      "processorDrainWindowSeconds": 60.624,
+      "processorDrainPositionsPerSecond": 192.48152546846134,
+      "peakLag": 31,
+      "lastLag": 0,
+      "framesPerSecond": 20855.136172503073,
+      "serverFrames": 1460014.0,
+      "pipelineP50Ms": 270,
+      "pipelineP95Ms": 1018,
+      "pipelineP99Ms": 1643,
+      "endToEndP99Ms": 1914,
+      "pipelineSamples": 19504966,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": null,
+      "gatewayGcPauseMs": 22644.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 34,
+        "EXIT": 0,
+        "exitEnterWithin30m": 0,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 0
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "scale-gateways-1/trial-2",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": 5000.0,
+      "tracingEnabled": false,
+      "connected": 5000,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 194.59114223252072,
+      "processedPositions": 11669.0,
+      "processorDrainWindowSeconds": 60.394,
+      "processorDrainPositionsPerSecond": 193.2145577375236,
+      "peakLag": 67,
+      "lastLag": 0,
+      "framesPerSecond": 20521.682503429045,
+      "serverFrames": 1436678.0,
+      "pipelineP50Ms": 275,
+      "pipelineP95Ms": 964,
+      "pipelineP99Ms": 1458,
+      "endToEndP99Ms": 1827,
+      "pipelineSamples": 19504966,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": null,
+      "gatewayGcPauseMs": 23412.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 34,
+        "EXIT": 0,
+        "exitEnterWithin30m": 0,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 0
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "scale-gateways-1/trial-3",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": 5000.0,
+      "tracingEnabled": false,
+      "connected": 5000,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 194.7028954596488,
+      "processedPositions": 11669.0,
+      "processorDrainWindowSeconds": 61.111,
+      "processorDrainPositionsPerSecond": 190.94761990476349,
+      "peakLag": 109,
+      "lastLag": 0,
+      "framesPerSecond": 19427.343247035184,
+      "serverFrames": 1360010.0,
+      "pipelineP50Ms": 331,
+      "pipelineP95Ms": 1162,
+      "pipelineP99Ms": 1824,
+      "endToEndP99Ms": 2114,
+      "pipelineSamples": 19501632,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": null,
+      "gatewayGcPauseMs": 24054.000000000004,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 32,
+        "EXIT": 0,
+        "exitEnterWithin30m": 0,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 0
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "scale-gateways-2/trial-1",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": 5000.0,
+      "tracingEnabled": false,
+      "connected": 5000,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 182.85559052213202,
+      "processedPositions": 11669.0,
+      "processorDrainWindowSeconds": 64.373,
+      "processorDrainPositionsPerSecond": 181.27165115809422,
+      "peakLag": 43,
+      "lastLag": 0,
+      "framesPerSecond": 32936.20218997212,
+      "serverFrames": 2305874.0,
+      "pipelineP50Ms": 148,
+      "pipelineP95Ms": 464,
+      "pipelineP99Ms": 845,
+      "endToEndP99Ms": 2295,
+      "pipelineSamples": 19504966,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": null,
+      "gatewayGcPauseMs": 1529.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 34,
+        "EXIT": 0,
+        "exitEnterWithin30m": 0,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 0
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "scale-gateways-2/trial-2",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": 5000.0,
+      "tracingEnabled": false,
+      "connected": 5000,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 194.6214826908265,
+      "processedPositions": 11669.0,
+      "processorDrainWindowSeconds": 60.271,
+      "processorDrainPositionsPerSecond": 193.6088666191037,
+      "peakLag": 44,
+      "lastLag": 0,
+      "framesPerSecond": 31903.99482347828,
+      "serverFrames": 2233449.0,
+      "pipelineP50Ms": 139,
+      "pipelineP95Ms": 399,
+      "pipelineP99Ms": 761,
+      "endToEndP99Ms": 1472,
+      "pipelineSamples": 19504966,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": null,
+      "gatewayGcPauseMs": 1764.9999999999998,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 34,
+        "EXIT": 0,
+        "exitEnterWithin30m": 0,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 0
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "scale-gateways-2/trial-3",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": 5000.0,
+      "tracingEnabled": false,
+      "connected": 5000,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 194.5385905349969,
+      "processedPositions": 11669.0,
+      "processorDrainWindowSeconds": 60.918,
+      "processorDrainPositionsPerSecond": 191.55257887652255,
+      "peakLag": 167,
+      "lastLag": 0,
+      "framesPerSecond": 33401.88262867774,
+      "serverFrames": 2338235.0,
+      "pipelineP50Ms": 122,
+      "pipelineP95Ms": 370,
+      "pipelineP99Ms": 860,
+      "endToEndP99Ms": 1439,
+      "pipelineSamples": 19504966,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": null,
+      "gatewayGcPauseMs": 1541.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 34,
+        "EXIT": 0,
+        "exitEnterWithin30m": 0,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 0
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "scale-processors-1/trial-1",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": null,
+      "tracingEnabled": false,
+      "connected": null,
+      "failedClients": null,
+      "terminatedObserved": null,
+      "slowTerminatedObserved": null,
+      "ingestPositionsPerSecond": 27776.966587741565,
+      "processedPositions": 261255.0,
+      "processorDrainWindowSeconds": 10.548,
+      "processorDrainPositionsPerSecond": 24768.202502844142,
+      "peakLag": 20200,
+      "lastLag": 0,
+      "framesPerSecond": null,
+      "serverFrames": 0.0,
+      "pipelineP50Ms": null,
+      "pipelineP95Ms": null,
+      "pipelineP99Ms": null,
+      "endToEndP99Ms": null,
+      "pipelineSamples": null,
+      "pipelineMissing": null,
+      "pipelineNegative": null,
+      "api429": 17.0,
+      "replayer429": 17,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": null,
+      "gatewayGcPauseMs": 162.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 55,
+        "EXIT": 10,
+        "exitEnterWithin30m": 3,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 3
+      },
+      "latencyQualified": null
+    },
+    {
+      "run": "scale-processors-1/trial-2",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": null,
+      "tracingEnabled": false,
+      "connected": null,
+      "failedClients": null,
+      "terminatedObserved": null,
+      "slowTerminatedObserved": null,
+      "ingestPositionsPerSecond": 28625.614928854495,
+      "processedPositions": 261255.0,
+      "processorDrainWindowSeconds": 10.557,
+      "processorDrainPositionsPerSecond": 24747.087240693378,
+      "peakLag": 50420,
+      "lastLag": 0,
+      "framesPerSecond": null,
+      "serverFrames": 0.0,
+      "pipelineP50Ms": null,
+      "pipelineP95Ms": null,
+      "pipelineP99Ms": null,
+      "endToEndP99Ms": null,
+      "pipelineSamples": null,
+      "pipelineMissing": null,
+      "pipelineNegative": null,
+      "api429": 14.0,
+      "replayer429": 14,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": null,
+      "gatewayGcPauseMs": 137.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 55,
+        "EXIT": 10,
+        "exitEnterWithin30m": 3,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 3
+      },
+      "latencyQualified": null
+    },
+    {
+      "run": "scale-processors-1/trial-3",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": null,
+      "tracingEnabled": false,
+      "connected": null,
+      "failedClients": null,
+      "terminatedObserved": null,
+      "slowTerminatedObserved": null,
+      "ingestPositionsPerSecond": 26941.27206507262,
+      "processedPositions": 261255.0,
+      "processorDrainWindowSeconds": 10.539,
+      "processorDrainPositionsPerSecond": 24789.353828636493,
+      "peakLag": 6849,
+      "lastLag": 0,
+      "framesPerSecond": null,
+      "serverFrames": 0.0,
+      "pipelineP50Ms": null,
+      "pipelineP95Ms": null,
+      "pipelineP99Ms": null,
+      "endToEndP99Ms": null,
+      "pipelineSamples": null,
+      "pipelineMissing": null,
+      "pipelineNegative": null,
+      "api429": 13.0,
+      "replayer429": 13,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": null,
+      "gatewayGcPauseMs": 143.00000000000003,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 55,
+        "EXIT": 10,
+        "exitEnterWithin30m": 3,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 3
+      },
+      "latencyQualified": null
+    },
+    {
+      "run": "scale-processors-2/trial-1",
+      "status": "failed",
+      "error": "Command '['docker', 'compose', '-p', 'fleetbench61scale', '-f', 'compose.yaml', '-f', 'bench/scale61.yaml', '--profile', 'multi', 'up', '-d', 'api', 'copilot']' returned non-zero exit status 1.",
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": null,
+      "tracingEnabled": false,
+      "connected": null,
+      "failedClients": null,
+      "terminatedObserved": null,
+      "slowTerminatedObserved": null,
+      "ingestPositionsPerSecond": null,
+      "processedPositions": null,
+      "processorDrainWindowSeconds": null,
+      "processorDrainPositionsPerSecond": null,
+      "peakLag": null,
+      "lastLag": null,
+      "framesPerSecond": null,
+      "serverFrames": null,
+      "pipelineP50Ms": null,
+      "pipelineP95Ms": null,
+      "pipelineP99Ms": null,
+      "endToEndP99Ms": null,
+      "pipelineSamples": null,
+      "pipelineMissing": null,
+      "pipelineNegative": null,
+      "api429": null,
+      "replayer429": null,
+      "replayer503": null,
+      "gatewayLiveHeapMiB": null,
+      "gatewayGcPauseMs": null,
+      "overflowTerminations": null,
+      "sendTimeTerminations": null,
+      "flaps": null,
+      "latencyQualified": null
+    },
+    {
+      "run": "scale-processors-probe-1/trial-1",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": 100.0,
+      "tracingEnabled": false,
+      "connected": 100,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 40671.12506428448,
+      "processedPositions": 261255.0,
+      "processorDrainWindowSeconds": 8.0,
+      "processorDrainPositionsPerSecond": 32656.875,
+      "peakLag": 56209,
+      "lastLag": 0,
+      "framesPerSecond": 90.35443670617431,
+      "serverFrames": 1808.0,
+      "pipelineP50Ms": 73,
+      "pipelineP95Ms": 872,
+      "pipelineP99Ms": 1473,
+      "endToEndP99Ms": 1533,
+      "pipelineSamples": 1808,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": null,
+      "gatewayGcPauseMs": 120.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 55,
+        "EXIT": 10,
+        "exitEnterWithin30m": 3,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 3
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "scale-processors-probe-1/trial-2",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": 100.0,
+      "tracingEnabled": false,
+      "connected": 100,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 42377.34175470333,
+      "processedPositions": 261255.0,
+      "processorDrainWindowSeconds": 6.99,
+      "processorDrainPositionsPerSecond": 37375.53648068669,
+      "peakLag": 16914,
+      "lastLag": 0,
+      "framesPerSecond": 100.34927323164793,
+      "serverFrames": 2008.0,
+      "pipelineP50Ms": 63,
+      "pipelineP95Ms": 493,
+      "pipelineP99Ms": 1245,
+      "endToEndP99Ms": 1264,
+      "pipelineSamples": 2008,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": null,
+      "gatewayGcPauseMs": 129.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 55,
+        "EXIT": 10,
+        "exitEnterWithin30m": 3,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 3
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "scale-processors-probe-1/trial-3",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": 100.0,
+      "tracingEnabled": false,
+      "connected": 100,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 42624.90971804937,
+      "processedPositions": 261255.0,
+      "processorDrainWindowSeconds": 6.864,
+      "processorDrainPositionsPerSecond": 38061.62587412587,
+      "peakLag": 2061,
+      "lastLag": 0,
+      "framesPerSecond": 115.17775653764195,
+      "serverFrames": 2304.0,
+      "pipelineP50Ms": 67,
+      "pipelineP95Ms": 205,
+      "pipelineP99Ms": 500,
+      "endToEndP99Ms": 637,
+      "pipelineSamples": 2304,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": null,
+      "gatewayGcPauseMs": 130.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 55,
+        "EXIT": 10,
+        "exitEnterWithin30m": 3,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 3
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "scale-processors-probe-2/trial-1",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": 100.0,
+      "tracingEnabled": false,
+      "connected": 100,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 36980.437669789375,
+      "processedPositions": 261255.0,
+      "processorDrainWindowSeconds": 7.958,
+      "processorDrainPositionsPerSecond": 32829.228449359136,
+      "peakLag": 20349,
+      "lastLag": 0,
+      "framesPerSecond": 112.53746661231341,
+      "serverFrames": 2251.0,
+      "pipelineP50Ms": 72,
+      "pipelineP95Ms": 851,
+      "pipelineP99Ms": 1462,
+      "endToEndP99Ms": 1479,
+      "pipelineSamples": 2251,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": null,
+      "gatewayGcPauseMs": 141.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 55,
+        "EXIT": 10,
+        "exitEnterWithin30m": 3,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 3
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "scale-processors-probe-2/trial-2",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": 100.0,
+      "tracingEnabled": false,
+      "connected": 100,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 38705.82901215727,
+      "processedPositions": 261255.0,
+      "processorDrainWindowSeconds": 7.737,
+      "processorDrainPositionsPerSecond": 33766.963939511435,
+      "peakLag": 6581,
+      "lastLag": 0,
+      "framesPerSecond": 124.93684728475137,
+      "serverFrames": 2500.0,
+      "pipelineP50Ms": 77,
+      "pipelineP95Ms": 238,
+      "pipelineP99Ms": 424,
+      "endToEndP99Ms": 663,
+      "pipelineSamples": 2500,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": null,
+      "gatewayGcPauseMs": 154.0,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 55,
+        "EXIT": 10,
+        "exitEnterWithin30m": 3,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 3
+      },
+      "latencyQualified": true
+    },
+    {
+      "run": "scale-processors-probe-2/trial-3",
+      "status": "completed",
+      "error": null,
+      "gatewayOutOfMemory": false,
+      "serverOpenSessionsBeforeClientAbort": 100.0,
+      "tracingEnabled": false,
+      "connected": 100,
+      "failedClients": 0,
+      "terminatedObserved": 0,
+      "slowTerminatedObserved": 0,
+      "ingestPositionsPerSecond": 37994.79732108719,
+      "processedPositions": 261255.0,
+      "processorDrainWindowSeconds": 7.766,
+      "processorDrainPositionsPerSecond": 33640.87046098377,
+      "peakLag": 18430,
+      "lastLag": 0,
+      "framesPerSecond": 118.54250712371986,
+      "serverFrames": 2371.0,
+      "pipelineP50Ms": 73,
+      "pipelineP95Ms": 408,
+      "pipelineP99Ms": 945,
+      "endToEndP99Ms": 993,
+      "pipelineSamples": 2371,
+      "pipelineMissing": 0,
+      "pipelineNegative": 0,
+      "api429": 0,
+      "replayer429": 0,
+      "replayer503": 0,
+      "gatewayLiveHeapMiB": null,
+      "gatewayGcPauseMs": 155.99999999999997,
+      "overflowTerminations": 0.0,
+      "sendTimeTerminations": 0,
+      "flaps": {
+        "ENTER": 55,
+        "EXIT": 10,
+        "exitEnterWithin30m": 3,
+        "enterExitWithin10m": 0,
+        "totalFlaps": 3
+      },
+      "latencyQualified": true
+    }
+  ],
+  "aggregates": {
+    "S1": {
+      "attempts": 3,
+      "completed": 3,
+      "metrics": {
+        "ingestPositionsPerSecond": {
+          "median": 27436.730741381918,
+          "min": 27313.355081143418,
+          "max": 29623.834394175497
+        },
+        "processedPositions": {
+          "median": 261255.0,
+          "min": 261255.0,
+          "max": 261255.0
+        },
+        "processorDrainWindowSeconds": {
+          "median": 10.462,
+          "min": 9.451,
+          "max": 10.484
+        },
+        "processorDrainPositionsPerSecond": {
+          "median": 24971.802714586123,
+          "min": 24919.40099198779,
+          "max": 27643.106549571472
+        },
+        "peakLag": {
+          "median": 35242,
+          "min": 33320,
+          "max": 37616
+        },
+        "lastLag": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "serverFrames": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "api429": {
+          "median": 17.0,
+          "min": 14.0,
+          "max": 18.0
+        },
+        "replayer429": {
+          "median": 17,
+          "min": 14,
+          "max": 18
+        },
+        "replayer503": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "gatewayGcPauseMs": {
+          "median": 47.0,
+          "min": 43.0,
+          "max": 56.0
+        },
+        "overflowTerminations": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "sendTimeTerminations": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    "S2-after-10000": {
+      "attempts": 1,
+      "completed": 1,
+      "metrics": {
+        "serverOpenSessionsBeforeClientAbort": {
+          "median": 10000.0,
+          "min": 10000.0,
+          "max": 10000.0
+        },
+        "connected": {
+          "median": 10000,
+          "min": 10000,
+          "max": 10000
+        },
+        "failedClients": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "terminatedObserved": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "slowTerminatedObserved": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "ingestPositionsPerSecond": {
+          "median": 194.672241790769,
+          "min": 194.672241790769,
+          "max": 194.672241790769
+        },
+        "processedPositions": {
+          "median": 11669.0,
+          "min": 11669.0,
+          "max": 11669.0
+        },
+        "processorDrainWindowSeconds": {
+          "median": 60.816,
+          "min": 60.816,
+          "max": 60.816
+        },
+        "processorDrainPositionsPerSecond": {
+          "median": 191.87384898710866,
+          "min": 191.87384898710866,
+          "max": 191.87384898710866
+        },
+        "peakLag": {
+          "median": 24,
+          "min": 24,
+          "max": 24
+        },
+        "lastLag": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "framesPerSecond": {
+          "median": 61809.213391960766,
+          "min": 61809.213391960766,
+          "max": 61809.213391960766
+        },
+        "serverFrames": {
+          "median": 4326668.0,
+          "min": 4326668.0,
+          "max": 4326668.0
+        },
+        "pipelineP50Ms": {
+          "median": 208,
+          "min": 208,
+          "max": 208
+        },
+        "pipelineP95Ms": {
+          "median": 893,
+          "min": 893,
+          "max": 893
+        },
+        "pipelineP99Ms": {
+          "median": 1273,
+          "min": 1273,
+          "max": 1273
+        },
+        "endToEndP99Ms": {
+          "median": 1535,
+          "min": 1535,
+          "max": 1535
+        },
+        "pipelineSamples": {
+          "median": 39009840,
+          "min": 39009840,
+          "max": 39009840
+        },
+        "pipelineMissing": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "pipelineNegative": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "api429": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "replayer429": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "replayer503": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "gatewayLiveHeapMiB": {
+          "median": 765.0461120605469,
+          "min": 765.0461120605469,
+          "max": 765.0461120605469
+        },
+        "gatewayGcPauseMs": {
+          "median": 1496.0,
+          "min": 1496.0,
+          "max": 1496.0
+        },
+        "overflowTerminations": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "sendTimeTerminations": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    "S2-after-5000": {
+      "attempts": 3,
+      "completed": 3,
+      "metrics": {
+        "serverOpenSessionsBeforeClientAbort": {
+          "median": 5000.0,
+          "min": 5000.0,
+          "max": 5000.0
+        },
+        "connected": {
+          "median": 5000,
+          "min": 5000,
+          "max": 5000
+        },
+        "failedClients": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "terminatedObserved": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "slowTerminatedObserved": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "ingestPositionsPerSecond": {
+          "median": 194.7025156340059,
+          "min": 194.64927589622812,
+          "max": 194.70862378598568
+        },
+        "processedPositions": {
+          "median": 11669.0,
+          "min": 11669.0,
+          "max": 11669.0
+        },
+        "processorDrainWindowSeconds": {
+          "median": 60.472,
+          "min": 60.34,
+          "max": 60.55
+        },
+        "processorDrainPositionsPerSecond": {
+          "median": 192.96533933059928,
+          "min": 192.71676300578036,
+          "max": 193.3874709976798
+        },
+        "peakLag": {
+          "median": 119,
+          "min": 84,
+          "max": 125
+        },
+        "lastLag": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "framesPerSecond": {
+          "median": 35447.39247761369,
+          "min": 34662.76257708146,
+          "max": 36733.52621971603
+        },
+        "serverFrames": {
+          "median": 2481678.0,
+          "min": 2426674.0,
+          "max": 2571673.0
+        },
+        "pipelineP50Ms": {
+          "median": 99,
+          "min": 98,
+          "max": 102
+        },
+        "pipelineP95Ms": {
+          "median": 216,
+          "min": 210,
+          "max": 333
+        },
+        "pipelineP99Ms": {
+          "median": 596,
+          "min": 519,
+          "max": 642
+        },
+        "endToEndP99Ms": {
+          "median": 870,
+          "min": 775,
+          "max": 1059
+        },
+        "pipelineSamples": {
+          "median": 19501632,
+          "min": 19498298,
+          "max": 19503299
+        },
+        "pipelineMissing": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "pipelineNegative": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "api429": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "replayer429": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "replayer503": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "gatewayLiveHeapMiB": {
+          "median": 396.54270935058594,
+          "min": 395.5116653442383,
+          "max": 396.56359100341797
+        },
+        "gatewayGcPauseMs": {
+          "median": 313.00000000000006,
+          "min": 273.0,
+          "max": 323.0
+        },
+        "overflowTerminations": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "sendTimeTerminations": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    "S2-before-10000": {
+      "attempts": 1,
+      "completed": 0,
+      "metrics": {}
+    },
+    "S2-before-5000": {
+      "attempts": 3,
+      "completed": 3,
+      "metrics": {
+        "connected": {
+          "median": 5000,
+          "min": 5000,
+          "max": 5000
+        },
+        "failedClients": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "terminatedObserved": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "slowTerminatedObserved": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "ingestPositionsPerSecond": {
+          "median": 194.69146527199266,
+          "min": 194.5852952172551,
+          "max": 194.70894149996957
+        },
+        "processedPositions": {
+          "median": 11669.0,
+          "min": 11669.0,
+          "max": 11669.0
+        },
+        "processorDrainWindowSeconds": {
+          "median": 60.576,
+          "min": 60.507,
+          "max": 60.636
+        },
+        "processorDrainPositionsPerSecond": {
+          "median": 192.6340464870576,
+          "min": 192.4434329441256,
+          "max": 192.85371940436644
+        },
+        "peakLag": {
+          "median": 104,
+          "min": 44,
+          "max": 188
+        },
+        "lastLag": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "framesPerSecond": {
+          "median": 28093.00766768595,
+          "min": 27651.689085612485,
+          "max": 29210.85815334459
+        },
+        "serverFrames": {
+          "median": 1966656.0,
+          "min": 1935903.0,
+          "max": 2044899.0
+        },
+        "pipelineP50Ms": {
+          "median": 110,
+          "min": 107,
+          "max": 113
+        },
+        "pipelineP95Ms": {
+          "median": 443,
+          "min": 427,
+          "max": 561
+        },
+        "pipelineP99Ms": {
+          "median": 1099,
+          "min": 1028,
+          "max": 1156
+        },
+        "endToEndP99Ms": {
+          "median": 1405,
+          "min": 1336,
+          "max": 1451
+        },
+        "pipelineSamples": {
+          "median": 19501632,
+          "min": 19491630,
+          "max": 19503299
+        },
+        "pipelineMissing": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "pipelineNegative": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "api429": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "replayer429": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "replayer503": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "gatewayLiveHeapMiB": {
+          "median": 579.4234008789062,
+          "min": 578.5041351318359,
+          "max": 581.5079879760742
+        },
+        "gatewayGcPauseMs": {
+          "median": 1877.0,
+          "min": 1830.0,
+          "max": 1953.0
+        },
+        "overflowTerminations": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "sendTimeTerminations": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    "S3-slow-0": {
+      "attempts": 3,
+      "completed": 3,
+      "metrics": {
+        "serverOpenSessionsBeforeClientAbort": {
+          "median": 1000.0,
+          "min": 1000.0,
+          "max": 1000.0
+        },
+        "connected": {
+          "median": 1000,
+          "min": 1000,
+          "max": 1000
+        },
+        "failedClients": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "terminatedObserved": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "slowTerminatedObserved": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "ingestPositionsPerSecond": {
+          "median": 2997.12062379895,
+          "min": 2996.9775386023252,
+          "max": 2997.2693405293344
+        },
+        "processedPositions": {
+          "median": 261255.0,
+          "min": 261255.0,
+          "max": 261255.0
+        },
+        "processorDrainWindowSeconds": {
+          "median": 88.409,
+          "min": 87.631,
+          "max": 88.47
+        },
+        "processorDrainPositionsPerSecond": {
+          "median": 2955.072447375267,
+          "min": 2953.03492709393,
+          "max": 2981.307984617316
+        },
+        "peakLag": {
+          "median": 1317,
+          "min": 1305,
+          "max": 2217
+        },
+        "lastLag": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "framesPerSecond": {
+          "median": 3936.145975467069,
+          "min": 3921.2240900277075,
+          "max": 3960.3347866387126
+        },
+        "serverFrames": {
+          "median": 433016.0,
+          "min": 431341.0,
+          "max": 435677.0
+        },
+        "pipelineP50Ms": {
+          "median": 82,
+          "min": 81,
+          "max": 84
+        },
+        "pipelineP95Ms": {
+          "median": 139,
+          "min": 137,
+          "max": 142
+        },
+        "pipelineP99Ms": {
+          "median": 424,
+          "min": 267,
+          "max": 434
+        },
+        "endToEndP99Ms": {
+          "median": 1606,
+          "min": 1596,
+          "max": 1609
+        },
+        "pipelineSamples": {
+          "median": 60226771,
+          "min": 60182913,
+          "max": 60250950
+        },
+        "pipelineMissing": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "pipelineNegative": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "api429": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "replayer429": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "replayer503": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "gatewayLiveHeapMiB": {
+          "median": 104.03601837158203,
+          "min": 103.91541290283203,
+          "max": 104.10037994384766
+        },
+        "gatewayGcPauseMs": {
+          "median": 802.0,
+          "min": 764.0,
+          "max": 823.9999999999999
+        },
+        "overflowTerminations": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "sendTimeTerminations": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    "S3-slow-5": {
+      "attempts": 3,
+      "completed": 3,
+      "metrics": {
+        "serverOpenSessionsBeforeClientAbort": {
+          "median": 950.0,
+          "min": 950.0,
+          "max": 950.0
+        },
+        "connected": {
+          "median": 1000,
+          "min": 1000,
+          "max": 1000
+        },
+        "failedClients": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "terminatedObserved": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "slowTerminatedObserved": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "ingestPositionsPerSecond": {
+          "median": 2997.526984304305,
+          "min": 2997.106320537031,
+          "max": 2997.5575493542574
+        },
+        "processedPositions": {
+          "median": 261255.0,
+          "min": 261255.0,
+          "max": 261255.0
+        },
+        "processorDrainWindowSeconds": {
+          "median": 88.435,
+          "min": 88.413,
+          "max": 88.582
+        },
+        "processorDrainPositionsPerSecond": {
+          "median": 2954.2036524000678,
+          "min": 2949.301212435935,
+          "max": 2954.9387533507515
+        },
+        "peakLag": {
+          "median": 2214,
+          "min": 2138,
+          "max": 3367
+        },
+        "lastLag": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "framesPerSecond": {
+          "median": 3739.145928960994,
+          "min": 3733.743204209563,
+          "max": 3739.1539651850503
+        },
+        "serverFrames": {
+          "median": 413271.0,
+          "min": 412944.0,
+          "max": 413567.0
+        },
+        "pipelineP50Ms": {
+          "median": 81,
+          "min": 81,
+          "max": 82
+        },
+        "pipelineP95Ms": {
+          "median": 138,
+          "min": 137,
+          "max": 139
+        },
+        "pipelineP99Ms": {
+          "median": 554,
+          "min": 446,
+          "max": 649
+        },
+        "endToEndP99Ms": {
+          "median": 1603,
+          "min": 1596,
+          "max": 1606
+        },
+        "pipelineSamples": {
+          "median": 57160663,
+          "min": 57113176,
+          "max": 57172411
+        },
+        "pipelineMissing": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "pipelineNegative": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "api429": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "replayer429": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "replayer503": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "gatewayLiveHeapMiB": {
+          "median": 103.646240234375,
+          "min": 103.56999206542969,
+          "max": 103.67264556884766
+        },
+        "gatewayGcPauseMs": {
+          "median": 753.0,
+          "min": 739.0,
+          "max": 778.0
+        },
+        "overflowTerminations": {
+          "median": 50.0,
+          "min": 50.0,
+          "max": 50.0
+        },
+        "sendTimeTerminations": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    "S5-hysteresis": {
+      "attempts": 1,
+      "completed": 1,
+      "metrics": {
+        "ingestPositionsPerSecond": {
+          "median": 28982.757007609416,
+          "min": 28982.757007609416,
+          "max": 28982.757007609416
+        },
+        "processedPositions": {
+          "median": 261255.0,
+          "min": 261255.0,
+          "max": 261255.0
+        },
+        "processorDrainWindowSeconds": {
+          "median": 10.416,
+          "min": 10.416,
+          "max": 10.416
+        },
+        "processorDrainPositionsPerSecond": {
+          "median": 25082.085253456222,
+          "min": 25082.085253456222,
+          "max": 25082.085253456222
+        },
+        "peakLag": {
+          "median": 45307,
+          "min": 45307,
+          "max": 45307
+        },
+        "lastLag": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "serverFrames": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "api429": {
+          "median": 22.0,
+          "min": 22.0,
+          "max": 22.0
+        },
+        "replayer429": {
+          "median": 22,
+          "min": 22,
+          "max": 22
+        },
+        "replayer503": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "gatewayGcPauseMs": {
+          "median": 34.0,
+          "min": 34.0,
+          "max": 34.0
+        },
+        "overflowTerminations": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "sendTimeTerminations": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    "S5-naive": {
+      "attempts": 1,
+      "completed": 1,
+      "metrics": {
+        "ingestPositionsPerSecond": {
+          "median": 28850.28845508509,
+          "min": 28850.28845508509,
+          "max": 28850.28845508509
+        },
+        "processedPositions": {
+          "median": 261255.0,
+          "min": 261255.0,
+          "max": 261255.0
+        },
+        "processorDrainWindowSeconds": {
+          "median": 10.444,
+          "min": 10.444,
+          "max": 10.444
+        },
+        "processorDrainPositionsPerSecond": {
+          "median": 25014.841057066256,
+          "min": 25014.841057066256,
+          "max": 25014.841057066256
+        },
+        "peakLag": {
+          "median": 57821,
+          "min": 57821,
+          "max": 57821
+        },
+        "lastLag": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "serverFrames": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "api429": {
+          "median": 25.0,
+          "min": 25.0,
+          "max": 25.0
+        },
+        "replayer429": {
+          "median": 25,
+          "min": 25,
+          "max": 25
+        },
+        "replayer503": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "gatewayGcPauseMs": {
+          "median": 37.0,
+          "min": 37.0,
+          "max": 37.0
+        },
+        "overflowTerminations": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "sendTimeTerminations": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    "scale-gateways-1": {
+      "attempts": 3,
+      "completed": 3,
+      "metrics": {
+        "serverOpenSessionsBeforeClientAbort": {
+          "median": 5000.0,
+          "min": 5000.0,
+          "max": 5000.0
+        },
+        "connected": {
+          "median": 5000,
+          "min": 5000,
+          "max": 5000
+        },
+        "failedClients": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "terminatedObserved": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "slowTerminatedObserved": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "ingestPositionsPerSecond": {
+          "median": 194.59114223252072,
+          "min": 194.56171319397413,
+          "max": 194.7028954596488
+        },
+        "processedPositions": {
+          "median": 11669.0,
+          "min": 11669.0,
+          "max": 11669.0
+        },
+        "processorDrainWindowSeconds": {
+          "median": 60.624,
+          "min": 60.394,
+          "max": 61.111
+        },
+        "processorDrainPositionsPerSecond": {
+          "median": 192.48152546846134,
+          "min": 190.94761990476349,
+          "max": 193.2145577375236
+        },
+        "peakLag": {
+          "median": 67,
+          "min": 31,
+          "max": 109
+        },
+        "lastLag": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "framesPerSecond": {
+          "median": 20521.682503429045,
+          "min": 19427.343247035184,
+          "max": 20855.136172503073
+        },
+        "serverFrames": {
+          "median": 1436678.0,
+          "min": 1360010.0,
+          "max": 1460014.0
+        },
+        "pipelineP50Ms": {
+          "median": 275,
+          "min": 270,
+          "max": 331
+        },
+        "pipelineP95Ms": {
+          "median": 1018,
+          "min": 964,
+          "max": 1162
+        },
+        "pipelineP99Ms": {
+          "median": 1643,
+          "min": 1458,
+          "max": 1824
+        },
+        "endToEndP99Ms": {
+          "median": 1914,
+          "min": 1827,
+          "max": 2114
+        },
+        "pipelineSamples": {
+          "median": 19504966,
+          "min": 19501632,
+          "max": 19504966
+        },
+        "pipelineMissing": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "pipelineNegative": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "api429": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "replayer429": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "replayer503": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "gatewayGcPauseMs": {
+          "median": 23412.0,
+          "min": 22644.0,
+          "max": 24054.000000000004
+        },
+        "overflowTerminations": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "sendTimeTerminations": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    "scale-gateways-2": {
+      "attempts": 3,
+      "completed": 3,
+      "metrics": {
+        "serverOpenSessionsBeforeClientAbort": {
+          "median": 5000.0,
+          "min": 5000.0,
+          "max": 5000.0
+        },
+        "connected": {
+          "median": 5000,
+          "min": 5000,
+          "max": 5000
+        },
+        "failedClients": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "terminatedObserved": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "slowTerminatedObserved": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "ingestPositionsPerSecond": {
+          "median": 194.5385905349969,
+          "min": 182.85559052213202,
+          "max": 194.6214826908265
+        },
+        "processedPositions": {
+          "median": 11669.0,
+          "min": 11669.0,
+          "max": 11669.0
+        },
+        "processorDrainWindowSeconds": {
+          "median": 60.918,
+          "min": 60.271,
+          "max": 64.373
+        },
+        "processorDrainPositionsPerSecond": {
+          "median": 191.55257887652255,
+          "min": 181.27165115809422,
+          "max": 193.6088666191037
+        },
+        "peakLag": {
+          "median": 44,
+          "min": 43,
+          "max": 167
+        },
+        "lastLag": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "framesPerSecond": {
+          "median": 32936.20218997212,
+          "min": 31903.99482347828,
+          "max": 33401.88262867774
+        },
+        "serverFrames": {
+          "median": 2305874.0,
+          "min": 2233449.0,
+          "max": 2338235.0
+        },
+        "pipelineP50Ms": {
+          "median": 139,
+          "min": 122,
+          "max": 148
+        },
+        "pipelineP95Ms": {
+          "median": 399,
+          "min": 370,
+          "max": 464
+        },
+        "pipelineP99Ms": {
+          "median": 845,
+          "min": 761,
+          "max": 860
+        },
+        "endToEndP99Ms": {
+          "median": 1472,
+          "min": 1439,
+          "max": 2295
+        },
+        "pipelineSamples": {
+          "median": 19504966,
+          "min": 19504966,
+          "max": 19504966
+        },
+        "pipelineMissing": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "pipelineNegative": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "api429": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "replayer429": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "replayer503": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "gatewayGcPauseMs": {
+          "median": 1541.0,
+          "min": 1529.0,
+          "max": 1764.9999999999998
+        },
+        "overflowTerminations": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "sendTimeTerminations": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    "scale-processors-1": {
+      "attempts": 3,
+      "completed": 3,
+      "metrics": {
+        "ingestPositionsPerSecond": {
+          "median": 27776.966587741565,
+          "min": 26941.27206507262,
+          "max": 28625.614928854495
+        },
+        "processedPositions": {
+          "median": 261255.0,
+          "min": 261255.0,
+          "max": 261255.0
+        },
+        "processorDrainWindowSeconds": {
+          "median": 10.548,
+          "min": 10.539,
+          "max": 10.557
+        },
+        "processorDrainPositionsPerSecond": {
+          "median": 24768.202502844142,
+          "min": 24747.087240693378,
+          "max": 24789.353828636493
+        },
+        "peakLag": {
+          "median": 20200,
+          "min": 6849,
+          "max": 50420
+        },
+        "lastLag": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "serverFrames": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "api429": {
+          "median": 14.0,
+          "min": 13.0,
+          "max": 17.0
+        },
+        "replayer429": {
+          "median": 14,
+          "min": 13,
+          "max": 17
+        },
+        "replayer503": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "gatewayGcPauseMs": {
+          "median": 143.00000000000003,
+          "min": 137.0,
+          "max": 162.0
+        },
+        "overflowTerminations": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "sendTimeTerminations": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    "scale-processors-2": {
+      "attempts": 1,
+      "completed": 0,
+      "metrics": {}
+    },
+    "scale-processors-probe-1": {
+      "attempts": 3,
+      "completed": 3,
+      "metrics": {
+        "serverOpenSessionsBeforeClientAbort": {
+          "median": 100.0,
+          "min": 100.0,
+          "max": 100.0
+        },
+        "connected": {
+          "median": 100,
+          "min": 100,
+          "max": 100
+        },
+        "failedClients": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "terminatedObserved": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "slowTerminatedObserved": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "ingestPositionsPerSecond": {
+          "median": 42377.34175470333,
+          "min": 40671.12506428448,
+          "max": 42624.90971804937
+        },
+        "processedPositions": {
+          "median": 261255.0,
+          "min": 261255.0,
+          "max": 261255.0
+        },
+        "processorDrainWindowSeconds": {
+          "median": 6.99,
+          "min": 6.864,
+          "max": 8.0
+        },
+        "processorDrainPositionsPerSecond": {
+          "median": 37375.53648068669,
+          "min": 32656.875,
+          "max": 38061.62587412587
+        },
+        "peakLag": {
+          "median": 16914,
+          "min": 2061,
+          "max": 56209
+        },
+        "lastLag": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "framesPerSecond": {
+          "median": 100.34927323164793,
+          "min": 90.35443670617431,
+          "max": 115.17775653764195
+        },
+        "serverFrames": {
+          "median": 2008.0,
+          "min": 1808.0,
+          "max": 2304.0
+        },
+        "pipelineP50Ms": {
+          "median": 67,
+          "min": 63,
+          "max": 73
+        },
+        "pipelineP95Ms": {
+          "median": 493,
+          "min": 205,
+          "max": 872
+        },
+        "pipelineP99Ms": {
+          "median": 1245,
+          "min": 500,
+          "max": 1473
+        },
+        "endToEndP99Ms": {
+          "median": 1264,
+          "min": 637,
+          "max": 1533
+        },
+        "pipelineSamples": {
+          "median": 2008,
+          "min": 1808,
+          "max": 2304
+        },
+        "pipelineMissing": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "pipelineNegative": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "api429": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "replayer429": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "replayer503": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "gatewayGcPauseMs": {
+          "median": 129.0,
+          "min": 120.0,
+          "max": 130.0
+        },
+        "overflowTerminations": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "sendTimeTerminations": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    "scale-processors-probe-2": {
+      "attempts": 3,
+      "completed": 3,
+      "metrics": {
+        "serverOpenSessionsBeforeClientAbort": {
+          "median": 100.0,
+          "min": 100.0,
+          "max": 100.0
+        },
+        "connected": {
+          "median": 100,
+          "min": 100,
+          "max": 100
+        },
+        "failedClients": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "terminatedObserved": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "slowTerminatedObserved": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "ingestPositionsPerSecond": {
+          "median": 37994.79732108719,
+          "min": 36980.437669789375,
+          "max": 38705.82901215727
+        },
+        "processedPositions": {
+          "median": 261255.0,
+          "min": 261255.0,
+          "max": 261255.0
+        },
+        "processorDrainWindowSeconds": {
+          "median": 7.766,
+          "min": 7.737,
+          "max": 7.958
+        },
+        "processorDrainPositionsPerSecond": {
+          "median": 33640.87046098377,
+          "min": 32829.228449359136,
+          "max": 33766.963939511435
+        },
+        "peakLag": {
+          "median": 18430,
+          "min": 6581,
+          "max": 20349
+        },
+        "lastLag": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "framesPerSecond": {
+          "median": 118.54250712371986,
+          "min": 112.53746661231341,
+          "max": 124.93684728475137
+        },
+        "serverFrames": {
+          "median": 2371.0,
+          "min": 2251.0,
+          "max": 2500.0
+        },
+        "pipelineP50Ms": {
+          "median": 73,
+          "min": 72,
+          "max": 77
+        },
+        "pipelineP95Ms": {
+          "median": 408,
+          "min": 238,
+          "max": 851
+        },
+        "pipelineP99Ms": {
+          "median": 945,
+          "min": 424,
+          "max": 1462
+        },
+        "endToEndP99Ms": {
+          "median": 993,
+          "min": 663,
+          "max": 1479
+        },
+        "pipelineSamples": {
+          "median": 2371,
+          "min": 2251,
+          "max": 2500
+        },
+        "pipelineMissing": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "pipelineNegative": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "api429": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "replayer429": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "replayer503": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "gatewayGcPauseMs": {
+          "median": 154.0,
+          "min": 141.0,
+          "max": 155.99999999999997
+        },
+        "overflowTerminations": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "sendTimeTerminations": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    }
+  }
+}

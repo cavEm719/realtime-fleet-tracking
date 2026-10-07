@@ -1,0 +1,7 @@
+{
+  "ENTER": 55,
+  "EXIT": 10,
+  "exitEnterWithin30m": 3,
+  "enterExitWithin10m": 0,
+  "totalFlaps": 3
+}

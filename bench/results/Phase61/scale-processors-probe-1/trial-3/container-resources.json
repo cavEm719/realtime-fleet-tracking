@@ -1,0 +1,103 @@
+[
+  {
+    "name": "/fleetbench61scale-api-1",
+    "imageId": "sha256:37b137f07fb5a00f05ab8b4af4eb8761458706736740f268951dcb18b12a4cb3",
+    "memoryBytes": 805306368,
+    "nanoCpus": 0,
+    "args": [
+      "-Xms128m",
+      "-Xmx512m",
+      "-jar",
+      "/app/service.jar"
+    ]
+  },
+  {
+    "name": "/fleetbench61scale-copilot-1",
+    "imageId": "sha256:45866c8602948b9bd9e4de7324894b54fdf580871643de81cdeb04942c7c67c7",
+    "memoryBytes": 805306368,
+    "nanoCpus": 0,
+    "args": [
+      "-Xms128m",
+      "-Xmx512m",
+      "-jar",
+      "/app/service.jar"
+    ]
+  },
+  {
+    "name": "/fleetbench61scale-gateway-1-1",
+    "imageId": "sha256:5420a1c56fb51c9a593b231fb480f60dd917dc0a9e71e3d3d77d10d81f3495b7",
+    "memoryBytes": 805306368,
+    "nanoCpus": 0,
+    "args": [
+      "-Xms128m",
+      "-Xmx512m",
+      "-jar",
+      "/app/service.jar",
+      "--gateway.event-group-id=fleet-gateway-1"
+    ]
+  },
+  {
+    "name": "/fleetbench61scale-jaeger-1",
+    "imageId": "sha256:ab6f1a1f0fb49ea08bcd19f6b84f6081d0d44b364b6de148e1798eb5816bacac",
+    "memoryBytes": 268435456,
+    "nanoCpus": 0,
+    "args": []
+  },
+  {
+    "name": "/fleetbench61scale-kafka-1",
+    "imageId": "sha256:4ceccc577f03f51f6af8dbfda55194d0d892f4fa7913ffbded567ce3895622ed",
+    "memoryBytes": 1610612736,
+    "nanoCpus": 0,
+    "args": [
+      "/etc/kafka/docker/run"
+    ]
+  },
+  {
+    "name": "/fleetbench61scale-mysql-1",
+    "imageId": "sha256:7dcddc01f13bab2f15cde676d44d01f61fc9f99fe7785e86196dfc07d358ae2b",
+    "memoryBytes": 1073741824,
+    "nanoCpus": 0,
+    "args": [
+      "mysqld"
+    ]
+  },
+  {
+    "name": "/fleetbench61scale-nginx-1",
+    "imageId": "sha256:30f1c0d78e0ad60901648be663a710bdadf19e4c10ac6782c235200619158284",
+    "memoryBytes": 134217728,
+    "nanoCpus": 0,
+    "args": [
+      "nginx",
+      "-g",
+      "daemon off;"
+    ]
+  },
+  {
+    "name": "/fleetbench61scale-processor-1-1",
+    "imageId": "sha256:c95d09e6b5a728df83ae5bc89331040bb1bbf2436259f8982dcdde82be025770",
+    "memoryBytes": 805306368,
+    "nanoCpus": 0,
+    "args": [
+      "-Xms128m",
+      "-Xmx512m",
+      "-jar",
+      "/app/service.jar",
+      "--fence-cache.group-id=fleet-fences-processor-1"
+    ]
+  },
+  {
+    "name": "/fleetbench61scale-redis-1",
+    "imageId": "sha256:a8f08480e1f88f2647fed492d1178c06abb0d0c1fbf02c682a61e2f483fb3954",
+    "memoryBytes": 536870912,
+    "nanoCpus": 0,
+    "args": [
+      "redis-server",
+      "--appendonly",
+      "yes",
+      "--appendfsync",
+      "always",
+      "--maxmemory-policy",
+      "noeviction"
+    ]
+  }
+]
