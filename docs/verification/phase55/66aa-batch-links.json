@@ -1,0 +1,80 @@
+{
+  "data": [
+    {
+      "traceID": "702d7e17bcb7ac236ddcb2a995bd67e8",
+      "spans": [
+        {
+          "traceID": "702d7e17bcb7ac236ddcb2a995bd67e8",
+          "spanID": "640bc296b2514a83",
+          "operationName": "processor.batch",
+          "references": [
+            {
+              "refType": "FOLLOWS_FROM",
+              "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+              "spanID": "5238adf1cead1408"
+            },
+            {
+              "refType": "FOLLOWS_FROM",
+              "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+              "spanID": "894df174b77bda4e"
+            },
+            {
+              "refType": "FOLLOWS_FROM",
+              "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+              "spanID": "aba960d88c9d34c7"
+            }
+          ],
+          "startTime": 1791476759921351,
+          "duration": 22476,
+          "tags": [
+            {
+              "key": "otel.scope.name",
+              "type": "string",
+              "value": "dev.fleet"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "fleet-processor",
+          "tags": [
+            {
+              "key": "service.instance.id",
+              "type": "string",
+              "value": "processor-2"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "java"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.49.0"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    }
+  ],
+  "total": 0,
+  "limit": 0,
+  "offset": 0,
+  "errors": null
+}

@@ -1,0 +1,754 @@
+{
+  "data": [
+    {
+      "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+      "spans": [
+        {
+          "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+          "spanID": "f40f501dbc5e9cf8",
+          "operationName": "fence-events receive",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+              "spanID": "04ad63ba7e7a221e"
+            }
+          ],
+          "startTime": 1791476760370308,
+          "duration": 1190,
+          "tags": [
+            {
+              "key": "messaging.consumer.id",
+              "type": "string",
+              "value": "fleet-gateway-2 - consumer-fleet-gateway-2-1"
+            },
+            {
+              "key": "messaging.kafka.client_id",
+              "type": "string",
+              "value": "consumer-fleet-gateway-2-1"
+            },
+            {
+              "key": "messaging.kafka.consumer.group",
+              "type": "string",
+              "value": "fleet-gateway-2"
+            },
+            {
+              "key": "messaging.kafka.message.offset",
+              "type": "string",
+              "value": "1"
+            },
+            {
+              "key": "messaging.kafka.source.partition",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "key": "messaging.operation",
+              "type": "string",
+              "value": "receive"
+            },
+            {
+              "key": "messaging.source.kind",
+              "type": "string",
+              "value": "topic"
+            },
+            {
+              "key": "messaging.source.name",
+              "type": "string",
+              "value": "fence-events"
+            },
+            {
+              "key": "messaging.system",
+              "type": "string",
+              "value": "kafka"
+            },
+            {
+              "key": "otel.scope.name",
+              "type": "string",
+              "value": "org.springframework.boot"
+            },
+            {
+              "key": "otel.scope.version",
+              "type": "string",
+              "value": "3.5.16"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "Apache Kafka: 5L6g3nShT-eMCtK--X86sw"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "consumer"
+            },
+            {
+              "key": "spring.kafka.listener.id",
+              "type": "string",
+              "value": "gateway-fence-events-0"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "clock skew adjustment disabled; not applying calculated delta of -9.285703ms"
+          ]
+        },
+        {
+          "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+          "spanID": "aba960d88c9d34c7",
+          "operationName": "positions send",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+              "spanID": "4d688b59b2e18188"
+            }
+          ],
+          "startTime": 1791476759907423,
+          "duration": 11903,
+          "tags": [
+            {
+              "key": "messaging.destination.kind",
+              "type": "string",
+              "value": "topic"
+            },
+            {
+              "key": "messaging.destination.name",
+              "type": "string",
+              "value": "positions"
+            },
+            {
+              "key": "messaging.operation",
+              "type": "string",
+              "value": "publish"
+            },
+            {
+              "key": "messaging.system",
+              "type": "string",
+              "value": "kafka"
+            },
+            {
+              "key": "otel.scope.name",
+              "type": "string",
+              "value": "org.springframework.boot"
+            },
+            {
+              "key": "otel.scope.version",
+              "type": "string",
+              "value": "3.5.16"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "Apache Kafka: 5L6g3nShT-eMCtK--X86sw"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "producer"
+            },
+            {
+              "key": "spring.kafka.template.name",
+              "type": "string",
+              "value": "kafkaTemplate"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+          "spanID": "685534797e1f9a3b",
+          "operationName": "gateway.delivery",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+              "spanID": "ad481aea61dea6d3"
+            }
+          ],
+          "startTime": 1791476760370480,
+          "duration": 346,
+          "tags": [
+            {
+              "key": "otel.scope.name",
+              "type": "string",
+              "value": "dev.fleet"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            }
+          ],
+          "logs": [],
+          "processID": "p3",
+          "warnings": [
+            "clock skew adjustment disabled; not applying calculated delta of -1.012945ms"
+          ]
+        },
+        {
+          "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+          "spanID": "667a03a2aede5555",
+          "operationName": "gateway.delivery",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+              "spanID": "f40f501dbc5e9cf8"
+            }
+          ],
+          "startTime": 1791476760371898,
+          "duration": 1034,
+          "tags": [
+            {
+              "key": "otel.scope.name",
+              "type": "string",
+              "value": "dev.fleet"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "clock skew adjustment disabled; not applying calculated delta of -1.512177ms"
+          ]
+        },
+        {
+          "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+          "spanID": "ca53ad04645b35bd",
+          "operationName": "outbox.publish",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+              "spanID": "5a4b06f4481a5f70"
+            }
+          ],
+          "startTime": 1791476760359270,
+          "duration": 1046,
+          "tags": [
+            {
+              "key": "otel.scope.name",
+              "type": "string",
+              "value": "dev.fleet"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            }
+          ],
+          "logs": [],
+          "processID": "p4",
+          "warnings": [
+            "clock skew adjustment disabled; not applying calculated delta of -426.17815ms"
+          ]
+        },
+        {
+          "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+          "spanID": "5a4b06f4481a5f70",
+          "operationName": "processor.transition",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+              "spanID": "aba960d88c9d34c7"
+            },
+            {
+              "refType": "FOLLOWS_FROM",
+              "traceID": "702d7e17bcb7ac236ddcb2a995bd67e8",
+              "spanID": "640bc296b2514a83"
+            }
+          ],
+          "startTime": 1791476759929946,
+          "duration": 7339,
+          "tags": [
+            {
+              "key": "otel.scope.name",
+              "type": "string",
+              "value": "dev.fleet"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            }
+          ],
+          "logs": [],
+          "processID": "p4",
+          "warnings": [
+            "clock skew adjustment disabled; not applying calculated delta of -20.240689ms"
+          ]
+        },
+        {
+          "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+          "spanID": "04ad63ba7e7a221e",
+          "operationName": "fence-events send",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+              "spanID": "ca53ad04645b35bd"
+            }
+          ],
+          "startTime": 1791476760359546,
+          "duration": 4143,
+          "tags": [
+            {
+              "key": "messaging.destination.kind",
+              "type": "string",
+              "value": "topic"
+            },
+            {
+              "key": "messaging.destination.name",
+              "type": "string",
+              "value": "fence-events"
+            },
+            {
+              "key": "messaging.operation",
+              "type": "string",
+              "value": "publish"
+            },
+            {
+              "key": "messaging.system",
+              "type": "string",
+              "value": "kafka"
+            },
+            {
+              "key": "otel.scope.name",
+              "type": "string",
+              "value": "org.springframework.boot"
+            },
+            {
+              "key": "otel.scope.version",
+              "type": "string",
+              "value": "3.5.16"
+            },
+            {
+              "key": "otel.status_code",
+              "type": "string",
+              "value": "OK"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "Apache Kafka: 5L6g3nShT-eMCtK--X86sw"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "producer"
+            },
+            {
+              "key": "spring.kafka.template.name",
+              "type": "string",
+              "value": "kafkaTemplate"
+            }
+          ],
+          "logs": [],
+          "processID": "p4",
+          "warnings": null
+        },
+        {
+          "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+          "spanID": "5238adf1cead1408",
+          "operationName": "positions send",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+              "spanID": "4d688b59b2e18188"
+            }
+          ],
+          "startTime": 1791476759905659,
+          "duration": 13482,
+          "tags": [
+            {
+              "key": "messaging.destination.kind",
+              "type": "string",
+              "value": "topic"
+            },
+            {
+              "key": "messaging.destination.name",
+              "type": "string",
+              "value": "positions"
+            },
+            {
+              "key": "messaging.operation",
+              "type": "string",
+              "value": "publish"
+            },
+            {
+              "key": "messaging.system",
+              "type": "string",
+              "value": "kafka"
+            },
+            {
+              "key": "otel.scope.name",
+              "type": "string",
+              "value": "org.springframework.boot"
+            },
+            {
+              "key": "otel.scope.version",
+              "type": "string",
+              "value": "3.5.16"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "Apache Kafka: 5L6g3nShT-eMCtK--X86sw"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "producer"
+            },
+            {
+              "key": "spring.kafka.template.name",
+              "type": "string",
+              "value": "kafkaTemplate"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+          "spanID": "4d688b59b2e18188",
+          "operationName": "http post /ingest",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+              "spanID": "55bb55bb55bb55bb"
+            }
+          ],
+          "startTime": 1791476759895070,
+          "duration": 25668,
+          "tags": [
+            {
+              "key": "exception",
+              "type": "string",
+              "value": "none"
+            },
+            {
+              "key": "http.url",
+              "type": "string",
+              "value": "/ingest"
+            },
+            {
+              "key": "method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "otel.scope.name",
+              "type": "string",
+              "value": "org.springframework.boot"
+            },
+            {
+              "key": "otel.scope.version",
+              "type": "string",
+              "value": "3.5.16"
+            },
+            {
+              "key": "outcome",
+              "type": "string",
+              "value": "SUCCESS"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "status",
+              "type": "string",
+              "value": "202"
+            },
+            {
+              "key": "uri",
+              "type": "string",
+              "value": "/ingest"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": [
+            "invalid parent span IDs=55bb55bb55bb55bb; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+          "spanID": "894df174b77bda4e",
+          "operationName": "positions send",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+              "spanID": "4d688b59b2e18188"
+            }
+          ],
+          "startTime": 1791476759907262,
+          "duration": 11984,
+          "tags": [
+            {
+              "key": "messaging.destination.kind",
+              "type": "string",
+              "value": "topic"
+            },
+            {
+              "key": "messaging.destination.name",
+              "type": "string",
+              "value": "positions"
+            },
+            {
+              "key": "messaging.operation",
+              "type": "string",
+              "value": "publish"
+            },
+            {
+              "key": "messaging.system",
+              "type": "string",
+              "value": "kafka"
+            },
+            {
+              "key": "otel.scope.name",
+              "type": "string",
+              "value": "org.springframework.boot"
+            },
+            {
+              "key": "otel.scope.version",
+              "type": "string",
+              "value": "3.5.16"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "Apache Kafka: 5L6g3nShT-eMCtK--X86sw"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "producer"
+            },
+            {
+              "key": "spring.kafka.template.name",
+              "type": "string",
+              "value": "kafkaTemplate"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+          "spanID": "ad481aea61dea6d3",
+          "operationName": "fence-events receive",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "66aa66aa66aa66aa66aa66aa66aa66aa",
+              "spanID": "04ad63ba7e7a221e"
+            }
+          ],
+          "startTime": 1791476760368784,
+          "duration": 1711,
+          "tags": [
+            {
+              "key": "messaging.consumer.id",
+              "type": "string",
+              "value": "fleet-gateway-1 - consumer-fleet-gateway-1-1"
+            },
+            {
+              "key": "messaging.kafka.client_id",
+              "type": "string",
+              "value": "consumer-fleet-gateway-1-1"
+            },
+            {
+              "key": "messaging.kafka.consumer.group",
+              "type": "string",
+              "value": "fleet-gateway-1"
+            },
+            {
+              "key": "messaging.kafka.message.offset",
+              "type": "string",
+              "value": "1"
+            },
+            {
+              "key": "messaging.kafka.source.partition",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "key": "messaging.operation",
+              "type": "string",
+              "value": "receive"
+            },
+            {
+              "key": "messaging.source.kind",
+              "type": "string",
+              "value": "topic"
+            },
+            {
+              "key": "messaging.source.name",
+              "type": "string",
+              "value": "fence-events"
+            },
+            {
+              "key": "messaging.system",
+              "type": "string",
+              "value": "kafka"
+            },
+            {
+              "key": "otel.scope.name",
+              "type": "string",
+              "value": "org.springframework.boot"
+            },
+            {
+              "key": "otel.scope.version",
+              "type": "string",
+              "value": "3.5.16"
+            },
+            {
+              "key": "peer.service",
+              "type": "string",
+              "value": "Apache Kafka: 5L6g3nShT-eMCtK--X86sw"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "consumer"
+            },
+            {
+              "key": "spring.kafka.listener.id",
+              "type": "string",
+              "value": "gateway-fence-events-0"
+            }
+          ],
+          "logs": [],
+          "processID": "p3",
+          "warnings": [
+            "clock skew adjustment disabled; not applying calculated delta of -8.022528ms"
+          ]
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "fleet-gateway",
+          "tags": [
+            {
+              "key": "service.instance.id",
+              "type": "string",
+              "value": "gateway-2"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "java"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.49.0"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "fleet-api",
+          "tags": [
+            {
+              "key": "service.instance.id",
+              "type": "string",
+              "value": "api-1"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "java"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.49.0"
+            }
+          ]
+        },
+        "p3": {
+          "serviceName": "fleet-gateway",
+          "tags": [
+            {
+              "key": "service.instance.id",
+              "type": "string",
+              "value": "gateway-1"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "java"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.49.0"
+            }
+          ]
+        },
+        "p4": {
+          "serviceName": "fleet-processor",
+          "tags": [
+            {
+              "key": "service.instance.id",
+              "type": "string",
+              "value": "processor-2"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "java"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.49.0"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    }
+  ],
+  "total": 0,
+  "limit": 0,
+  "offset": 0,
+  "errors": null
+}
