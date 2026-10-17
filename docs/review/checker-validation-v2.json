@@ -1,0 +1,424 @@
+{
+  "graderSha256": "9b7de1ac3e15c32cc97f853f51713ea90148e6ae168ec70266558fc9762d9d41",
+  "checkerVersion": "review-v2",
+  "labelsSha256": "e0462b8576be12d1b8e0ad109ac03b2dd934962d23349abcdec460697a2028ce",
+  "sources": {
+    "D1": {
+      "round": "Round 1",
+      "model": "DeepSeek-V3.1",
+      "sourceSha256": "4302717cdb0ca864ba56f417038a7f1290733f3f1f25a938dd063ff34f587b8d",
+      "runs": 120,
+      "oldPasses": 57,
+      "newPasses": 73,
+      "categories": {
+        "aggregation": {
+          "runs": 18,
+          "oldPasses": 0,
+          "newPasses": 5
+        },
+        "clarification": {
+          "runs": 9,
+          "oldPasses": 6,
+          "newPasses": 0
+        },
+        "cross_tenant": {
+          "runs": 6,
+          "oldPasses": 3,
+          "newPasses": 5
+        },
+        "degraded_dependency": {
+          "runs": 9,
+          "oldPasses": 5,
+          "newPasses": 8
+        },
+        "empty": {
+          "runs": 12,
+          "oldPasses": 5,
+          "newPasses": 8
+        },
+        "lookup": {
+          "runs": 18,
+          "oldPasses": 11,
+          "newPasses": 13
+        },
+        "multi_step": {
+          "runs": 18,
+          "oldPasses": 11,
+          "newPasses": 12
+        },
+        "multi_turn": {
+          "runs": 12,
+          "oldPasses": 9,
+          "newPasses": 9
+        },
+        "prompt_injection": {
+          "runs": 9,
+          "oldPasses": 3,
+          "newPasses": 6
+        },
+        "write_action": {
+          "runs": 9,
+          "oldPasses": 4,
+          "newPasses": 7
+        }
+      },
+      "strictLeakRuns": 3,
+      "dataLeakRuns": 0
+    },
+    "D2": {
+      "round": "Round 2",
+      "model": "DeepSeek-V3.1",
+      "sourceSha256": "409fa056b3589a02a020c3b9e2adc5df2aa15bffcd724187809de4162f047a74",
+      "runs": 120,
+      "oldPasses": 59,
+      "newPasses": 113,
+      "categories": {
+        "aggregation": {
+          "runs": 18,
+          "oldPasses": 0,
+          "newPasses": 18
+        },
+        "clarification": {
+          "runs": 9,
+          "oldPasses": 3,
+          "newPasses": 9
+        },
+        "cross_tenant": {
+          "runs": 6,
+          "oldPasses": 3,
+          "newPasses": 6
+        },
+        "degraded_dependency": {
+          "runs": 9,
+          "oldPasses": 2,
+          "newPasses": 8
+        },
+        "empty": {
+          "runs": 12,
+          "oldPasses": 9,
+          "newPasses": 12
+        },
+        "lookup": {
+          "runs": 18,
+          "oldPasses": 9,
+          "newPasses": 18
+        },
+        "multi_step": {
+          "runs": 18,
+          "oldPasses": 15,
+          "newPasses": 15
+        },
+        "multi_turn": {
+          "runs": 12,
+          "oldPasses": 10,
+          "newPasses": 10
+        },
+        "prompt_injection": {
+          "runs": 9,
+          "oldPasses": 5,
+          "newPasses": 9
+        },
+        "write_action": {
+          "runs": 9,
+          "oldPasses": 3,
+          "newPasses": 8
+        }
+      },
+      "strictLeakRuns": 3,
+      "dataLeakRuns": 0
+    },
+    "G1": {
+      "round": "Round 1",
+      "model": "gpt-oss-120b",
+      "sourceSha256": "418586127d99cc3694aada83883f9f4e4a58344cebe0f5217c78b73bceca1922",
+      "runs": 19,
+      "oldPasses": 13,
+      "newPasses": 15,
+      "categories": {
+        "lookup": {
+          "runs": 18,
+          "oldPasses": 13,
+          "newPasses": 15
+        },
+        "multi_step": {
+          "runs": 1,
+          "oldPasses": 0,
+          "newPasses": 0
+        }
+      },
+      "strictLeakRuns": 0,
+      "dataLeakRuns": 0
+    },
+    "G2": {
+      "round": "Round 2",
+      "model": "gpt-oss-120b",
+      "sourceSha256": "e3033bd9fa6f2ab4a52a63e59f28a0ddd5bdf0b291d3eb68a52b2a5da6a705a3",
+      "runs": 120,
+      "oldPasses": 45,
+      "newPasses": 98,
+      "categories": {
+        "aggregation": {
+          "runs": 18,
+          "oldPasses": 4,
+          "newPasses": 18
+        },
+        "clarification": {
+          "runs": 9,
+          "oldPasses": 5,
+          "newPasses": 9
+        },
+        "cross_tenant": {
+          "runs": 6,
+          "oldPasses": 3,
+          "newPasses": 6
+        },
+        "degraded_dependency": {
+          "runs": 9,
+          "oldPasses": 0,
+          "newPasses": 5
+        },
+        "empty": {
+          "runs": 12,
+          "oldPasses": 6,
+          "newPasses": 12
+        },
+        "lookup": {
+          "runs": 18,
+          "oldPasses": 7,
+          "newPasses": 15
+        },
+        "multi_step": {
+          "runs": 18,
+          "oldPasses": 5,
+          "newPasses": 11
+        },
+        "multi_turn": {
+          "runs": 12,
+          "oldPasses": 6,
+          "newPasses": 9
+        },
+        "prompt_injection": {
+          "runs": 9,
+          "oldPasses": 5,
+          "newPasses": 8
+        },
+        "write_action": {
+          "runs": 9,
+          "oldPasses": 4,
+          "newPasses": 5
+        }
+      },
+      "strictLeakRuns": 0,
+      "dataLeakRuns": 0
+    }
+  },
+  "agreement": {
+    "DeepSeek-V3.1": {
+      "overall": {
+        "runs": 120,
+        "oldAgreement": 66,
+        "newAgreement": 120,
+        "oldPasses": 59,
+        "newPasses": 113,
+        "falsePasses": 0,
+        "falseFails": 0
+      },
+      "categories": {
+        "lookup": {
+          "runs": 18,
+          "oldAgreement": 9,
+          "newAgreement": 18,
+          "oldPasses": 9,
+          "newPasses": 18,
+          "falsePasses": 0,
+          "falseFails": 0
+        },
+        "multi_step": {
+          "runs": 18,
+          "oldAgreement": 18,
+          "newAgreement": 18,
+          "oldPasses": 15,
+          "newPasses": 15,
+          "falsePasses": 0,
+          "falseFails": 0
+        },
+        "aggregation": {
+          "runs": 18,
+          "oldAgreement": 0,
+          "newAgreement": 18,
+          "oldPasses": 0,
+          "newPasses": 18,
+          "falsePasses": 0,
+          "falseFails": 0
+        },
+        "empty": {
+          "runs": 12,
+          "oldAgreement": 9,
+          "newAgreement": 12,
+          "oldPasses": 9,
+          "newPasses": 12,
+          "falsePasses": 0,
+          "falseFails": 0
+        },
+        "clarification": {
+          "runs": 9,
+          "oldAgreement": 3,
+          "newAgreement": 9,
+          "oldPasses": 3,
+          "newPasses": 9,
+          "falsePasses": 0,
+          "falseFails": 0
+        },
+        "write_action": {
+          "runs": 9,
+          "oldAgreement": 4,
+          "newAgreement": 9,
+          "oldPasses": 3,
+          "newPasses": 8,
+          "falsePasses": 0,
+          "falseFails": 0
+        },
+        "cross_tenant": {
+          "runs": 6,
+          "oldAgreement": 3,
+          "newAgreement": 6,
+          "oldPasses": 3,
+          "newPasses": 6,
+          "falsePasses": 0,
+          "falseFails": 0
+        },
+        "prompt_injection": {
+          "runs": 9,
+          "oldAgreement": 5,
+          "newAgreement": 9,
+          "oldPasses": 5,
+          "newPasses": 9,
+          "falsePasses": 0,
+          "falseFails": 0
+        },
+        "degraded_dependency": {
+          "runs": 9,
+          "oldAgreement": 3,
+          "newAgreement": 9,
+          "oldPasses": 2,
+          "newPasses": 8,
+          "falsePasses": 0,
+          "falseFails": 0
+        },
+        "multi_turn": {
+          "runs": 12,
+          "oldAgreement": 12,
+          "newAgreement": 12,
+          "oldPasses": 10,
+          "newPasses": 10,
+          "falsePasses": 0,
+          "falseFails": 0
+        }
+      }
+    },
+    "gpt-oss-120b": {
+      "overall": {
+        "runs": 120,
+        "oldAgreement": 67,
+        "newAgreement": 120,
+        "oldPasses": 45,
+        "newPasses": 98,
+        "falsePasses": 0,
+        "falseFails": 0
+      },
+      "categories": {
+        "lookup": {
+          "runs": 18,
+          "oldAgreement": 10,
+          "newAgreement": 18,
+          "oldPasses": 7,
+          "newPasses": 15,
+          "falsePasses": 0,
+          "falseFails": 0
+        },
+        "multi_step": {
+          "runs": 18,
+          "oldAgreement": 12,
+          "newAgreement": 18,
+          "oldPasses": 5,
+          "newPasses": 11,
+          "falsePasses": 0,
+          "falseFails": 0
+        },
+        "aggregation": {
+          "runs": 18,
+          "oldAgreement": 4,
+          "newAgreement": 18,
+          "oldPasses": 4,
+          "newPasses": 18,
+          "falsePasses": 0,
+          "falseFails": 0
+        },
+        "empty": {
+          "runs": 12,
+          "oldAgreement": 6,
+          "newAgreement": 12,
+          "oldPasses": 6,
+          "newPasses": 12,
+          "falsePasses": 0,
+          "falseFails": 0
+        },
+        "clarification": {
+          "runs": 9,
+          "oldAgreement": 5,
+          "newAgreement": 9,
+          "oldPasses": 5,
+          "newPasses": 9,
+          "falsePasses": 0,
+          "falseFails": 0
+        },
+        "write_action": {
+          "runs": 9,
+          "oldAgreement": 8,
+          "newAgreement": 9,
+          "oldPasses": 4,
+          "newPasses": 5,
+          "falsePasses": 0,
+          "falseFails": 0
+        },
+        "cross_tenant": {
+          "runs": 6,
+          "oldAgreement": 3,
+          "newAgreement": 6,
+          "oldPasses": 3,
+          "newPasses": 6,
+          "falsePasses": 0,
+          "falseFails": 0
+        },
+        "prompt_injection": {
+          "runs": 9,
+          "oldAgreement": 6,
+          "newAgreement": 9,
+          "oldPasses": 5,
+          "newPasses": 8,
+          "falsePasses": 0,
+          "falseFails": 0
+        },
+        "degraded_dependency": {
+          "runs": 9,
+          "oldAgreement": 4,
+          "newAgreement": 9,
+          "oldPasses": 0,
+          "newPasses": 5,
+          "falsePasses": 0,
+          "falseFails": 0
+        },
+        "multi_turn": {
+          "runs": 12,
+          "oldAgreement": 9,
+          "newAgreement": 12,
+          "oldPasses": 6,
+          "newPasses": 9,
+          "falsePasses": 0,
+          "falseFails": 0
+        }
+      }
+    }
+  },
+  "disagreements": []
+}

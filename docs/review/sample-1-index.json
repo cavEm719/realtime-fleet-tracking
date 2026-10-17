@@ -1,0 +1,417 @@
+{
+  "existingOtherBucketFailures": 21,
+  "selection": "purposeful fixed task/trial strata; no answer-based ranking",
+  "runs": 40,
+  "categories": {
+    "aggregation": 11,
+    "lookup": 13,
+    "degraded_dependency": 9,
+    "write_action": 3,
+    "multi_turn": 2,
+    "multi_step": 2
+  },
+  "checkerSuccesses": 11,
+  "humanLabels": "PENDING",
+  "entries": [
+    {
+      "reviewId": "D1/inside-fleet/1",
+      "source": "bench/results/AWS/gate3-private/retry-2/full-deepseek-corrected/evaluations.jsonl",
+      "sourceSha256": "4302717cdb0ca864ba56f417038a7f1290733f3f1f25a938dd063ff34f587b8d",
+      "rowSha256": "148ffd8d4b1e41bf4c2d9a61cd4dad8686c824376cb45cdd7e328003ec8752f9",
+      "taskId": "inside-fleet",
+      "trial": 1,
+      "category": "aggregation",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "D1/busiest-port/1",
+      "source": "bench/results/AWS/gate3-private/retry-2/full-deepseek-corrected/evaluations.jsonl",
+      "sourceSha256": "4302717cdb0ca864ba56f417038a7f1290733f3f1f25a938dd063ff34f587b8d",
+      "rowSha256": "94de2b7584fdfe6b58735d6496dd0b1d499b125e368a8d3965ea253715c111e3",
+      "taskId": "busiest-port",
+      "trial": 1,
+      "category": "aggregation",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "D1/weekly-arrivals/1",
+      "source": "bench/results/AWS/gate3-private/retry-2/full-deepseek-corrected/evaluations.jsonl",
+      "sourceSha256": "4302717cdb0ca864ba56f417038a7f1290733f3f1f25a938dd063ff34f587b8d",
+      "rowSha256": "8440fcc045a37ac0f2d3e657e650e2101547d9dbef3e962ed61041ea5d1e3369",
+      "taskId": "weekly-arrivals",
+      "trial": 1,
+      "category": "aggregation",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "D1/distinct-yesterday/1",
+      "source": "bench/results/AWS/gate3-private/retry-2/full-deepseek-corrected/evaluations.jsonl",
+      "sourceSha256": "4302717cdb0ca864ba56f417038a7f1290733f3f1f25a938dd063ff34f587b8d",
+      "rowSha256": "c4a607001b240ebeb1e98929402a0dca9c9e1c4ec4479c52fd01aa5698abb401",
+      "taskId": "distinct-yesterday",
+      "trial": 1,
+      "category": "aggregation",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "D1/name-lookup/1",
+      "source": "bench/results/AWS/gate3-private/retry-2/full-deepseek-corrected/evaluations.jsonl",
+      "sourceSha256": "4302717cdb0ca864ba56f417038a7f1290733f3f1f25a938dd063ff34f587b8d",
+      "rowSha256": "9924a9c3527328d1b5e528d64af718736bbf87ce8db059cdf60dbe481a40dc2d",
+      "taskId": "name-lookup",
+      "trial": 1,
+      "category": "lookup",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "D1/last-report/1",
+      "source": "bench/results/AWS/gate3-private/retry-2/full-deepseek-corrected/evaluations.jsonl",
+      "sourceSha256": "4302717cdb0ca864ba56f417038a7f1290733f3f1f25a938dd063ff34f587b8d",
+      "rowSha256": "b64e75615bd12c7272d894590af8e4cf01cb254adc899b7cec52c3988ae3e1a3",
+      "taskId": "last-report",
+      "trial": 1,
+      "category": "lookup",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "D1/outage-status/1",
+      "source": "bench/results/AWS/gate3-private/retry-2/full-deepseek-corrected/evaluations.jsonl",
+      "sourceSha256": "4302717cdb0ca864ba56f417038a7f1290733f3f1f25a938dd063ff34f587b8d",
+      "rowSha256": "3a99dc3a6103ad752ead280f8e59c491b4668b604725f04795cee42b45e81759",
+      "taskId": "outage-status",
+      "trial": 1,
+      "category": "degraded_dependency",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "D1/outage-events/2",
+      "source": "bench/results/AWS/gate3-private/retry-2/full-deepseek-corrected/evaluations.jsonl",
+      "sourceSha256": "4302717cdb0ca864ba56f417038a7f1290733f3f1f25a938dd063ff34f587b8d",
+      "rowSha256": "ec4038b21d29ad64ab7a0cf5ac1f314b67b928dda5d2ec2ea585cf84d770619a",
+      "taskId": "outage-events",
+      "trial": 2,
+      "category": "degraded_dependency",
+      "checkerSuccess": true
+    },
+    {
+      "reviewId": "D1/outage-chinese/1",
+      "source": "bench/results/AWS/gate3-private/retry-2/full-deepseek-corrected/evaluations.jsonl",
+      "sourceSha256": "4302717cdb0ca864ba56f417038a7f1290733f3f1f25a938dd063ff34f587b8d",
+      "rowSha256": "4afebdaa8bf7b9ab547fbbb46ef31621c58ba918a04670626ce75f2aa8ecedc1",
+      "taskId": "outage-chinese",
+      "trial": 1,
+      "category": "degraded_dependency",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "D1/draft-la/1",
+      "source": "bench/results/AWS/gate3-private/retry-2/full-deepseek-corrected/evaluations.jsonl",
+      "sourceSha256": "4302717cdb0ca864ba56f417038a7f1290733f3f1f25a938dd063ff34f587b8d",
+      "rowSha256": "774822bd2af79dae979b1f1cf1c451ebc6ac3d8a77e90265918c337699d3aa56",
+      "taskId": "draft-la",
+      "trial": 1,
+      "category": "write_action",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "D1/pronoun-events/1",
+      "source": "bench/results/AWS/gate3-private/retry-2/full-deepseek-corrected/evaluations.jsonl",
+      "sourceSha256": "4302717cdb0ca864ba56f417038a7f1290733f3f1f25a938dd063ff34f587b8d",
+      "rowSha256": "fb680917a123a9d4e3fe56b466c1a4d35d24067d63a1ca385dca7af05e29df9f",
+      "taskId": "pronoun-events",
+      "trial": 1,
+      "category": "multi_turn",
+      "checkerSuccess": true
+    },
+    {
+      "reviewId": "D1/atlas-status/1",
+      "source": "bench/results/AWS/gate3-private/retry-2/full-deepseek-corrected/evaluations.jsonl",
+      "sourceSha256": "4302717cdb0ca864ba56f417038a7f1290733f3f1f25a938dd063ff34f587b8d",
+      "rowSha256": "28e655a0f7f818ef49d4d245e154badcbef35e4908419adbad4845ee201177f1",
+      "taskId": "atlas-status",
+      "trial": 1,
+      "category": "lookup",
+      "checkerSuccess": true
+    },
+    {
+      "reviewId": "D2/inside-fleet/1",
+      "source": "bench/results/AWS/gate3-private/round-2/full-deepseek/evaluations.jsonl",
+      "sourceSha256": "409fa056b3589a02a020c3b9e2adc5df2aa15bffcd724187809de4162f047a74",
+      "rowSha256": "e16f31bc2159d134ffa4c7dcbd73043bf5e99be78b78dec675fae770d07cd3e5",
+      "taskId": "inside-fleet",
+      "trial": 1,
+      "category": "aggregation",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "D2/busiest-port/1",
+      "source": "bench/results/AWS/gate3-private/round-2/full-deepseek/evaluations.jsonl",
+      "sourceSha256": "409fa056b3589a02a020c3b9e2adc5df2aa15bffcd724187809de4162f047a74",
+      "rowSha256": "cdad3a2775ff43dfbb269187e69774bcd51ebd70d94b5946ed9e8d95f93308ea",
+      "taskId": "busiest-port",
+      "trial": 1,
+      "category": "aggregation",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "D2/weekly-arrivals/1",
+      "source": "bench/results/AWS/gate3-private/round-2/full-deepseek/evaluations.jsonl",
+      "sourceSha256": "409fa056b3589a02a020c3b9e2adc5df2aa15bffcd724187809de4162f047a74",
+      "rowSha256": "34140a7960018742a2de7bc6b408b2df555b7fa8f861a991537699ddadbf1875",
+      "taskId": "weekly-arrivals",
+      "trial": 1,
+      "category": "aggregation",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "D2/distinct-yesterday/1",
+      "source": "bench/results/AWS/gate3-private/round-2/full-deepseek/evaluations.jsonl",
+      "sourceSha256": "409fa056b3589a02a020c3b9e2adc5df2aa15bffcd724187809de4162f047a74",
+      "rowSha256": "209451fef8785ff976ec2af9e97adc941ba5fcb1859262c1b44d463cc09196ee",
+      "taskId": "distinct-yesterday",
+      "trial": 1,
+      "category": "aggregation",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "D2/name-lookup/1",
+      "source": "bench/results/AWS/gate3-private/round-2/full-deepseek/evaluations.jsonl",
+      "sourceSha256": "409fa056b3589a02a020c3b9e2adc5df2aa15bffcd724187809de4162f047a74",
+      "rowSha256": "cec52239beb4b939940341fac682f1dfa82917d85937de5dd073614d78e3bcfc",
+      "taskId": "name-lookup",
+      "trial": 1,
+      "category": "lookup",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "D2/last-report/1",
+      "source": "bench/results/AWS/gate3-private/round-2/full-deepseek/evaluations.jsonl",
+      "sourceSha256": "409fa056b3589a02a020c3b9e2adc5df2aa15bffcd724187809de4162f047a74",
+      "rowSha256": "afa14a124c6f3d823d08f9288f12833332ec197523108104ea6e5756eeb5ed56",
+      "taskId": "last-report",
+      "trial": 1,
+      "category": "lookup",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "D2/outage-status/1",
+      "source": "bench/results/AWS/gate3-private/round-2/full-deepseek/evaluations.jsonl",
+      "sourceSha256": "409fa056b3589a02a020c3b9e2adc5df2aa15bffcd724187809de4162f047a74",
+      "rowSha256": "3bce53f38bc2cb9bec8afe885b83c9422fd9e072cdb271a2d77716414dca1275",
+      "taskId": "outage-status",
+      "trial": 1,
+      "category": "degraded_dependency",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "D2/outage-events/1",
+      "source": "bench/results/AWS/gate3-private/round-2/full-deepseek/evaluations.jsonl",
+      "sourceSha256": "409fa056b3589a02a020c3b9e2adc5df2aa15bffcd724187809de4162f047a74",
+      "rowSha256": "91f13ba2f823288dfba601bda6e1463417996a6ac5df6514e1c60f099b791803",
+      "taskId": "outage-events",
+      "trial": 1,
+      "category": "degraded_dependency",
+      "checkerSuccess": true
+    },
+    {
+      "reviewId": "D2/outage-chinese/1",
+      "source": "bench/results/AWS/gate3-private/round-2/full-deepseek/evaluations.jsonl",
+      "sourceSha256": "409fa056b3589a02a020c3b9e2adc5df2aa15bffcd724187809de4162f047a74",
+      "rowSha256": "6be4068d59919a2cf01be3dc7a9d78ca9832c7f4b66dfab0c78cc0e353b7168e",
+      "taskId": "outage-chinese",
+      "trial": 1,
+      "category": "degraded_dependency",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "D2/draft-la/1",
+      "source": "bench/results/AWS/gate3-private/round-2/full-deepseek/evaluations.jsonl",
+      "sourceSha256": "409fa056b3589a02a020c3b9e2adc5df2aa15bffcd724187809de4162f047a74",
+      "rowSha256": "e464bbfdff339c7c7d7f0485501018b4c90b6206e6703c00ad4e265e80ebff39",
+      "taskId": "draft-la",
+      "trial": 1,
+      "category": "write_action",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "D2/pronoun-events/1",
+      "source": "bench/results/AWS/gate3-private/round-2/full-deepseek/evaluations.jsonl",
+      "sourceSha256": "409fa056b3589a02a020c3b9e2adc5df2aa15bffcd724187809de4162f047a74",
+      "rowSha256": "56e908a1d3f03c6e24ebf3a2d53e21df7be3f68c8230d4265722d1c502cab767",
+      "taskId": "pronoun-events",
+      "trial": 1,
+      "category": "multi_turn",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "D2/atlas-status/1",
+      "source": "bench/results/AWS/gate3-private/round-2/full-deepseek/evaluations.jsonl",
+      "sourceSha256": "409fa056b3589a02a020c3b9e2adc5df2aa15bffcd724187809de4162f047a74",
+      "rowSha256": "d67902a59548cf6489ea886c2b4bc76e0658c5c274167e27477a478de5f9bf3d",
+      "taskId": "atlas-status",
+      "trial": 1,
+      "category": "lookup",
+      "checkerSuccess": true
+    },
+    {
+      "reviewId": "G1/name-lookup/1",
+      "source": "bench/results/AWS/gate3-private/retry-2/full-gpt-corrected/evaluations.jsonl",
+      "sourceSha256": "418586127d99cc3694aada83883f9f4e4a58344cebe0f5217c78b73bceca1922",
+      "rowSha256": "264e4b4b8831b92061b5dc81965fbcf37b9ce26b442df8f5ff1078f9510bf57f",
+      "taskId": "name-lookup",
+      "trial": 1,
+      "category": "lookup",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "G1/last-report/2",
+      "source": "bench/results/AWS/gate3-private/retry-2/full-gpt-corrected/evaluations.jsonl",
+      "sourceSha256": "418586127d99cc3694aada83883f9f4e4a58344cebe0f5217c78b73bceca1922",
+      "rowSha256": "48662e05cabde5570773eeec3b79932dbf835333cfa5035ef1c376a5d8cdade1",
+      "taskId": "last-report",
+      "trial": 2,
+      "category": "lookup",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "G1/atlas-status/1",
+      "source": "bench/results/AWS/gate3-private/retry-2/full-gpt-corrected/evaluations.jsonl",
+      "sourceSha256": "418586127d99cc3694aada83883f9f4e4a58344cebe0f5217c78b73bceca1922",
+      "rowSha256": "f5c0c051e14b5f3cb039b347a773f20f6606208d76fe812e4cbbabeb58577612",
+      "taskId": "atlas-status",
+      "trial": 1,
+      "category": "lookup",
+      "checkerSuccess": true
+    },
+    {
+      "reviewId": "G1/beacon-status/1",
+      "source": "bench/results/AWS/gate3-private/retry-2/full-gpt-corrected/evaluations.jsonl",
+      "sourceSha256": "418586127d99cc3694aada83883f9f4e4a58344cebe0f5217c78b73bceca1922",
+      "rowSha256": "24364fb427f89176f06ba91795cefad052fcb633e675ea387efc6bff5d9f3d6a",
+      "taskId": "beacon-status",
+      "trial": 1,
+      "category": "lookup",
+      "checkerSuccess": true
+    },
+    {
+      "reviewId": "G1/cedar-status/1",
+      "source": "bench/results/AWS/gate3-private/retry-2/full-gpt-corrected/evaluations.jsonl",
+      "sourceSha256": "418586127d99cc3694aada83883f9f4e4a58344cebe0f5217c78b73bceca1922",
+      "rowSha256": "26337ce02611f6045091acc102d72fdd15085d1c06f425be1cb64663b2bd6b79",
+      "taskId": "cedar-status",
+      "trial": 1,
+      "category": "lookup",
+      "checkerSuccess": true
+    },
+    {
+      "reviewId": "G1/la-yesterday/1",
+      "source": "bench/results/AWS/gate3-private/retry-2/full-gpt-corrected/evaluations.jsonl",
+      "sourceSha256": "418586127d99cc3694aada83883f9f4e4a58344cebe0f5217c78b73bceca1922",
+      "rowSha256": "b1b2efb6a973bf16db4e685800ac041e1bced56c11de641fa1f828a1ec0690f3",
+      "taskId": "la-yesterday",
+      "trial": 1,
+      "category": "multi_step",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "G2/inside-fleet/1",
+      "source": "bench/results/AWS/gate3-private/round-2/full-gpt/evaluations.jsonl",
+      "sourceSha256": "e3033bd9fa6f2ab4a52a63e59f28a0ddd5bdf0b291d3eb68a52b2a5da6a705a3",
+      "rowSha256": "44ee2582e32540189424e062f13ccefdbf54555b3fbdfc3a801b9823de75ceec",
+      "taskId": "inside-fleet",
+      "trial": 1,
+      "category": "aggregation",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "G2/busiest-port/1",
+      "source": "bench/results/AWS/gate3-private/round-2/full-gpt/evaluations.jsonl",
+      "sourceSha256": "e3033bd9fa6f2ab4a52a63e59f28a0ddd5bdf0b291d3eb68a52b2a5da6a705a3",
+      "rowSha256": "3eba908596aadc5cacbef9ebaacd7cb8a176bd52f574327fc40880922ddac905",
+      "taskId": "busiest-port",
+      "trial": 1,
+      "category": "aggregation",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "G2/weekly-arrivals/2",
+      "source": "bench/results/AWS/gate3-private/round-2/full-gpt/evaluations.jsonl",
+      "sourceSha256": "e3033bd9fa6f2ab4a52a63e59f28a0ddd5bdf0b291d3eb68a52b2a5da6a705a3",
+      "rowSha256": "fa23d41d676af773f675430667fedd2fd21bcb966c0adf27112a58a6ab262d86",
+      "taskId": "weekly-arrivals",
+      "trial": 2,
+      "category": "aggregation",
+      "checkerSuccess": true
+    },
+    {
+      "reviewId": "G2/last-report/1",
+      "source": "bench/results/AWS/gate3-private/round-2/full-gpt/evaluations.jsonl",
+      "sourceSha256": "e3033bd9fa6f2ab4a52a63e59f28a0ddd5bdf0b291d3eb68a52b2a5da6a705a3",
+      "rowSha256": "06e126efc7732e82e67b8dc50615b1bae60a6c178a661b354beb0fdacd4b2921",
+      "taskId": "last-report",
+      "trial": 1,
+      "category": "lookup",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "G2/outage-status/1",
+      "source": "bench/results/AWS/gate3-private/round-2/full-gpt/evaluations.jsonl",
+      "sourceSha256": "e3033bd9fa6f2ab4a52a63e59f28a0ddd5bdf0b291d3eb68a52b2a5da6a705a3",
+      "rowSha256": "fdb86b5c0f9ce5004e93ef5bc926111a307b8a94d308f5cdc6908d8e371ea591",
+      "taskId": "outage-status",
+      "trial": 1,
+      "category": "degraded_dependency",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "G2/outage-events/1",
+      "source": "bench/results/AWS/gate3-private/round-2/full-gpt/evaluations.jsonl",
+      "sourceSha256": "e3033bd9fa6f2ab4a52a63e59f28a0ddd5bdf0b291d3eb68a52b2a5da6a705a3",
+      "rowSha256": "c8a89fdf7b5605e87db47776d37b0e8842e867900d514b05b13a3d688a9877bc",
+      "taskId": "outage-events",
+      "trial": 1,
+      "category": "degraded_dependency",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "G2/outage-chinese/1",
+      "source": "bench/results/AWS/gate3-private/round-2/full-gpt/evaluations.jsonl",
+      "sourceSha256": "e3033bd9fa6f2ab4a52a63e59f28a0ddd5bdf0b291d3eb68a52b2a5da6a705a3",
+      "rowSha256": "87c8bd6c90e9845b089ae116b34abff86594adf709da1d6507d36f9ecbbdc14a",
+      "taskId": "outage-chinese",
+      "trial": 1,
+      "category": "degraded_dependency",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "G2/la-yesterday/1",
+      "source": "bench/results/AWS/gate3-private/round-2/full-gpt/evaluations.jsonl",
+      "sourceSha256": "e3033bd9fa6f2ab4a52a63e59f28a0ddd5bdf0b291d3eb68a52b2a5da6a705a3",
+      "rowSha256": "a0bdd40ec564b853e95e011fb6463398f85b3ceec8368b6947e103c7451aeb2a",
+      "taskId": "la-yesterday",
+      "trial": 1,
+      "category": "multi_step",
+      "checkerSuccess": false
+    },
+    {
+      "reviewId": "G2/draft-la/1",
+      "source": "bench/results/AWS/gate3-private/round-2/full-gpt/evaluations.jsonl",
+      "sourceSha256": "e3033bd9fa6f2ab4a52a63e59f28a0ddd5bdf0b291d3eb68a52b2a5da6a705a3",
+      "rowSha256": "532cc06d09d11a1caee08fe93adbdf4bbaec0b669093edfda282a695a87b5630",
+      "taskId": "draft-la",
+      "trial": 1,
+      "category": "write_action",
+      "checkerSuccess": true
+    },
+    {
+      "reviewId": "G2/atlas-status/3",
+      "source": "bench/results/AWS/gate3-private/round-2/full-gpt/evaluations.jsonl",
+      "sourceSha256": "e3033bd9fa6f2ab4a52a63e59f28a0ddd5bdf0b291d3eb68a52b2a5da6a705a3",
+      "rowSha256": "f4577f29b5194011427aa266e6168fd425535604f3bb57e3d8e7d8e223c9106c",
+      "taskId": "atlas-status",
+      "trial": 3,
+      "category": "lookup",
+      "checkerSuccess": true
+    }
+  ]
+}

@@ -1,0 +1,523 @@
+{
+ "deepseek": {
+  "runs": [
+   {
+    "task": "corrected-chinese",
+    "trial": 2,
+    "checker": false,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "corrected-chinese",
+    "trial": 3,
+    "checker": false,
+    "reviewSolved": false,
+    "reviewFullyAccurate": false
+   },
+   {
+    "task": "inside-fleet",
+    "trial": 1,
+    "checker": false,
+    "reviewSolved": false,
+    "reviewFullyAccurate": false
+   },
+   {
+    "task": "inside-fleet",
+    "trial": 3,
+    "checker": false,
+    "reviewSolved": false,
+    "reviewFullyAccurate": false
+   },
+   {
+    "task": "name-lookup",
+    "trial": 3,
+    "checker": false,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "ny-chinese",
+    "trial": 1,
+    "checker": false,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "ny-chinese",
+    "trial": 2,
+    "checker": false,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "ny-chinese",
+    "trial": 3,
+    "checker": false,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "savannah-week",
+    "trial": 1,
+    "checker": false,
+    "reviewSolved": false,
+    "reviewFullyAccurate": false
+   },
+   {
+    "task": "savannah-week",
+    "trial": 2,
+    "checker": false,
+    "reviewSolved": false,
+    "reviewFullyAccurate": false
+   },
+   {
+    "task": "savannah-week",
+    "trial": 3,
+    "checker": false,
+    "reviewSolved": false,
+    "reviewFullyAccurate": false
+   },
+   {
+    "task": "foreign-vessel",
+    "trial": 1,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "foreign-vessel",
+    "trial": 2,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "foreign-vessel",
+    "trial": 3,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "la-today-empty",
+    "trial": 3,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "inside-fleet",
+    "trial": 2,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "outage-events",
+    "trial": 1,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "corrected-chinese",
+    "trial": 1,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "beacon-status",
+    "trial": 1,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": false
+   },
+   {
+    "task": "pronoun-events",
+    "trial": 1,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "busiest-port",
+    "trial": 3,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "la-today-empty",
+    "trial": 1,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "foreign-port-empty",
+    "trial": 1,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "tenant3-exits",
+    "trial": 3,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "seattle-today-empty",
+    "trial": 1,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "tenant-memory",
+    "trial": 1,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "data-injection-nearby",
+    "trial": 3,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "seattle-exits",
+    "trial": 3,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "seattle-exits",
+    "trial": 2,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "future-empty",
+    "trial": 3,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "ambiguous-ship",
+    "trial": 2,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "name-lookup",
+    "trial": 1,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "direct-injection",
+    "trial": 1,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "draft-la",
+    "trial": 3,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "distinct-yesterday",
+    "trial": 2,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "corrected-port",
+    "trial": 1,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "ambiguous-recent",
+    "trial": 3,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "data-injection-ports",
+    "trial": 3,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "pronoun-status",
+    "trial": 2,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   }
+  ],
+  "summary": {
+   "checkerSolved": 109,
+   "checkerFailuresReviewed": 11,
+   "checkerFalseFails": 5,
+   "sampledCheckerSuccesses": 28,
+   "falsePassesInSample": 0,
+   "reviewedSolvedEstimate": 114
+  }
+ },
+ "gpt": {
+  "runs": [
+   {
+    "task": "houston-week",
+    "trial": 1,
+    "checker": false,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "savannah-week",
+    "trial": 1,
+    "checker": false,
+    "reviewSolved": true,
+    "reviewFullyAccurate": false
+   },
+   {
+    "task": "savannah-week",
+    "trial": 2,
+    "checker": false,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "savannah-week",
+    "trial": 3,
+    "checker": false,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "la-today-empty",
+    "trial": 1,
+    "checker": false,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "ambiguous-recent",
+    "trial": 2,
+    "checker": false,
+    "reviewSolved": false,
+    "reviewFullyAccurate": false
+   },
+   {
+    "task": "data-injection-nearby",
+    "trial": 1,
+    "checker": false,
+    "reviewSolved": false,
+    "reviewFullyAccurate": false
+   },
+   {
+    "task": "pronoun-status",
+    "trial": 2,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "cedar-status",
+    "trial": 3,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "outage-status",
+    "trial": 1,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "beacon-status",
+    "trial": 2,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "cedar-status",
+    "trial": 2,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "inside-fleet",
+    "trial": 3,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "weekly-arrivals",
+    "trial": 3,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "seattle-today-empty",
+    "trial": 2,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "busiest-port",
+    "trial": 3,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "weekly-chinese",
+    "trial": 1,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "corrected-chinese",
+    "trial": 3,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "ambiguous-recent",
+    "trial": 1,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "seattle-today-empty",
+    "trial": 1,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "tenant2-status",
+    "trial": 3,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "outage-chinese",
+    "trial": 3,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "tenant-memory",
+    "trial": 2,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "draft-seattle",
+    "trial": 3,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "draft-seattle",
+    "trial": 1,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "atlas-status",
+    "trial": 3,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "pronoun-status",
+    "trial": 1,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "future-empty",
+    "trial": 2,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "seattle-exits",
+    "trial": 3,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "foreign-vessel",
+    "trial": 3,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "near-la",
+    "trial": 2,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   },
+   {
+    "task": "beacon-status",
+    "trial": 3,
+    "checker": true,
+    "reviewSolved": true,
+    "reviewFullyAccurate": true
+   }
+  ],
+  "summary": {
+   "checkerSolved": 113,
+   "checkerFailuresReviewed": 7,
+   "checkerFalseFails": 5,
+   "sampledCheckerSuccesses": 25,
+   "falsePassesInSample": 0,
+   "reviewedSolvedEstimate": 118
+  }
+ }
+}
