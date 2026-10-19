@@ -80,3 +80,155 @@ services:
     volumes:
       - mysql-replica-data:/var/lib/mysql
       - ./docker/mysql/replica:/docker-entrypoint-initdb.d:ro
+    depends_on:
+      mysql: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD-SHELL", "mysql -u root -plocalroot -N -e \"SELECT SERVICE_STATE FROM performance_schema.replication_connection_status\" | grep -q ON"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+  api:
+    <<: *service
+    image: fleet-api:local
+    build:
+      context: .
+      args: {MODULE: api}
+    environment:
+      <<: *data-environment
+      API_PORT: 8080
+      API_GRPC_PORT: 9095
+      AI_READ_URL: jdbc:mysql://mysql-replica:3306/fleet
+      AI_READ_USER: fleet_ai
+      AI_READ_PASSWORD: fleet_ai
+    ports: ["8080:8080"]
+    depends_on:
+      kafka: {condition: service_healthy}
+      redis: {condition: service_healthy}
+      mysql: {condition: service_healthy}
+      mysql-replica: {condition: service_healthy}
+
+  copilot:
+    <<: *service
+    image: fleet-copilot:local
+    build:
+      context: .
+      dockerfile: copilot/Dockerfile
+    environment:
+      API_GRPC_TARGET: api:9095
+      REDIS_HOST: redis
+      DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY:-}
+      COPILOT_MODEL: ${COPILOT_MODEL:-deepseek-flash}
+      COPILOT_FIXED_NOW: ${COPILOT_FIXED_NOW:-}
+      COPILOT_EVALUATION_ENABLED: ${COPILOT_EVALUATION_ENABLED:-false}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/actuator/health')"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+    ports: ["8083:8080"]
+    depends_on:
+      api: {condition: service_healthy}
+      redis: {condition: service_healthy}
+
+  copilot-2:
+    <<: *service
+    image: fleet-copilot:local
+    build:
+      context: .
+      dockerfile: copilot/Dockerfile
+    environment:
+      API_GRPC_TARGET: api:9095
+      REDIS_HOST: redis
+      DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY:-}
+      COPILOT_MODEL: ${COPILOT_MODEL:-deepseek-flash}
+      COPILOT_FIXED_NOW: ${COPILOT_FIXED_NOW:-}
+      COPILOT_EVALUATION_ENABLED: ${COPILOT_EVALUATION_ENABLED:-false}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/actuator/health')"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+    ports: ["8084:8080"]
+    depends_on:
+      api: {condition: service_healthy}
+      redis: {condition: service_healthy}
+
+  processor-1:
+    <<: *service
+    image: fleet-processor:local
+    build:
+      context: .
+      args: {MODULE: processor}
+    environment:
+      <<: *data-environment
+      PROCESSOR_PORT: 8080
+    command: ["--fence-cache.group-id=fleet-fences-processor-1"]
+    ports: ["18081:8080"]
+    depends_on:
+      api: {condition: service_healthy}
+
+  processor-2:
+    <<: *service
+    image: fleet-processor:local
+    build:
+      context: .
+      args: {MODULE: processor}
+    environment:
+      <<: *data-environment
+      PROCESSOR_PORT: 8080
+    command: ["--fence-cache.group-id=fleet-fences-processor-2"]
+    ports: ["18091:8080"]
+    depends_on:
+      api: {condition: service_healthy}
+
+  gateway-1:
+    <<: *service
+    image: fleet-gateway:local
+    build:
+      context: .
+      args: {MODULE: gateway}
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:19092
+      REDIS_HOST: redis
+      GATEWAY_PORT: 8080
+      API_GRPC_TARGET: api:9095
+    command: ["--gateway.event-group-id=fleet-gateway-1"]
+    ports: ["18082:8080"]
+    depends_on:
+      api: {condition: service_healthy}
+
+  gateway-2:
+    <<: *service
+    image: fleet-gateway:local
+    build:
+      context: .
+      args: {MODULE: gateway}
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:19092
+      REDIS_HOST: redis
+      GATEWAY_PORT: 8080
+      API_GRPC_TARGET: api:9095
+    command: ["--gateway.event-group-id=fleet-gateway-2"]
+    ports: ["18092:8080"]
+    depends_on:
+      api: {condition: service_healthy}
+
+  nginx:
+    profiles: [multi]
+    image: nginx:1.28.0-alpine
+    volumes: ["./docker/nginx.conf:/etc/nginx/nginx.conf:ro"]
+    ports: ["8082:80"]
+    depends_on:
+      gateway-1: {condition: service_healthy}
+      gateway-2: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1/actuator/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  kafka-data:
+  redis-data:
+  mysql-data:
+  mysql-replica-data:
